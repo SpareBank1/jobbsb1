@@ -24,8 +24,8 @@ const IndexPage = () => (
     </g>
     </svg>
     <p>Vi søker nye medarbeidere – vil du være med på laget?</p>
-
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/ansatte/">Les om våre ansatte</Link><br />
+    <Link to="/page-2/">Go to page 2</Link><br />
   </Layout>
 )
 
