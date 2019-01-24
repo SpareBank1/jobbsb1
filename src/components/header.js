@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle }) => (
-  <div>
+  <header>
     <div>
       <h1 className="ffe-h1">
         <Link
@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-  </div>
+  </header>
 )
 
 Header.propTypes = {
