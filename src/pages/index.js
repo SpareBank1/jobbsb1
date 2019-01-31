@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Vi søker nye medarbeidere" keywords={[`gatsby`, `application`, `react`]} />
@@ -26,6 +27,7 @@ const IndexPage = () => (
     <p>Vi søker nye medarbeidere – vil du være med på laget?</p>
     <Link to="/ansatte/">Les om våre ansatte</Link><br />
     <Link to="/page-2/">Go to page 2</Link><br />
+    
   </Layout>
 )
 

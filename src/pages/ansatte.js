@@ -13,10 +13,10 @@ const EmplyeesPage = ({ data }) => (
         <div key={post.node.id}>
           <h3 className="ffe-h3">{post.node.frontmatter.title}</h3>
           <small>
-            {post.node.frontmatter.date}
+            {post.node.frontmatter.rolle}
           </small>
           <br />    
-          <Link to={post.node.frontmatter.path} className="ffe-link-text">Les om {post.node.frontmatter.title}</Link>
+          <Link to={post.node.frontmatter.path} className="ffe-link-text">Les om {post.node.frontmatter.title}  </Link>
           <hr />
         </div>
       ))}
@@ -34,6 +34,7 @@ const EmplyeesPage = ({ data }) => (
             path
             title
             date
+            rolle
           }
         }
       }
