@@ -27,7 +27,10 @@ const EmplyeesPage = ({ data }) => (
 
   export const pageQuery = graphql`
   query BlogIndexQuery {
-    allMarkdownRemark{
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex : "\/employees/"} },
+      sort: {fields: [frontmatter___title], order: DESC},
+    ){
       edges{
         node{
           frontmatter{
