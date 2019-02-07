@@ -27,6 +27,13 @@ module.exports = {
         username: `sparebank1design`,
       },
     },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `sparebank1-digital`,
+        limit: 200,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
