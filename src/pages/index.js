@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import Employee from '../components/employee'
+
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +27,10 @@ const IndexPage = () => (
     </g>
     </svg>
     <p>Vi søker nye medarbeidere – vil du være med på laget?</p>
-    <Link to="/ansatte/">Les om våre ansatte</Link><br />
+    
+    <h2>Våre ansatte</h2>
+    <Employee />
+
     <Link to="/page-2/">Go to page 2</Link><br />
     
   </Layout>
