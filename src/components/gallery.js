@@ -1,4 +1,5 @@
 import React from 'react'
+import Timestamp from 'react-timestamp'
 /* import Image from 'gatsby-image' */
 
 export default ({posts}) => (
@@ -11,6 +12,7 @@ export default ({posts}) => (
                         <ul>
                             <li>Likes: {item.node.likes}</li>
                             <li>Comments: {item.node.comments}</li>
+                            <li>Timestamp: <Timestamp time={item.node.timestamp}/></li>
                         </ul>
                         <p>{item.node.caption}</p>
                     </div>
