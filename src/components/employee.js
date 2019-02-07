@@ -6,11 +6,11 @@ import { Link } from 'gatsby'
 export default () => (
   <StaticQuery
     query={graphql`
-      query employeeQuery {
+      query employeeQuery{
         allMarkdownRemark(
           limit: 2,
           filter: { fileAbsolutePath: {regex : "\/employees/"} },
-          sort: {fields: [frontmatter___title], order: DESC},
+          sort: {fields: [frontmatter___date], order: DESC},
         ){
           edges{
             node{
@@ -34,7 +34,6 @@ export default () => (
           </small>
           <br />    
           <Link to={post.node.frontmatter.path} className="ffe-link-text">Les om {post.node.frontmatter.title}  </Link>
-          <hr />
         </div>
       ))
     )}

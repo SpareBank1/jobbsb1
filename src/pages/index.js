@@ -31,7 +31,7 @@ const IndexPage = () => (
     <h2>Våre ansatte</h2>
     <Employee />
 
-    <Link to="/page-2/">Go to page 2</Link><br />
+    <br /><Link to="/page-2/">Go to page 2</Link><br />
     
   </Layout>
 )
