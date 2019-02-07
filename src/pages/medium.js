@@ -18,6 +18,7 @@ query {
       node {
         id
         title
+        uniqueSlug
         virtuals {
           subtitle
           previewImage {
