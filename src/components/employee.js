@@ -8,7 +8,7 @@ export default () => (
     query={graphql`
       query employeeQuery{
         allMarkdownRemark(
-          limit: 2,
+          limit: 5,
           filter: { fileAbsolutePath: {regex : "\/employees/"} },
           sort: {fields: [frontmatter___date], order: DESC},
         ){
@@ -30,11 +30,13 @@ export default () => (
         <div key={post.node.id}>
           <h3 className="ffe-h3">{post.node.frontmatter.title}</h3>
           <small>
-            {post.node.frontmatter.rolle}
+            Stilling: {post.node.frontmatter.rolle}
           </small>
           <br />    
           <Link to={post.node.frontmatter.path} className="ffe-link-text">Les om {post.node.frontmatter.title}  </Link>
+          <hr/>
         </div>
+        
       ))
     )}
   />
