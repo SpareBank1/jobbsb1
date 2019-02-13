@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Gallery from '../components/gallery'
 export default ({data}) => {
 
@@ -13,7 +13,13 @@ export default ({data}) => {
 
 export const query = graphql`
 query {
-  allInstaNode {
+  allInstaNode
+  (
+    limit:6,
+    sort:{
+    fields:timestamp,
+    order:DESC
+  }) {
     edges {
       node {
         id
@@ -24,19 +30,10 @@ query {
         caption
         localFile {
           childImageSharp {
-            fixed(width: 240, height: 240) {
-              src
+            fixed(width: 640, height: 640) {
+            	src
             }
           }
-        }
-        thumbnails {
-          src
-          config_width
-          config_height
-        }
-        dimensions {
-          height
-          width
         }
       }
     }
