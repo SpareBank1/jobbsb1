@@ -34,6 +34,12 @@ module.exports = {
         limit: 200,
       },
     },
+    {
+      resolve: "gatsby-source-hrmanager",
+      options: {
+        customerAlias: 'sparebank1',
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
