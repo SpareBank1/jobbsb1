@@ -22,6 +22,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/employees`,
+        name: "employees",
+      },
+    },
+    {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `sparebank1design`,
