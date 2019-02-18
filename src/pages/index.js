@@ -29,6 +29,7 @@ const IndexPage = () => (
     <Link to="/ansatte/">Les om våre ansatte</Link><br />
     <Link to="/instagram/">Instagram-feed</Link><br />
     <Link to="/medium/">Medium-feed</Link><br />
+    <Link to="/stillinger/">HrManager-feed</Link><br />
 
   </Layout>
 )
