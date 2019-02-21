@@ -28,13 +28,17 @@ export default () => (
       `}
       render={
         data => (
-          data.allHRmanagerJob.edges.map(post => (
-          
-            <div key={post.node.Id}>
-              <a href={post.node.AdvertisementUrl} target="_blank" rel="noopener noreferrer">{post.node.Name}</a>
-            </div>
-          
-          )
+          data.allHRmanagerJob.edges.map(post => {
+            if (post.node.Name==='dummy'){
+              return <div>ingen ledige stillinger</div>
+            }else{
+              return (
+                <div key={post.node.Id}>
+                  <a href={post.node.AdvertisementUrl} target="_blank" rel="noopener noreferrer">{post.node.Name}</a>
+                </div>
+              )
+            }
+          }
         )
       )}
     />
