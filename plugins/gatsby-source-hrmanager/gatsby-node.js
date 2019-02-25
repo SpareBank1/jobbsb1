@@ -43,12 +43,29 @@ exports.sourceNodes = (
       // Process the response data into a node
       .then(data => {
         // For each query result (or 'Items')
-        data.Items.forEach(job => {
-          // Process the photo data to match the structure of a Gatsby node
-          const nodeData = processJob(job)
+        if(data.Items.length>0){
+          data.Items.forEach(job => {
+            // Process the job data to match the structure of a Gatsby node
+            const nodeData = processJob(job)
+            // Use Gatsby's createNode helper to create a node from the node data
+            createNode(nodeData)
+            
+          })
+        }else{
+          //Needed to have one dummy node available so the graphql wont fail
+            const emptyNodeData = processJob({
+            "LastUpdated": "/Date(1549611757000+0100)/",
+            "Id": 007,
+            "Name": "dummy",
+            "ShortDescription": "",
+            "AdvertisementUrl": "",
+            "Created":"/Date(1549611757000+0100)/"
+          })
           // Use Gatsby's createNode helper to create a node from the node data
-          createNode(nodeData)
-        })
+          createNode(emptyNodeData)
+        }
+
+        
       })
   )
 }
