@@ -4,7 +4,7 @@ import { ShortcutButton } from '@sb1/ffe-buttons-react';
 
 
 export default () => (
-<div className="sb1-hrmanager">
+<div className="sb1-joblist">
     <StaticQuery
       query={graphql`
         query hrQuery{
@@ -32,14 +32,25 @@ export default () => (
         data => (
           data.allHRmanagerJob.edges.map(post => {
             if (post.node.Name==='dummy'){
-              return (<div>
-                <ShortcutButton element="a" href="https://www.webcruiter.no/WcMain/AdvertViewPublic.aspx?oppdragsnr=4004904858&Company_Id=3670262172&Culture_Id=NB-NO&cols=3,5,7&orderby=5&listtype=1&urltarget=_blank" 
-                                    target="_blank" rel="noopener noreferrer">Utvikler? Bli med å skape morgendagens bank</ShortcutButton>
-                </div>)
+              return (
+                <ShortcutButton 
+                  element="a"
+                  className="sb1-joblist__link"
+                  href="https://www.webcruiter.no/WcMain/AdvertViewPublic.aspx?oppdragsnr=4004904858&Company_Id=3670262172&Culture_Id=NB-NO&cols=3,5,7&orderby=5&listtype=1&urltarget=_blank" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Utvikler? Bli med å skape morgendagens bank</ShortcutButton>
+              )
             }else{
               return (
-                <div key={post.node.Id}>
-                  <ShortcutButton element="a" href={post.node.AdvertisementUrl} target="_blank" rel="noopener noreferrer">{post.node.Name}</ShortcutButton>
+                <div key={post.node.Id} className="sb1-joblist__opening">
+                  <ShortcutButton 
+                    element="a" 
+                    className="sb1-joblist__link"
+                    href={post.node.AdvertisementUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >{post.node.Name}</ShortcutButton>
                 </div>
               )
             }
