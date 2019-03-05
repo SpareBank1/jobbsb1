@@ -74,12 +74,10 @@ const IndexPage = () => (
                 </div>
             </GridCol>
         </GridRow>
-        <GridRow>
-            <GridCol className="sb1-joblist-box" sm={{ cols: 12 }} md={{ cols: 12 }} lg={{ cols: 8, offset:2 }} center={true} background="green-mint">
-                <div className="sb1-joblist">
-                    <h3 className="ffe-h3">Ledige stillinger</h3>
-                    <Jobs />
-                </div>
+        <GridRow topPadding={ true } background="green-mint">
+            <GridCol sm={{ cols: 12 }} md={{ cols: 12 }} lg={{ cols: 8, offset:2 }} center={true}>
+                <h3 className="ffe-h3">Ledige stillinger</h3>
+                <Jobs />
             </GridCol>
         </GridRow>
     </InlineGrid>
