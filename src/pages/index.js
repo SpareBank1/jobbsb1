@@ -53,7 +53,7 @@ const IndexPage = () => (
         <GridRow>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4, offset: 2 }} center={true}>
                 <div style={divStyle}></div>
-                <h3 className="ffe-h3">Hackathon</h3>
+                <h3 className="ffe-h3"><Link to="/hackathon/">Hackathon</Link></h3>
             </GridCol>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4 }} center={true}>
                 <div style={divStyle}></div>
