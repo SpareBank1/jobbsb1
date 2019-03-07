@@ -61,6 +61,17 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/sb1-icon.png`, // This path is relative to the root of the site.
       },
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 970,
+            },
+          },
+        ],
+      },
     },
     `gatsby-plugin-less`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
