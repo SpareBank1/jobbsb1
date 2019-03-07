@@ -7,33 +7,27 @@ import Instagallery from './instagallery'
 const Instagram = ({ children }) => (
   <StaticQuery
     query={graphql`
-    query {
-        allInstaNode
-        (
-          limit:6,
-          sort:{
-          fields:timestamp,
-          order:DESC
-        }) {
-          edges {
-            node {
-              id
-              likes
-              comments
-              original
-              timestamp
-              caption
-              localFile {
-                childImageSharp {
-                  fixed(width: 640, height: 640) {
-                      src
-                  }
+    {
+      allInstaNode(limit: 6, sort: {fields: timestamp, order: DESC}) {
+        edges {
+          node {
+            id
+            likes
+            comments
+            original
+            timestamp
+            caption
+            localFile {
+              childImageSharp {
+                fixed(width: 640, height: 640) {
+                  src
                 }
               }
             }
           }
         }
       }
+    }
     `}
     render={data => (
       <>

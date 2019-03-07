@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { InlineGrid, GridRow, GridCol } from '@sb1/ffe-grid-react'
+import { Grid, GridRow, GridCol } from '@sb1/ffe-grid-react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Instagram from '../components/instagram';
@@ -17,61 +17,59 @@ var divStyle = {
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Vi søker nye medarbeidere" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Vi søker nye medarbeidere" keywords={[`sparebank 1`, `utvikling`, `react`, `frontend`, `backend`, `design`, `UX`, `IxD`]} />
 
-    <InlineGrid>
+    <Grid>
         <GridRow>
             <GridCol center={true}>
-                <p>Vi søker nye medarbeidere – vil du være med på laget?</p>
+                <h1 className="ffe-h1">Vi søker nye medarbeidere – vil du være med på laget?</h1>
             </GridCol>
         </GridRow>
         <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4, offset: 2 }} center={true}>
-                <div style={divStyle}></div>
-                Unni utvikler
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
+                <div className="sb1-video">
+                    <iframe width="100%" height="315" title="Utvikler i SpareBank 1" src="https://www.youtube.com/embed/Zs3quTUlzj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4 }} center={true}>
-                <div style={divStyle}></div>
-                Dennis designer
-            </GridCol>
-        </GridRow>
-        <GridRow>
-            <GridCol sm={{ cols: 12 }} lg={{ cols: 8, offset: 2 }} center={true}>
-                <p>Unni og Dennis forteller om hvordan det er å jobbe i Banksamarbeidet. Det gjøres ved å stille spørsmål på plakater a la rekrutteringsideen til UX.</p>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
+                <div className="sb1-video">
+                    <iframe width="100%" height="315" title="Teamleder i SpareBank 1" src="https://www.youtube.com/embed/afoKcCZuRes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </GridCol>
         </GridRow>
         <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4, offset: 2 }} center={true}>
+            <GridCol sm={{ cols: 12 }} lg={{ cols: 10, offset: 1 }} center={true}>
+                <p>Ida og Øyvind forteller om hvordan det er å jobbe i Banksamarbeidet.</p>
+            </GridCol>
+        </GridRow>
+
+        <GridRow topPadding={ true } background="sand">
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
                 <div style={divStyle}></div>
                 <h3 className="ffe-h3">Fagdager</h3>
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4 }} center={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
                 <div style={divStyle}></div>
                 <h3 className="ffe-h3">Fagforum</h3>
             </GridCol>
         </GridRow>
-        <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4, offset: 2 }} center={true}>
+        <GridRow background="sand">
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
                 <div style={divStyle}></div>
                 <h3 className="ffe-h3">Hackathon</h3>
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4 }} center={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
                 <div style={divStyle}></div>
                 <h3 className="ffe-h3">Designsystem</h3>
             </GridCol>
         </GridRow>
-        <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4, offset: 2 }} center={true}>
-                <h3 className="ffe-h3">Siste fra Medium</h3>
-                <div>
-                    <Medium />
-                </div>
+
+        <GridRow topPadding={ true }>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
+                <Medium />
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 4 }} center={true}>
-                <h3 className="ffe-h3">Siste fra Instagram</h3>
-                <div>
-                    <Instagram />
-                </div>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
+                <Instagram />
             </GridCol>
         </GridRow>
         <GridRow topPadding={ true } background="green-mint">
@@ -80,9 +78,9 @@ const IndexPage = () => (
                 <Jobs />
             </GridCol>
         </GridRow>
-    </InlineGrid>
-    
-    
+    </Grid>
+
+
     <Link to="/ansatte/">Les om våre ansatte</Link><br />
 
   </Layout>
