@@ -4,13 +4,12 @@ import React from 'react'
 
 const Header = ({ siteTitle }) => (
   <header className="sb1-header">
-    <h1 className="ffe-h1">
       <Link
         to="/"
       >
         <svg viewBox="0 0 182 40" xmlns="http://www.w3.org/2000/svg" className="sb1-header__logo">
             <title>
-                SpareBank 1
+              {siteTitle}
             </title>
             <g fill="none" fill-rule="evenodd">
                 <path d="M181.144 20.07c0 10.952-8.89 19.83-19.86 19.83-10.968 0-19.86-8.878-19.86-19.83 0-10.95 8.892-19.827 19.86-19.827 10.97 0 19.86 8.877 19.86 19.828"
@@ -23,9 +22,7 @@ const Header = ({ siteTitle }) => (
                     fill="#002776" />
             </g>
         </svg>
-        {siteTitle}
       </Link>
-    </h1>
   </header>
 )
 

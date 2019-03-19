@@ -11,6 +11,7 @@
     "@sb1/ffe-grid": "^10.1.5",
     "@sb1/ffe-grid-react": "^9.1.4",
     "@sb1/ffe-webfonts": "^2.0.4",
+    "classnames": "^2.2.6",
     "gatsby": "^2.1.4",
     "gatsby-image": "^2.0.31",
     "gatsby-plugin-less": "^2.0.11",
