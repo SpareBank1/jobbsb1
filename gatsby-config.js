@@ -70,6 +70,12 @@ module.exports = {
               maxWidth: 970,
             },
           },
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              ignoreFileExtensions: [],
+            },
+          },
         ],
       },
     },
