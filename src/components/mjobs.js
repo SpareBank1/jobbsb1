@@ -24,7 +24,7 @@ export default () => (
     `}
     render={data => (
       data.allMarkdownRemark.edges.map(post => (
-        <div key={post.node.id} className="sb1-joblist--item">
+        <div key={post.node.id} className="sb1-joblist__item">
           <h4 className="ffe-h4"><Link to={post.node.frontmatter.path} className="ffe-link-text">{post.node.frontmatter.title}</Link></h4>
           <p>{post.node.frontmatter.description}</p>
         </div>
