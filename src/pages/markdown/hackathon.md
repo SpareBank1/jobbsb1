@@ -10,6 +10,6 @@ Siden 2014 har vi jevnlig gjennomført hackathons i SpareBank 1. På tvers av te
 
 ![Gi meg et nummer hack](/img/Gi-meg-et-nummer_profil.jpg)
 
-## Vil du vite mer
+## Vil du vite mer?
 [Artikkel på SpareBank 1 Labs](https://labs.sparebank1.no/2017/11/23/hvordan-rigge-til-hackathon-i-en-stor-bedrift/)
 

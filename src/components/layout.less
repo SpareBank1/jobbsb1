@@ -16,10 +16,12 @@ img {
 
 .sb1-header {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
+  background-color: @ffe-blue-cobalt;
 
   &__logo {
     max-width: 250px;
+    vertical-align: middle;
   }
 }
 
@@ -141,4 +143,35 @@ img {
 
 .sb1-video {
   width: 100%;
+  margin-bottom: 20px;
+}
+
+.sb1-markdown {
+  p {
+    .ffe-body-text();
+  }
+
+  a {
+    .ffe-link-text();
+
+    &.gatsby-resp-image-link {
+      border-bottom: none;
+    }
+  }
+
+  h1 {
+    .ffe-h1();
+  }
+
+  h2 {
+    .ffe-h2();
+  }
+
+  h3 {
+    .ffe-h3();
+  }
+
+  h4 {
+    .ffe-h4();
+  }
 }

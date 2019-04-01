@@ -37,11 +37,6 @@ const IndexPage = () => (
                 </div>
             </GridCol>
         </GridRow>
-        <GridRow>
-            <GridCol sm={{ cols: 12 }} lg={{ cols: 10, offset: 1 }} center={true}>
-                <p>Ida og Øyvind forteller om hvordan det er å jobbe i Banksamarbeidet.</p>
-            </GridCol>
-        </GridRow>
 
         <GridRow topPadding={ true } background="sand">
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
@@ -56,11 +51,15 @@ const IndexPage = () => (
         <GridRow background="sand">
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
                 <div style={divStyle}></div>
-                <h3 className="ffe-h3"><Link to="/hackathon/">Hackathon</Link></h3>
+                <h3 className="ffe-h3">
+                    <Link to="/hackathon/">Hackathon</Link>
+                </h3>
             </GridCol>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
                 <div style={divStyle}></div>
-                <h3 className="ffe-h3">Designsystem</h3>
+                <h3 className="ffe-h3">
+                    <Link to="/designsystem/">Designsystem</Link>
+                </h3>
             </GridCol>
         </GridRow>
 
