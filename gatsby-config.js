@@ -51,10 +51,9 @@ module.exports = {
     {
       resolve: "gatsby-source-hrmanager",
       options: {
-        customerAlias: 'sparebank1', 
+        customerAlias: 'sparebank1',
       },
     },
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -68,6 +67,8 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/sb1-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -75,6 +76,8 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 970,
+              linkImagesToOriginal: false,
+              quality: 85,
             },
           },
           {
