@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Grid, GridRow, GridCol } from '@sb1/ffe-grid-react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Instagram from '../components/instagram';
 import Medium from '../components/medium';
 import Jobs from '../components/jobs'
+import Img from "gatsby-image"
 
 var divStyle = {
     backgroundColor: '#ccc',
@@ -15,7 +16,7 @@ var divStyle = {
     margin: '10px'
   };
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <SEO title="Vi søker nye medarbeidere" keywords={[`sparebank 1`, `utvikling`, `react`, `frontend`, `backend`, `design`, `UX`, `IxD`]} />
 
@@ -52,7 +53,9 @@ const IndexPage = () => (
         </GridRow>
         <GridRow background="sand">
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
-                <div style={divStyle}></div>
+                <div style={divStyle}>
+                    <Img fluid={props.data.hackathon.childImageSharp.fluid} />
+                </div>
                 <h3 className="ffe-h3">
                     <Link to="/hackathon/">Hackathon</Link>
                 </h3>
@@ -88,3 +91,15 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    hackathon: file(relativePath: { eq: "Hackathon-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
