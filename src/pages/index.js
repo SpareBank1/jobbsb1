@@ -41,7 +41,9 @@ const IndexPage = () => (
         <GridRow topPadding={ true } background="sand">
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
                 <div style={divStyle}></div>
-                <h3 className="ffe-h3">Fagdager</h3>
+                <h3 className="ffe-h3">
+                    <Link to="/fagdag/">Fagdag</Link>
+                </h3>
             </GridCol>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
                 <div style={divStyle}></div>
