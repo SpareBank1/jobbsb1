@@ -7,7 +7,7 @@ Siden 2014 har vi jevnlig gjennomført hackathons i SpareBank 1. På tvers av te
 Les mer om hvordan vi kjører Hackathons på vår blogg:
 [hvordan-rigge-hackathon-i-en-stor-bedrift](https://labs.sparebank1.no/2017/11/23/hvordan-rigge-til-hackathon-i-en-stor-bedrift/)
 
-![Gi meg et nummer hack](/img/Gi-meg-et-nummer_profil.jpg)
+![HjerneBank 1](/img/hackathon-brain.jpg)
 
 ![Hackathon logo](/img/Hackathon-logo.png)
 
