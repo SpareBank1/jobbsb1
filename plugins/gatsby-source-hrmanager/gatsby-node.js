@@ -32,6 +32,7 @@ exports.sourceNodes = (
   const apiOptions = queryString.stringify(configOptions)
 
   // Join apiOptions with the HRmanager API URL
+  // ?incads=1&plainads=1 returns Advertisements {Content}
   const apiUrl = `https://recruiter-api.hr-manager.net/jobportal.svc/${configOptions.customerAlias}/positionlist/json/`
 
   // Gatsby expects sourceNodes to return a promise

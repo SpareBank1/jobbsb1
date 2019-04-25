@@ -1,6 +1,6 @@
 ---
 path: "/utvikler"
-title: "Utvikler"
+title: "Utvikler til team sparing"
 description: "Vi prøver å gi folk gode sparevaner. Derfor fokuserer vi mye på å finne kundenes behov, prøve ut hypoteser og utvikle MVP’er. Vi håper du vil være med på denne reisen."
 ---
 
@@ -47,8 +47,8 @@ Våre foredrag på [JavaZone og Smidigkonferansen](https://vimeo.com/album/42572
 SpareBank 1 Banksamarbeidet DA er eid av 14 selvstendige SpareBank 1-banker og er et innovasjons- og utviklingsselskap for tjenester og løsninger i SpareBank 1-alliansen. Selskapet har 250 ansatte med oppgaver innen IT, markeds- og forretningsutvikling. Selskapet er en proaktiv og innovativ samarbeidspartner og fasilitator for SpareBank 1-bankene.
 SpareBank 1 Banksamarbeidet DA er ansvarlig for å utvikle og levere felles IT- og mobilløsninger, merkevare og markedsføringskonsepter, forretningskonsepter, produkter og tjenester, kompetanse, analyse, prosesser, beste praksisløsninger og innkjøp.
 
-Ved spørsmål om stillingene kontakt teamleder Brit Kristin Kaaresen på telefon 988 60 034.
+Ved spørsmål om stillingene kontakt teamleder **Brit Kristin Kaaresen** på telefon **988 60 034**.
 
-**Søknadsfrist 31. mars**
+**Søknadsfrist 2. mai**
 
 [Send inn din søknad](https://www.webcruiter.no/WcMain/CvJobRespond1.aspx?company_id=2870757501&oppdragsnr=4045674140)

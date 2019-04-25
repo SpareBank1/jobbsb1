@@ -10,7 +10,7 @@ export default () => (
       query={graphql`
         query hrQuery{
           allHRmanagerJob(
-            limit: 5,
+            limit: 10,
             sort:{
               fields:LastUpdated,
               order:DESC
