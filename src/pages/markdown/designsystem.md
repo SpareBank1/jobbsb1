@@ -13,3 +13,5 @@ Foruten vårt eget system er vi aktive i et stadig voksende miljø rundt designs
 
 #### Vil du vite mer?
 Ta gjerne en titt på [design.sparebank1.no](https://design.sparebank1.no/), eller utforsk [kildekoden som ligger åpent tilgjengelig på GitHub](https://github.com/SpareBank1/designsystem).
+
+![Design System Power lunch](/img/dsm-4.jpeg)
