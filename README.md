@@ -16,7 +16,7 @@ npm i
 
 Start en lokal utviklingsserver:
 ```bash
-gatsby develop
+npm run dev
 ```
 
 ### Publisering
