@@ -83,10 +83,6 @@ const IndexPage = (props) => (
             </GridCol>
         </GridRow>
     </Grid>
-
-
-    <Link to="/ansatte/">Les om våre ansatte</Link><br />
-
   </Layout>
 )
 
