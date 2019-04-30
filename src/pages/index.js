@@ -49,7 +49,7 @@ const IndexPage = (props) => (
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
                 <div style={divStyle}></div>
                 <h3 className="ffe-h3">
-                    <Link to="/fagdag/">Fagforum</Link>
+                    <Link to="/fagforum/">Fagforum</Link>
                 </h3>
             </GridCol>
         </GridRow>
