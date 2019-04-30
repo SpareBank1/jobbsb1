@@ -26,6 +26,10 @@ img {
 }
 
 .sb1-somefeed {
+  .ffe-h3 {
+    text-align: center;
+  }
+
   &__controls {
     display: flex;
     justify-content: space-between;
@@ -62,8 +66,7 @@ img {
   }
 }
 
-.sb1-mediumfeed,
-.sb1-instafeed {
+.sb1-mediumfeed {
   width: 100%;
 
   &__inner {
@@ -77,18 +80,9 @@ img {
     fill: @ffe-white;
   }
 
-  .ffe-h3 {
-    text-align: center;
-  }
-
   &__article {
     width: 100%;
     padding: 20px;
-    background: @ffe-blue-pale;
-
-    &:not(.sb1-mediumfeed--visible):not(.sb1-instafeed--visible) {
-
-    }
 
     .ffe-h4 {
       margin-bottom: 5px;
@@ -101,6 +95,38 @@ img {
 }
 
 .sb1-instafeed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr [col-start]);
+  grid-gap: 10px;
+
+  @media screen and (min-width: @breakpoint-md) {
+    grid-template-columns: repeat(3, 1fr [col-start]);
+  }
+
+  @media screen and (min-width: @breakpoint-lg) {
+    grid-template-columns: repeat(6, 1fr [col-start]);
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__icon {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    fill: @ffe-white;
+  }
+
+  &__article {
+    width: 100%;
+
+    &:hover .sb1-instafeed__meta,
+    &:focus .sb1-instafeed__meta, {
+      opacity: 1;
+    }
+  }
+
   img {
     display: block;
   }
@@ -117,6 +143,8 @@ img {
     flex-wrap: wrap;
     color: @ffe-white;
     background: rgba(0, 0, 0, .65);
+    opacity: 0;
+    transition: opacity @ffe-transition-duration @ffe-ease;
   }
 
   &__meta-item {
@@ -127,7 +155,15 @@ img {
     }
 
     &--caption {
-      margin-top: 30px;
+      margin-top: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &--timestamp {
+      font-size: .8em;
+      opacity: .8;
     }
   }
 }

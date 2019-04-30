@@ -40,7 +40,7 @@ function prev(e) {
 export default ({posts}) => (
     <div className='sb1-mediumfeed sb1-somefeed'>
         <h3 className="ffe-h3">
-            <a href="https://medium.com/sparebank1-digital" target="_blank" rel="noopener noreferrer">@sparebank1-digital</a>
+            <a href="https://medium.com/sparebank1-digital" target="_blank" rel="noopener noreferrer">@sparebank1-digital</a> på Medium
         </h3>
 
         <div className="sb1-somefeed__controls">
