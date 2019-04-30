@@ -48,7 +48,9 @@ const IndexPage = (props) => (
             </GridCol>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
                 <div style={divStyle}></div>
-                <h3 className="ffe-h3">Fagforum</h3>
+                <h3 className="ffe-h3">
+                    <Link to="/fagdag/">Fagforum</Link>
+                </h3>
             </GridCol>
         </GridRow>
         <GridRow background="sand">
