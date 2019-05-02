@@ -8,7 +8,7 @@ const Medium = ({ children }) => (
   <StaticQuery
     query={graphql`
     query {
-      allMediumPost(limit: 6, sort: { fields: [createdAt], order: DESC }) {
+      allMediumPost(limit: 12, sort: { fields: [createdAt], order: DESC }) {
         edges {
           node {
             id
