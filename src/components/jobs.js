@@ -1,8 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { ShortcutButton } from '@sb1/ffe-buttons-react';
 import Mjobs from "./mjobs";
-
+import { TextCard } from '@sb1/ffe-cards-react'; 
 
 export default () => (
 <div className="sb1-joblist">
@@ -10,13 +9,15 @@ export default () => (
       query={graphql`
         query hrQuery{
           allHRmanagerJob(
-            limit: 10,
+            limit: 20,
             sort:{
-              fields:LastUpdated,
+              fields:Created,
               order:DESC
             }
             ) {
+              totalCount
             edges {
+
               node {
                 Id
                 Name
@@ -38,15 +39,18 @@ export default () => (
               )
             }else{
               return (
-                <div key={post.node.Id} className="sb1-joblist__opening">
-                  <ShortcutButton 
-                    element="a" 
-                    className="sb1-joblist__link"
-                    href={post.node.AdvertisementUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >{post.node.Name}</ShortcutButton>
-                </div>
+              
+                <div className="sb1-joblist__item">
+                  <TextCard element="a" className="sb1-joblist__item-content" key={post.node.id} href={post.node.AdvertisementUrl}>
+                  {({ Title, Text }) => (
+                    <React.Fragment>
+                      <Title>{post.node.Name}</Title>
+                      <Text>{post.node.ShortDescription}</Text>
+                    </React.Fragment>
+                  )}
+                  </TextCard>
+                </div>   
+                      
               )
             }
           }

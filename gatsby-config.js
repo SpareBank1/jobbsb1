@@ -51,7 +51,8 @@ module.exports = {
     {
       resolve: "gatsby-source-hrmanager",
       options: {
-        customerAlias: 'sparebank1',
+        //customerAlias: 'sparebank1',
+        customerAlias: 'evry',
       },
     },
     `gatsby-transformer-sharp`,
