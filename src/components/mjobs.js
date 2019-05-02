@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { TextCard } from '@sb1/ffe-cards-react'; 
+import Job from './job'
 
 export default () => (
   <StaticQuery
@@ -27,21 +27,13 @@ export default () => (
         }
       }
     `}
+
     render={data => (
       <div>
         <h3 className="ffe-h3">{data.allMarkdownRemark.totalCount} ledige stillinger - vil du være med på laget?</h3>
         <div className="sb1-joblist">
           { data.allMarkdownRemark.edges.map(post => (
-              <div className="sb1-joblist__item">
-                <TextCard element="a" className="sb1-joblist__item-content" key={post.node.id} href={post.node.frontmatter.path}>
-                {({ Title, Text }) => (
-                  <React.Fragment>
-                    <Title>{post.node.frontmatter.title}</Title>
-                    <Text>{post.node.frontmatter.description}</Text>
-                  </React.Fragment>
-                )}
-                </TextCard>
-              </div>   
+            <Job id={post.node.id} path={post.node.frontmatter.path} title={post.node.frontmatter.title} desc={post.node.frontmatter.description}/>
             ))}
         </div>
       </div>

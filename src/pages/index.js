@@ -26,19 +26,9 @@ const IndexPage = (props) => (
                 <h1 className="ffe-h1">Vi søker nye medarbeidere – vil du være med på laget?</h1>
             </GridCol>
         </GridRow>
-        <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
-                <div className="sb1-video">
-                    <iframe width="100%" height="315" title="Utvikler i SpareBank 1" src="https://www.youtube.com/embed/Zs3quTUlzj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
-                <div className="sb1-video">
-                    <iframe width="100%" height="315" title="Teamleder i SpareBank 1" src="https://www.youtube.com/embed/afoKcCZuRes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </GridCol>
-        </GridRow>
+    </Grid>
 
+    <Grid>
         <GridRow topPadding={ true }>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
                 <div style={divStyle}></div>
@@ -67,7 +57,32 @@ const IndexPage = (props) => (
                 </h3>
             </GridCol>
         </GridRow>
+    </Grid>
 
+    <Grid>
+        <GridRow topPadding={ true } background="blue-pale">
+            <GridCol sm={{ cols: 12 }} md={{ cols: 12 }} lg={{ cols: 10, offset: 1 }} center={true}>
+                <Jobs />
+            </GridCol>
+        </GridRow>
+    </Grid>
+
+    <Grid>
+        <GridRow>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
+                <div className="sb1-video">
+                    <iframe width="100%" height="315" title="Utvikler i SpareBank 1" src="https://www.youtube.com/embed/Zs3quTUlzj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </GridCol>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
+                <div className="sb1-video">
+                    <iframe width="100%" height="315" title="Teamleder i SpareBank 1" src="https://www.youtube.com/embed/afoKcCZuRes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </GridCol>
+        </GridRow>
+    </Grid>
+
+    <Grid>
         <GridRow topPadding={ true }>
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
                 <Medium />
@@ -77,14 +92,6 @@ const IndexPage = (props) => (
 
     <Instagram />
 
-    <Grid>
-        <GridRow topPadding={ true } background="blue-pale">
-            <GridCol sm={{ cols: 12 }} md={{ cols: 12 }} lg={{ cols: 10, offset: 1 }} center={true}>
-                
-                <Jobs />
-            </GridCol>
-        </GridRow>
-    </Grid>
   </Layout>
 )
 

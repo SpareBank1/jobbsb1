@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Mjobs from "./mjobs";
-import { TextCard } from '@sb1/ffe-cards-react'; 
+import Job from './job'
 
 export default () => (
 <div className="sb1-joblist">
@@ -39,16 +39,8 @@ export default () => (
               <h3 className="ffe-h3">{data.allHRmanagerJob.totalCount} ledige stillinger - vil du være med på laget?</h3>
               <div className="sb1-joblist">
                 { data.allHRmanagerJob.edges.map(post => (
-                  <div className="sb1-joblist__item">
-                    <TextCard element="a" className="sb1-joblist__item-content" key={post.node.id} href={post.node.AdvertisementUrl}>
-                    {({ Title, Text }) => (
-                      <React.Fragment>
-                        <Title>{post.node.Name}</Title>
-                        <Text>{post.node.ShortDescription}</Text>
-                      </React.Fragment>
-                    )}
-                    </TextCard>
-                  </div>   
+                  <Job id={post.node.id} path={post.node.AdvertisementUrl} title={post.node.Name} desc={post.node.ShortDescription}/>
+                  
                 ))}
               </div>
             </div>
