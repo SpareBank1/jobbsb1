@@ -78,9 +78,9 @@ const IndexPage = (props) => (
     <Instagram />
 
     <Grid>
-        <GridRow topPadding={ true } background="green-mint">
-            <GridCol sm={{ cols: 12 }} md={{ cols: 12 }} lg={{ cols: 8, offset:2 }} center={true}>
-                <h3 className="ffe-h3">Ledige stillinger</h3>
+        <GridRow topPadding={ true } background="blue-pale">
+            <GridCol sm={{ cols: 12 }} md={{ cols: 12 }} lg={{ cols: 10, offset: 1 }} center={true}>
+                
                 <Jobs />
             </GridCol>
         </GridRow>

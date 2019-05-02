@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Link } from 'gatsby'
+import { TextCard } from '@sb1/ffe-cards-react'; 
 
 export default () => (
   <StaticQuery
@@ -10,6 +10,7 @@ export default () => (
         allMarkdownRemark(
           filter: { fileAbsolutePath: {regex : "\/stilling/"} }
         ){
+          totalCount
           edges{
             node{
               frontmatter{
@@ -23,13 +24,23 @@ export default () => (
       }
     `}
     render={data => (
-      data.allMarkdownRemark.edges.map(post => (
-        <div key={post.node.id} className="sb1-joblist__item">
-          <h4 className="ffe-h4"><Link to={post.node.frontmatter.path} className="ffe-link-text">{post.node.frontmatter.title}</Link></h4>
-          <p>{post.node.frontmatter.description}</p>
+      <div>
+        <h3 className="ffe-h3">{data.allMarkdownRemark.totalCount} ledige stillinger - vil du være med på laget?</h3>
+        <div className="sb1-joblist">
+          { data.allMarkdownRemark.edges.map(post => (
+              <div className="sb1-joblist__item">
+                <TextCard element="a" className="sb1-joblist__item-content" key={post.node.id} href={post.node.frontmatter.path}>
+                {({ Title, Text }) => (
+                  <React.Fragment>
+                  <Title>{post.node.frontmatter.title}</Title>
+                  <Text>{post.node.frontmatter.description}</Text>
+                  </React.Fragment>
+                )}
+                </TextCard>
+              </div>   
+            ))}
         </div>
-        
-      ))
+      </div>
     )}
   />
 )
