@@ -138,14 +138,25 @@ img {
   flex-wrap: wrap;
   
   &__item{
-    margin: 10px;
-    width: 45%;
+    padding: 10px;
+    width: 100%;
     text-align: left;
+
+    @media (min-width: @breakpoint-md)  {
+      width: 50%;
+    }
+    
+    &-content{
+      text-align: left;
+      height: 100%;
+      margin:0;
+    }
   }
 
   &__link {
     width: 100%;
   }
+  
 }
 
 .sb1-video {

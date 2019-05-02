@@ -81,7 +81,7 @@ const IndexPage = (props) => (
         
         <GridRow topPadding={ true } background="blue-pale">
             <GridCol sm={{ cols: 12 }} md={{ cols: 12 }} lg={{ cols: 10, offset: 1 }} center={true}>
-                <h3 className="ffe-h3">Ledige stillinger</h3>
+                
                 <Jobs />
             </GridCol>
         </GridRow>
