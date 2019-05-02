@@ -39,22 +39,20 @@ const IndexPage = (props) => (
             </GridCol>
         </GridRow>
 
-        <GridRow topPadding={ true } background="sand">
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
+        <GridRow topPadding={ true }>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
                 <div style={divStyle}></div>
                 <h3 className="ffe-h3">
                     <Link to="/fagdag/">Fagdag</Link>
                 </h3>
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
                 <div style={divStyle}></div>
                 <h3 className="ffe-h3">
                     <Link to="/fagforum/">Fagforum</Link>
                 </h3>
             </GridCol>
-        </GridRow>
-        <GridRow background="sand">
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
                 <div style={divStyle}>
                     <Img fluid={props.data.hackathon.childImageSharp.fluid} />
                 </div>
@@ -62,7 +60,7 @@ const IndexPage = (props) => (
                     <Link to="/hackathon/">Hackathon</Link>
                 </h3>
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
                 <div style={divStyle}></div>
                 <h3 className="ffe-h3">
                     <Link to="/designsystem/">Designsystem</Link>
@@ -71,14 +69,15 @@ const IndexPage = (props) => (
         </GridRow>
 
         <GridRow topPadding={ true }>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
                 <Medium />
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
-                <Instagram />
-            </GridCol>
         </GridRow>
-        
+    </Grid>
+
+    <Instagram />
+
+    <Grid>
         <GridRow topPadding={ true } background="blue-pale">
             <GridCol sm={{ cols: 12 }} md={{ cols: 12 }} lg={{ cols: 10, offset: 1 }} center={true}>
                 

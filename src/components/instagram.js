@@ -8,7 +8,7 @@ const Instagram = ({ children }) => (
   <StaticQuery
     query={graphql`
     {
-      allInstaNode(limit: 6, sort: {fields: timestamp, order: DESC}) {
+      allInstaNode(limit: 12, sort: {fields: timestamp, order: DESC}) {
         edges {
           node {
             id
