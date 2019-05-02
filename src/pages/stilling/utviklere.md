@@ -2,6 +2,7 @@
 path: "/utviklere"
 title: "Utviklere ønskes"
 description: "Til våre team trenger vi mange type utviklere: flere techleads, utviklere som vil jobbe med sikkerhet, frontendere, full-stack-utviklere, API-utviklere og mer. "
+pri: 10
 ---
 
 
