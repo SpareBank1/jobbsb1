@@ -1,79 +1,24 @@
 import React from 'react'
 import Timestamp from 'react-timestamp'
-import classNames from 'classnames';
-
-function next(e) {
-    let elem = document.querySelector('.sb1-instafeed--visible');
-    let elemIdSplit = elem.getAttribute('id').split('-');
-    let elemId = parseInt(elemIdSplit[1]);
-    const elemPrefix = '#' + elemIdSplit[0] + '-';
-
-    if (elemId < 5) {
-        let nextElemId = parseInt(elemId + 1);
-        let nextElem = document.querySelector(elemPrefix + nextElemId);
-        let track = document.querySelector('.sb1-instafeed .sb1-somefeed__track-inner');
-
-        track.classList.remove('sb1-somefeed__track-inner--' + elemId);
-        track.classList.add('sb1-somefeed__track-inner--' + nextElemId);
-        elem.classList.remove('sb1-instafeed--visible');
-        nextElem.classList.add('sb1-instafeed--visible');
-    }
-}
-
-function prev(e) {
-    let elem = document.querySelector('.sb1-instafeed--visible');
-    let elemIdSplit = elem.getAttribute('id').split('-');
-    let elemId = parseInt(elemIdSplit[1]);
-    const elemPrefix = '#' + elemIdSplit[0] + '-';
-
-    if (elemId > 0) {
-        let nextElemId = parseInt(elemId - 1);
-        let nextElem = document.querySelector(elemPrefix + nextElemId);
-        let track = document.querySelector('.sb1-instafeed .sb1-somefeed__track-inner');
-
-        track.classList.remove('sb1-somefeed__track-inner--' + elemId);
-        track.classList.add('sb1-somefeed__track-inner--' + nextElemId);
-        elem.classList.remove('sb1-instafeed--visible');
-        nextElem.classList.add('sb1-instafeed--visible');
-    }
-}
 
 export default ({posts}) => (
-    <div className='sb1-instafeed sb1-somefeed'>
+    <div className="sb1-somefeed">
         <h3 className="ffe-h3">
-            <a href="https://instagram.com/sparebank1design" target="_blank" rel="noopener noreferrer">@sparebank1design</a>
+            <a href="https://instagram.com/sparebank1design" target="_blank" rel="noopener noreferrer">@sparebank1design</a> på Instagram
         </h3>
 
-        <div className="sb1-somefeed__controls">
-            <button
-                onClick={prev}
-                className="ffe-inline-button ffe-inline-button--tertiary"
-            >Forrige</button>
-            <button
-                onClick={next}
-                className="ffe-inline-button ffe-inline-button--tertiary"
-            >Neste</button>
-        </div>
-
-        <div className="sb1-somefeed__track">
-            <div className="sb1-somefeed__track-inner">
-                {
-                    posts.edges.map((item, index) => {
-                        let active = (index === 0);
-
-                        return (
-                            <div
-                                active={ active }
-                                key={ item.node.id }
-                                id={ 'ig-' + index }
-                                className={classNames(
-                                    'sb1-instafeed__article',
-                                    { 'sb1-instafeed--visible' : active }
-                            )}>
-                                <div className="sb1-instafeed__inner">
-                                    <a href={ "https://www.instagram.com/p/" + item.node.id }>
-                                        <img src={item.node.localFile.childImageSharp.fixed.src} alt=''/>
-                                    </a>
+        <div className='sb1-instafeed sb1-somefeed'>
+            {
+                posts.edges.map((item, index) => {
+                    return (
+                        <div
+                            key={ item.node.id }
+                            id={ 'ig-' + index }
+                            className='sb1-instafeed__article'
+                        >
+                            <div className="sb1-instafeed__inner">
+                                <a href={ "https://www.instagram.com/p/" + item.node.id }>
+                                    <img src={item.node.localFile.childImageSharp.fixed.src} alt=''/>
                                     <div className="sb1-instafeed__meta">
                                         <div className="sb1-instafeed__meta-item--interactions">
                                             <div>
@@ -91,20 +36,20 @@ export default ({posts}) => (
                                                 { item.node.comments ? item.node.comments : '0' }
 
                                             </div>
-                                            <div>
-                                                <Timestamp time={ item.node.timestamp }/>
-                                            </div>
                                         </div>
                                         <div className="sb1-instafeed__meta-item sb1-instafeed__meta-item--caption">
                                             { item.node.caption }
                                         </div>
+                                        <div className="sb1-instafeed__meta-item sb1-instafeed__meta-item--timestamp">
+                                            <Timestamp time={ item.node.timestamp }/>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                        )
-                    })
-                }
-            </div>
+                        </div>
+                    )
+                })
+            }
         </div>
     </div>
 )
