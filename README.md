@@ -25,3 +25,4 @@ Deploy til [github pages](https://sparebank1.github.io/jobbsb1/):
 ```bash
 npm run deploy
 ```
+**Merge til master branch vil føre til at Travis bygger og publiserer**
