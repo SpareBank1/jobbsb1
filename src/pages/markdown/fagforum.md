@@ -21,11 +21,10 @@ Forum for alle interne og innleide interaksjonsdesignere. Vi møtes annenhver on
 Forum for alle interne og innleide grafiske designere. Vi møtes annenhver onsdag i 1,5 time. Agenda settes fra gang til gang, det skal være lav terskel for å dele, inspirere eller diskutere. 
 
 ## Designsystemforum
-Møtepunkt for alle som er interessert i designsystemet vårt.
-(her må vi ha noe mer)
+Møtepunkt for alle som er interessert i designsystemet vårt. Vi møtes hver tirsdag, har lav terskel for å delta, og tar opp et bredt spekter av problemstillinger som angår både vårt designsystem og designsystemer generelt.
 
 ## Frontendforum 
-Noen utviklere må skrive noe om dette. 
+Forum for alle interne og innleide frontendutviklere. Vi møtes annenhver onsdag, og snakker om alt fra konkrete problemstillinger vi jobber med til hva som rører seg på teknologifronten.
 
 ## Eksempel på hvordan det kan fungere
 Et team eller prosjekt ser at de har behov for en komponent. De sjekker designsystemet, men finner ikke noe de kan bruke. Noen fra teamet tar opp på designsystemforum om dette er noe som flere har bruk for. Interaksjonsdesigner lager forslag til flyt og viser dette i IxD-forum, samtidig som grafisk designer viser utformingen i GD-forum. Etter tilbakemeldinger går designerne tilbake til teamet og jobber videre med komponenten sammen med utviklerne. Etter flere iterasjoner, kanskje en brukertest eller flere, så er komponenten ferdig. Den vises fram i alle forum og teamet får til slutt ansvaret for å legge denne inn i designsystemet slik at alle kan ta den i bruk. 
