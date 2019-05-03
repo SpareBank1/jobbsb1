@@ -41,7 +41,7 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "rm -rf .cache/* && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "rm -rf .cache/* && gatsby build && gh-pages -d public",
     "dev": "rm -rf .cache/* && gatsby develop"
   },
   "devDependencies": {
