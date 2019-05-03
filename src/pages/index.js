@@ -6,15 +6,7 @@ import SEO from '../components/seo'
 import Instagram from '../components/instagram';
 import Medium from '../components/medium';
 import Jobs from '../components/jobs'
-import Img from "gatsby-image"
-
-var divStyle = {
-    backgroundColor: '#ccc',
-    height: '200px',
-    width: '200px',
-    borderRadius: '50%',
-    margin: '10px'
-  };
+// import Img from "gatsby-image"
 
 const IndexPage = (props) => (
   <Layout>
@@ -31,30 +23,32 @@ const IndexPage = (props) => (
     <Grid>
         <GridRow topPadding={ true }>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
-                <div style={divStyle}></div>
-                <h3 className="ffe-h3">
-                    <Link to="/fagdag/">Fagdag</Link>
-                </h3>
+                <Link className="sb1-frontpage-link" to="/fagdag/">
+                    <div className="sb1-frontpage-link__circle"></div>
+                    <h3 className="ffe-h3">Fagdag</h3>
+                    <p className="ffe-small-text">Individuell faglig utvikling og felles kompetanseheving.</p>
+                </Link>
             </GridCol>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
-                <div style={divStyle}></div>
-                <h3 className="ffe-h3">
-                    <Link to="/fagforum/">Fagforum</Link>
-                </h3>
+                <Link className="sb1-frontpage-link" to="/fagforum/">
+                    <div className="sb1-frontpage-link__circle"></div>
+                    <h3 className="ffe-h3">Fagforum</h3>
+                    <p className="ffe-small-text">Arena for kompetansedeling og erfaringsutveksling.</p>
+                </Link>
             </GridCol>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
-                <div style={divStyle}>
-                    <Img fluid={props.data.hackathon.childImageSharp.fluid} />
-                </div>
-                <h3 className="ffe-h3">
-                    <Link to="/hackathon/">Hackathon</Link>
-                </h3>
+                <Link className="sb1-frontpage-link" to="/hackathon/">
+                    <div className="sb1-frontpage-link__circle"></div>
+                    <h3 className="ffe-h3">Hackathon</h3>
+                    <p className="ffe-small-text">Dedikert tid til å jobbe med ideer vi tror på og brenner for.</p>
+                </Link>
             </GridCol>
             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }} center={true}>
-                <div style={divStyle}></div>
-                <h3 className="ffe-h3">
-                    <Link to="/designsystem/">Designsystem</Link>
-                </h3>
+                <Link className="sb1-frontpage-link" to="/designsystem/">
+                    <div className="sb1-frontpage-link__circle"></div>
+                    <h3 className="ffe-h3">Designsystem</h3>
+                    <p className="ffe-small-text">Felles språk og delte ressurser for design og utvikling.</p>
+                </Link>
             </GridCol>
         </GridRow>
     </Grid>
@@ -83,14 +77,20 @@ const IndexPage = (props) => (
     </Grid>
 
     <Grid>
-        <GridRow topPadding={ true }>
+        <GridRow topPadding={ true } background="grey-warm">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
                 <Medium />
             </GridCol>
         </GridRow>
     </Grid>
 
-    <Instagram />
+    <Grid topPadding={ false }>
+        <GridRow topPadding={ true } background="grey-warm">
+            <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
+                <Instagram />
+                </GridCol>
+        </GridRow>
+    </Grid>
 
   </Layout>
 )
