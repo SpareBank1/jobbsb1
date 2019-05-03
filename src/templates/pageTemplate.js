@@ -13,16 +13,17 @@ export default function Template({
     <Layout>
       <SEO title={frontmatter.title} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />
       <div className="sb1-markdown">
-        <Grid>
+        <Grid className="sb1-markdown__header">
           <GridRow>
-            <GridCol center={true}>
+            <GridCol>
               <h1>{frontmatter.title}</h1>
+              <p className="sb1-markdown__lead">{frontmatter.description}</p>
               </GridCol>
           </GridRow>
         </Grid>
         <Grid>
           <GridRow>
-            <GridCol center={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 10 }} lg={{ cols: 8 }}>
               <div
                 className="content"
                 dangerouslySetInnerHTML={{ __html: html }}
@@ -43,6 +44,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        description
       }
     }
   }

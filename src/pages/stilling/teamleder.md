@@ -5,9 +5,7 @@ description: "Vil du kjempe sammen med oss for en enklere og bedre hverdagsøkon
 pri: 10
 ---
 
-## Vil du kjempe sammen med oss for en enklere og bedre hverdagsøkonomi for folk flest?
-
-pareBank 1 har de senere år gjort store endringer på hvordan vi jobber med våre digitale løsninger. Vi arbeider målrettet med å skape en utviklingsoperasjon basert på Lean produksjonsfilosofi og smidig-prinsipper. I dag leverer våre kryssfunksjonelle utviklingsteam hyppig, og kan i stor grad påvirke hvordan de best løser sine oppgaver. Fokuset nå er å få teamene til å levere enda bedre ved å måle på hva de oppnår og ikke hva de produserer.
+SpareBank 1 har de senere år gjort store endringer på hvordan vi jobber med våre digitale løsninger. Vi arbeider målrettet med å skape en utviklingsoperasjon basert på Lean produksjonsfilosofi og smidig-prinsipper. I dag leverer våre kryssfunksjonelle utviklingsteam hyppig, og kan i stor grad påvirke hvordan de best løser sine oppgaver. Fokuset nå er å få teamene til å levere enda bedre ved å måle på hva de oppnår og ikke hva de produserer.
 
 Vi søker en teamleder som kan hjelpe oss med å bli flinkere til å bygge bro mellom utvikling og drift, raskere finne kundenes egentlige behov, teste hypoteser, gjøre oss bedre til å jobbe sammen med forretningssiden, og mye mer. Kort sagt, deg som ikke er redd for å utfordre vedtatte sannheter og som kan være med på å bringe oss videre. Videre brenner du for løsninger med god kundeopplevelse og brukervennlighet, og ønsker å være del av et sterkt kompetansemiljø hvor verdiskapning for kundene er i sentrum.
 
