@@ -4,7 +4,7 @@ import Mjobs from "./mjobs";
 import Job from './job'
 
 export default () => (
-<div className="sb1-joblist">
+<div>
     <StaticQuery
       query={graphql`
         query hrQuery{
