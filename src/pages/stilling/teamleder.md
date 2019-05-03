@@ -2,6 +2,7 @@
 path: "/teamleder"
 title: "Smidig teamleder"
 description: "Vil du kjempe sammen med oss for en enklere og bedre hverdagsøkonomi for folk flest?"
+pri: 10
 ---
 
 ## Vil du kjempe sammen med oss for en enklere og bedre hverdagsøkonomi for folk flest?

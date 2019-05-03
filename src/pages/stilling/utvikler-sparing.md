@@ -1,5 +1,5 @@
 ---
-path: "/utvikler"
+path: "/utvikler-sparing"
 title: "Utvikler til team sparing"
 description: "Vi prøver å gi folk gode sparevaner. Derfor fokuserer vi mye på å finne kundenes behov, prøve ut hypoteser og utvikle MVP’er. Vi håper du vil være med på denne reisen."
 ---

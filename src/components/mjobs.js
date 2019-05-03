@@ -8,7 +8,10 @@ export default () => (
     query={graphql`
       query markdownJobs{
         allMarkdownRemark(
-          filter: { fileAbsolutePath: {regex : "\/stilling/"} }
+          filter: { fileAbsolutePath: {regex : "\/stilling/"} },
+          sort: {
+            fields:frontmatter___pri
+          }
         ){
           totalCount
           edges{
@@ -17,6 +20,7 @@ export default () => (
                 path
                 title
                 description
+                pri
               }
             }
           }
@@ -32,8 +36,8 @@ export default () => (
                 <TextCard element="a" className="sb1-joblist__item-content" key={post.node.id} href={post.node.frontmatter.path}>
                 {({ Title, Text }) => (
                   <React.Fragment>
-                  <Title>{post.node.frontmatter.title}</Title>
-                  <Text>{post.node.frontmatter.description}</Text>
+                    <Title>{post.node.frontmatter.title}</Title>
+                    <Text>{post.node.frontmatter.description}</Text>
                   </React.Fragment>
                 )}
                 </TextCard>
