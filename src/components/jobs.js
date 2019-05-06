@@ -35,9 +35,9 @@ export default () => (
           return (<Mjobs />)
         }else{
           return (
-            <div>
+            <div className="sb1-joblist">
               <h3 className="ffe-h3">{data.allHRmanagerJob.totalCount} ledige stillinger - vil du være med på laget?</h3>
-              <div className="sb1-joblist">
+              <div className="sb1-joblist__list">
                 { data.allHRmanagerJob.edges.map(post => (
                   <Job id={post.node.id} path={post.node.AdvertisementUrl} title={post.node.Name} desc={post.node.ShortDescription}/>
                   
