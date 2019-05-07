@@ -29,9 +29,9 @@ export default () => (
     `}
 
     render={data => (
-      <div>
+      <div className="sb1-joblist">
         <h3 className="ffe-h3">{data.allMarkdownRemark.totalCount} ledige stillinger - vil du være med på laget?</h3>
-        <div className="sb1-joblist">
+        <div className="sb1-joblist__list">
           { data.allMarkdownRemark.edges.map(post => (
             <Job id={post.node.id} path={post.node.frontmatter.path} title={post.node.frontmatter.title} desc={post.node.frontmatter.description}/>
             ))}

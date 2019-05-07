@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames';
-import { ImageCard } from '@sb1/ffe-cards-react'; 
+import { ImageCard } from '@sb1/ffe-cards-react';
 
 function next(e) {
     let elem = document.querySelector('.sb1-mediumfeed--visible');
@@ -41,7 +41,7 @@ function prev(e) {
 export default ({posts}) => (
     <div className='sb1-mediumfeed sb1-somefeed'>
         <h3 className="ffe-h3">
-            <a href="https://medium.com/sparebank1-digital" target="_blank" rel="noopener noreferrer">@sparebank1-digital</a> på Medium
+            <a href="https://medium.com/sparebank1-digital" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1-digital</a> på Medium
         </h3>
 
         <div className="sb1-somefeed__track">
