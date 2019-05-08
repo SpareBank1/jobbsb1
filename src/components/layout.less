@@ -17,6 +17,9 @@ img {
 }
 
 .sb1-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   background-color: @ffe-blue-cobalt;
   padding: 20px;
@@ -25,12 +28,29 @@ img {
     padding: 30px 20px;
   }
 
+  &__link {
+    &--home {
+      flex-basis: 50%;
+    }
+  }
+
   &__logo {
-    max-width: 150px;
+    height: 30px;
+    max-width: 200px;
     vertical-align: middle;
 
     @media screen and (min-width: @breakpoint-md) {
-      max-width: 200px;
+      height: 40px;
+    }
+  }
+
+  &__github-logo {
+    height: 30px;
+    max-width: 40px;
+    vertical-align: middle;
+
+    @media screen and (min-width: @breakpoint-md) {
+      height: 40px;
     }
   }
 }
@@ -128,11 +148,16 @@ img {
   &__controls {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: @breakpoint-sm) {
+      display: none;
+    }
   }
 
   &__track {
     overflow-y: hidden;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 
     @media screen and (min-width: @breakpoint-md) {
       overflow-x: hidden;
