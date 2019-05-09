@@ -1,21 +1,22 @@
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
+import PropTypes, { bool } from 'prop-types'
 import React from 'react'
 import { Location } from '@reach/router'
 import { BackButton } from '@sb1/ffe-buttons-react';
+import classNames from 'classnames';
 
-const Header = ({ siteTitle }) => (
-  <header className="sb1-header">
+const Header = ({ siteTitle, opening }) => (
+  <header className={classNames( 'sb1-header', { 'sb1-header--opening': opening })}>
   <Location>
-      {({ location }) => {
-        var path = location.pathname;
-        if (path === '/') {
-          return <div></div>
-        } else {
-          return <BackButton element="a" href="/" dark={true} className="sb1-header__link sb1-header__link--back">Tilbake</BackButton>
-        }
-      }}
-    </Location>
+    {({ location }) => {
+      var path = location.pathname;
+      if (path === '/') {
+        return <div></div>
+      } else {
+        return <BackButton element="a" href="/" dark={true} className="sb1-header__link sb1-header__link--back">Tilbake</BackButton>
+      }
+    }}
+  </Location>
 
       <Link to="/" className="sb1-header__link sb1-header__link--home">
         <svg viewBox="0 0 182 40" xmlns="http://www.w3.org/2000/svg" className="sb1-header__logo">
@@ -53,10 +54,12 @@ const Header = ({ siteTitle }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  opening: bool,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  opening: false,
 }
 
 export default Header

@@ -12,20 +12,27 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <Header/>
+      <Header opening={true} />
       <SEO title={frontmatter.title} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />
+
+      <div className="sb1-hero sb1-hero--opening">
+        <div className="sb1-hero__inner">
+        </div>
+      </div>
+
+      <Grid className="sb1-opening__header">
+        <GridRow>
+          <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} lg={{ cols: 8, offset: 2 }}>
+            <h1 className="ffe-h1">{frontmatter.title}</h1>
+            <p className="ffe-lead-paragraph">{frontmatter.description}</p>
+            </GridCol>
+        </GridRow>
+      </Grid>
+
       <div className="sb1-markdown">
-        <Grid className="sb1-markdown__header">
-          <GridRow>
-            <GridCol>
-              <h1>{frontmatter.title}</h1>
-              <p className="sb1-markdown__lead">{frontmatter.description}</p>
-              </GridCol>
-          </GridRow>
-        </Grid>
         <Grid>
-          <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 10 }} lg={{ cols: 8 }}>
+          <GridRow background="grey-warm" topPadding={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
               <div
                 className="content"
                 dangerouslySetInnerHTML={{ __html: html }}

@@ -1,6 +1,7 @@
 ---
 path: "/fagforum"
 title: "Fagforum i SpareBank 1"
+pagetype: "page"
 ---
 Vi er mange som jobber med utvikling og design spredt på nesten 20 team rundt om på huset. For å få til samarbeid og deling på tvers av team har vi flere ulike møtepunkter som vi kaller forum.
 

@@ -3,6 +3,7 @@ path: "/utvikler-java"
 title: "Utviklere med Java-erfaring og kjennskap til sikkerhet"
 description: "Har du lyst til å bli med på å gjøre 2019 til vårt mest spennende år? "
 pri: 10
+pagetype: "opening"
 ---
 
 ## Har du lyst til å bli med på å gjøre 2019 til vårt mest spennende år?

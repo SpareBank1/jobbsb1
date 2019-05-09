@@ -1,6 +1,7 @@
 ---
 path: "/designsystem"
 title: "SpareBank 1 Designsystem"
+pagetype: "page"
 ---
 
 ## Brukeropplevelse, design og frontend

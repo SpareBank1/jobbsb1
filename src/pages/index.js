@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { Grid, GridRow, GridCol, InlineGrid } from '@sb1/ffe-grid-react'
 import Layout from '../components/layout'
+import Header from '../components/header'
 import SEO from '../components/seo'
 import Instagram from '../components/instagram';
 import Medium from '../components/medium';
@@ -10,6 +11,7 @@ import Jobs from '../components/jobs'
 
 const IndexPage = (props) => (
   <Layout>
+    <Header/>
     <SEO title="Vi søker nye medarbeidere" keywords={[`sparebank 1`, `utvikling`, `react`, `frontend`, `backend`, `design`, `UX`, `IxD`]} />
 
     <div className="sb1-hero">
@@ -18,7 +20,7 @@ const IndexPage = (props) => (
                 <h1 className="ffe-h2">Et bra sted å jobbe</h1>
                 <p className="ffe-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit lorem ligula, non porttitor metus mollis vel. Sed ut sem magna. In hac habitasse platea dictumst.</p>
             </div>
-            </div>
+        </div>
     </div>
 
 

@@ -1,6 +1,7 @@
 ---
 path: "/hackathon"
 title: "Hackathon i SpareBank 1"
+pagetype: "page"
 ---
 Siden 2014 har vi jevnlig gjennomført hackathons i SpareBank 1. På tvers av team samler vi oss rundt ideer vi tror på. I våre hackathons har vi utforsket 3D progammering, bygget BitCoin lommebok, gjort det mulig å lese inn faktura fra bilde og laget verktøy for hverdagsøkonomien.
 

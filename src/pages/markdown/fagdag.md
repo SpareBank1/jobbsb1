@@ -1,6 +1,7 @@
 ---
 path: "/fagdag"
 title: "Fagdag i SpareBank 1"
+pagetype: "page"
 ---
 
 ## “Torsdag er den nye lørdagen!”

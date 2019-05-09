@@ -28,6 +28,13 @@ img {
     padding: 30px 20px;
   }
 
+  &--opening {
+    background: transparent;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+
   &__link {
     &--home {
       flex-basis: 50%;
@@ -63,6 +70,14 @@ img {
 
   @media screen and (min-width: @breakpoint-md) {
     height: 500px;
+  }
+
+  &--opening {
+    height: 200px;
+
+    @media screen and (min-width: @breakpoint-md) {
+      height: 350px;
+    }
   }
 
   &__inner {
