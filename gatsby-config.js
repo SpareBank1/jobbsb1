@@ -41,6 +41,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `sparebank1utvikler`,
+      },
+    },
+    {
       resolve: `gatsby-source-medium`,
       options: {
         username: `sparebank1-digital`,
