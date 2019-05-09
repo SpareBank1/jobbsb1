@@ -6,12 +6,13 @@
 
 // You can delete this file if you're not using it
 
-const path = require("path")
+const path = require("path");
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`src/templates/pageTemplate.js`)
+  const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
+  const openingTemplate = path.resolve(`src/templates/openingTemplate.js`);
 
   return graphql(`
     {
@@ -23,6 +24,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
+              pagetype
             }
           }
         }
@@ -34,11 +36,19 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: blogPostTemplate,
-        context: {}, // additional data can be passed via context
-      })
+      if (node.frontmatter.pagetype === 'opening') {
+        createPage({
+          path: node.frontmatter.path,
+          component: openingTemplate,
+          context: {}, // additional data can be passed via context
+        })
+      } else {
+        createPage({
+          path: node.frontmatter.path,
+          component: pageTemplate,
+          context: {}, // additional data can be passed via context
+        })
+      }
     })
   })
 }
