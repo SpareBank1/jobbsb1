@@ -1,12 +1,23 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Location } from '@reach/router'
+import { BackButton } from '@sb1/ffe-buttons-react';
 
 const Header = ({ siteTitle }) => (
   <header className="sb1-header">
-      <Link
-        to="/"
-      >
+  <Location>
+      {({ location }) => {
+        var path = location.pathname;
+        if (path === '/') {
+          return <div></div>
+        } else {
+          return <BackButton element="a" href="/" dark={true} className="sb1-header__link sb1-header__link--back">Tilbake</BackButton>
+        }
+      }}
+    </Location>
+
+      <Link to="/" className="sb1-header__link sb1-header__link--home">
         <svg viewBox="0 0 182 40" xmlns="http://www.w3.org/2000/svg" className="sb1-header__logo">
             <title>
               {siteTitle}
@@ -23,6 +34,20 @@ const Header = ({ siteTitle }) => (
             </g>
         </svg>
       </Link>
+
+      <a href="https://github.com/SpareBank1/jobbsb1" className="sb1-header__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 41" className="sb1-header__github-logo">
+          <title>SpareBank1.dev på GitHub</title>
+          <defs>
+            <clipPath id="a">
+            <path d="M0 0h42v41H0z"></path>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)">
+            <path fill="#fff" fill-rule="evenodd" d="M20.998.5C9.676.5.494 9.681.494 21.007c0 9.059 5.875 16.745 14.024 19.458 1.025.187 1.399-.446 1.399-.99 0-.487-.017-1.776-.027-3.487-5.704 1.239-6.908-2.749-6.908-2.749-.932-2.369-2.277-3-2.277-3-1.862-1.271.141-1.246.141-1.246 2.058.145 3.141 2.114 3.141 2.114 1.829 3.133 4.8 2.228 5.968 1.703.186-1.325.716-2.228 1.302-2.741-4.553-.518-9.341-2.277-9.341-10.135 0-2.239.799-4.068 2.111-5.502-.211-.519-.915-2.604.202-5.427 0 0 1.72-.552 5.638 2.101 1.635-.455 3.39-.681 5.134-.69 1.742.009 3.495.235 5.133.69 3.915-2.653 5.634-2.101 5.634-2.101 1.119 2.823.415 4.908.205 5.427 1.314 1.434 2.107 3.263 2.107 5.502 0 7.878-4.795 9.612-9.362 10.119.735.633 1.391 1.884 1.391 3.798 0 2.74-.025 4.952-.025 5.624 0 .549.37 1.188 1.41.987 8.142-2.717 14.012-10.398 14.012-19.455 0-2.88-.593-5.62-1.665-8.107C36.699 5.606 29.445.5 20.998.5"></path>
+          </g>
+        </svg>
+      </a>
   </header>
 )
 
