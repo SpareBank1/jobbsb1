@@ -55,9 +55,14 @@ img {
     height: 30px;
     max-width: 40px;
     vertical-align: middle;
+    transition: transform @ffe-transition-duration @ffe-ease;
 
     @media screen and (min-width: @breakpoint-md) {
       height: 40px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }
@@ -117,6 +122,7 @@ img {
     background-color: #ccc;
     background-image: url('../images/background.png');
     background-size: 200px 200px;
+    transition: transform @ffe-transition-duration @ffe-ease;
 
     &--fagdag {
 
@@ -132,6 +138,20 @@ img {
 
     &--designsystem {
 
+    }
+  }
+
+  .ffe-h3 {
+    transition: color @ffe-transition-duration @ffe-ease;
+  }
+
+  &:hover {
+    .sb1-frontpage-link__circle {
+      transform: translateY(-10px);
+    }
+
+    .ffe-h3 {
+      color: @ffe-blue-azure;
     }
   }
 }
@@ -410,15 +430,30 @@ img {
     .ffe-h4();
     margin-top: 48px;
   }
+}
 
+.sb1-markdown-page {
   &__header{
     background-color: @ffe-blue-cobalt;
-    h1{
-      color: #fff;
+    padding: 64px 0 24px 0;
+
+    .ffe-h1,
+    .ffe-lead-paragraph {
+      color: @ffe-white;
     }
-    p{
-      color: #fff;
-      font-size: 22px;
+  }
+
+  &__image {
+    border-radius: 50%;
+    object-fit: contain;
+
+    @media screen and (min-width: @breakpoint-md) {
+      margin-top: -300px;
+    }
+
+    @media screen and (min-width: @breakpoint-lg) {
+      margin-top: -240px;
+      max-width: 100%;
     }
   }
 }

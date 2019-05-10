@@ -2,6 +2,8 @@
 path: "/fagforum"
 title: "Fagforum i SpareBank 1"
 pagetype: "page"
+image: "./img/hackathon-brain.jpg"
+description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"
 ---
 Vi er mange som jobber med utvikling og design spredt på nesten 20 team rundt om på huset. For å få til samarbeid og deling på tvers av team har vi flere ulike møtepunkter som vi kaller forum.
 

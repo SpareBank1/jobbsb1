@@ -2,6 +2,8 @@
 path: "/fagdag"
 title: "Fagdag i SpareBank 1"
 pagetype: "page"
+image: "./img/hackathon-brain.jpg"
+description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"
 ---
 
 ## “Torsdag er den nye lørdagen!”
