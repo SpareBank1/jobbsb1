@@ -2,6 +2,8 @@
 path: "/designsystem"
 title: "SpareBank 1 Designsystem"
 pagetype: "page"
+image: "./img/dsm-4.jpeg"
+description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"
 ---
 
 ## Brukeropplevelse, design og frontend
@@ -14,5 +16,3 @@ Foruten vårt eget system er vi aktive i et stadig voksende miljø rundt designs
 
 #### Vil du vite mer?
 Ta gjerne en titt på [design.sparebank1.no](https://design.sparebank1.no/), eller utforsk [kildekoden som ligger åpent tilgjengelig på GitHub](https://github.com/SpareBank1/designsystem).
-
-![Design System Power lunch](/img/dsm-4.jpeg)

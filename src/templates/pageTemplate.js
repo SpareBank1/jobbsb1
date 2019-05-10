@@ -10,26 +10,30 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+  console.log(frontmatter.image);
   return (
     <Layout>
       <Header/>
       <SEO title={frontmatter.title} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />
-      <div className="sb1-markdown">
-        <Grid className="sb1-markdown__header">
+      <div className="sb1-markdown-page">
+        <Grid className="sb1-markdown-page__header">
           <GridRow>
-            <GridCol>
-              <h1>{frontmatter.title}</h1>
-              <p className="sb1-markdown__lead">{frontmatter.description}</p>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 6, offset: 1 }}>
+              <h1 className="ffe-h1">{frontmatter.title}</h1>
+              <div className="ffe-lead-paragraph">{frontmatter.description}</div>
               </GridCol>
           </GridRow>
         </Grid>
         <Grid>
           <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 10 }} lg={{ cols: 8 }}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 8 }} lg={{ cols: 6, offset: 1 }}>
               <div
-                className="content"
+                className="content sb1-markdown"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
+            </GridCol>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 4 }} lg={{ cols: 4 }} end={true}>
+              <img src={frontmatter.image.childImageSharp.fixed.src} alt={frontmatter.title} className="sb1-markdown-page__image" />
             </GridCol>
           </GridRow>
         </Grid>
@@ -47,6 +51,13 @@ export const pageQuery = graphql`
         path
         title
         description
+        image {
+          childImageSharp {
+            fixed(width: 640, height: 640) {
+              src
+            }
+          }
+        }
       }
     }
   }
