@@ -13,6 +13,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
   const openingTemplate = path.resolve(`src/templates/openingTemplate.js`);
+  const genericTemplate = path.resolve(`src/templates/genericTemplate.js`);
 
   return graphql(`
     {
@@ -42,10 +43,16 @@ exports.createPages = ({ actions, graphql }) => {
           component: openingTemplate,
           context: {}, // additional data can be passed via context
         })
-      } else {
+      } else if (node.frontmatter.pagetype === 'page') {
         createPage({
           path: node.frontmatter.path,
           component: pageTemplate,
+          context: {}, // additional data can be passed via context
+        })
+      } else  {
+        createPage({
+          path: node.frontmatter.path,
+          component: genericTemplate,
           context: {}, // additional data can be passed via context
         })
       }
