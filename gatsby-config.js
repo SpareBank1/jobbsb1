@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/markdown`,
+        path: `${__dirname}/src/pages/static`,
         name: "markdown-pages",
       },
     },
@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/stilling`,
+        path: `${__dirname}/src/pages/openings`,
         name: "stilling",
       },
     },

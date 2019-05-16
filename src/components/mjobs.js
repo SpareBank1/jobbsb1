@@ -8,7 +8,7 @@ export default () => (
     query={graphql`
       query markdownJobs{
         allMarkdownRemark(
-          filter: { fileAbsolutePath: {regex : "\/stilling/"} },
+          filter: { fileAbsolutePath: {regex : "\/openings/"} },
           sort: {
             fields:frontmatter___pri
           }
