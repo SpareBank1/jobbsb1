@@ -1,9 +1,10 @@
 ---
 path: "/utviklere"
-title: "Utviklere ønskes"
-description: "Til våre team trenger vi mange type utviklere: flere techleads, utviklere som vil jobbe med sikkerhet, frontendere, full-stack-utviklere, API-utviklere og mer. "
-pri: 10
+title: "Fronender, backender, fullstack , techlead"
+description: "Jobbe i et av Norges triveligste og største inhouse utviklingsmiljøer?"
+pri: 1
 pagetype: "opening"
+available: "public"
 ---
 
 
@@ -33,4 +34,4 @@ Velger du oss, håper vi du gjør det fordi du ønsker å være en del av vårt 
 
 Velger du oss får du muligheten til å påvirke hva du bruker tiden din på, og hvilket team du vil bidra i. Finner du ikke riktig team hos oss, trenger du ikke ta jobben. Men det er verdt å sjekke ut. Vi lover!
 
-**[Søk i dag](https://www.linkedin.com/jobs/view/1235976641/)**
+**[Søk på stillingen](https://www.webcruiter.no/wcmain/CvJobRespond1.aspx?company_id=3670262170&oppdragsnr=3976533286)**

@@ -4,9 +4,8 @@ title: "Fullstack utvikler til et av Norges største utviklingsmiljøer"
 description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"
 pri: 10
 pagetype: "opening"
+available: "public"
 ---
-
-## Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?
 
 Vi ønsker å gi privatpersoner og bedrifter gode finansieringsløsninger. Derfor fokuserer vi mye på å forstå kundenes problemer og behov, prøve ut hypoteser, utvikle MVPer og bruker Lean start-up metodikk.
 
@@ -53,8 +52,5 @@ Våre foredrag på [JavaZone og Smidigkonferansen](https://vimeo.com/album/42572
 SpareBank 1 Banksamarbeidet DA er eid av 14 selvstendige SpareBank 1-banker og er et innovasjons- og utviklingsselskap for tjenester og løsninger i SpareBank 1-alliansen. Selskapet har 250 ansatte med oppgaver innen IT, markeds- og forretningsutvikling. Selskapet er en proaktiv og innovativ samarbeidspartner og fasilitator for SpareBank 1-bankene.
 SpareBank 1 Banksamarbeidet DA er ansvarlig for å utvikle og levere felles IT- og mobilløsninger, merkevare og markedsføringskonsepter, forretningskonsepter, produkter og tjenester, kompetanse, analyse, prosesser, beste praksisløsninger og innkjøp.
 
-Ved spørsmål om stillingene kontakt **teamleder Marit Ween Brekken** på telefon **950 53 533**.
-
-**Søknadsfrist 1. mai**
-
-[Send inn din søknad](https://www.webcruiter.no/WcMain/CvJobrespond1.aspx?oppdragsnr=4055574506&culture_id=NB-NO)
+####Interessert i stillingen?
+Ta en prat med teamleder **Marit Ween Brekken** på telefon **950 53 533** eller e-post [marit.brekken@sparebank1.no](mailto:marit.brekken@sparebank1.no).
