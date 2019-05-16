@@ -17,7 +17,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div>
+        <div className="sb1-layout">
           {children}
         </div>
       </>
