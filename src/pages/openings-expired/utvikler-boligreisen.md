@@ -1,9 +1,10 @@
 ---
 path: "/utvikler-boligreisen"
-title: "Testutvikler til Team Boligreisen"
+title: "utgått! Testutvikler til Team Boligreisen"
 description: "Bli med å utvikle Norges råeste boliglånesøknad!"
 pri: 10
 pagetype: "opening"
+available: "private"
 ---
 
 ## Bli med å utvikle Norges råeste boliglånesøknad!
