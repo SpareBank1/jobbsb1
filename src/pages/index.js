@@ -6,7 +6,7 @@ import Header from '../components/header'
 import SEO from '../components/seo'
 import Instagram from '../components/instagram';
 import Medium from '../components/medium';
-import Jobs from '../components/jobs'
+import Jobs from '../components/jobs/jobs'
 // import Img from "gatsby-image"
 
 const IndexPage = (props) => (

@@ -2,9 +2,7 @@
 path: "/teamleder"
 title: "Smidig teamleder"
 description: "Vil du kjempe sammen med oss for en enklere og bedre hverdagsøkonomi for folk flest?"
-pri: 10
 pagetype: "opening"
-available: "public"
 ---
 
 SpareBank 1 har de senere år gjort store endringer på hvordan vi jobber med våre digitale løsninger. Vi arbeider målrettet med å skape en utviklingsoperasjon basert på Lean produksjonsfilosofi og smidig-prinsipper. I dag leverer våre kryssfunksjonelle utviklingsteam hyppig, og kan i stor grad påvirke hvordan de best løser sine oppgaver. Fokuset nå er å få teamene til å levere enda bedre ved å måle på hva de oppnår og ikke hva de produserer.

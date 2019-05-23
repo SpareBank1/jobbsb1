@@ -3,7 +3,6 @@ path: "/utvikler-sparing"
 title: "Utvikler til team sparing"
 description: "Vi prøver å gi folk gode sparevaner. Derfor fokuserer vi mye på å finne kundenes behov, prøve ut hypoteser og utvikle MVP’er. Vi håper du vil være med på denne reisen."
 pagetype: "opening"
-available: "public"
 ---
 
 ## Har du lyst til å bli med på å gjøre 2019 til vårt mest spennende år på spareområdet?

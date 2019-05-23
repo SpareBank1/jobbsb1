@@ -1,10 +1,9 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Mjobs from "./mjobs";
-import Job from './job'
 
 export default () => (
-<div>
+
     <StaticQuery
       query={graphql`
         query hrQuery{
@@ -32,21 +31,15 @@ export default () => (
 
       render={data => {
         if(data.allHRmanagerJob.edges[0].node.Name==="dummy"){
-          return (<Mjobs />)
+          return (<Mjobs numHRopenings={0}  hrData={[]}/>)
         }else{
+          const numOpenings = data.allHRmanagerJob.totalCount > 20 ? 20 : data.allHRmanagerJob.totalCount;
           return (
-            <div className="sb1-joblist">
-              <h3 className="ffe-h3">{data.allHRmanagerJob.totalCount} ledige stillinger - vil du være med på laget?</h3>
-              <div className="sb1-joblist__list">
-                { data.allHRmanagerJob.edges.map(post => (
-                  <Job id={post.node.id} path={post.node.AdvertisementUrl} title={post.node.Name} desc={post.node.ShortDescription}/>
-                  
-                ))}
-              </div>
-            </div>
+            <Mjobs numHRopenings={numOpenings} hrData={data.allHRmanagerJob.edges}/>
           )
         }
-      } }
+      } 
+    }
     />
-  </div>
+  
 )
