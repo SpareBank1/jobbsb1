@@ -2,7 +2,6 @@
 path: "/utvikler-fullstack"
 title: "Fullstack utvikler til et av Norges største utviklingsmiljøer"
 description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"
-pri: 10
 pagetype: "opening"
 available: "public"
 ---
