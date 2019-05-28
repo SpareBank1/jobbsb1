@@ -40,14 +40,20 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "test": "jest",
     "deploy": "rm -rf .cache/* && gatsby build && gh-pages -d public",
     "dev": "rm -rf .cache/* && gatsby develop"
   },
   "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-gatsby": "^0.1.11",
     "gh-pages": "^2.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.2.2",
     "less": "^3.9.0",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "react-testing-library": "^7.0.1"
   },
   "repository": {
     "type": "git",
