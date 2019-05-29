@@ -1,7 +1,9 @@
 import React from 'react'
-import { render } from 'react-testing-library'
+import { render, cleanup } from 'react-testing-library'
 
 import Header from '../header'
+
+afterEach(cleanup)
 
 describe(`Header`, () => {
   it(`renders siteTitle`, () => {
