@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jobbe i SpareBank 1`,
+    title: `SpareBank 1 Utvikling`,
     description: `.`,
     author: `@antidecaf`,
   },
