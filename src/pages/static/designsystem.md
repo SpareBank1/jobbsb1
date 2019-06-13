@@ -2,7 +2,7 @@
 path: "/designsystem"
 title: "SpareBank 1 Designsystem"
 pagetype: "page"
-image: "./img/dsm-4.jpeg"
+image: "./img/designsystem.jpg"
 description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"
 ---
 

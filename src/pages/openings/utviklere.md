@@ -1,6 +1,6 @@
 ---
 path: "/utviklere"
-title: "Fronender, backender, fullstack , techlead"
+title: "Frontender, backender, fullstack, tech-lead"
 description: "Jobbe i et av Norges triveligste og største inhouse utviklingsmiljøer?"
 pagetype: "opening"
 date: "2019-05-01"
