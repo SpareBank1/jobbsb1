@@ -17,8 +17,8 @@ const IndexPage = (props) => (
     <div className="sb1-hero">
         <div className="sb1-hero__inner">
             <div className="sb1-hero__preamble">
-                <h1 className="ffe-h2">Et bra sted å jobbe</h1>
-                <p className="ffe-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit lorem ligula, non porttitor metus mollis vel. Sed ut sem magna. In hac habitasse platea dictumst.</p>
+                <h1 className="ffe-h2">Et spennende sted å jobbe</h1>
+                <p className="ffe-body-text">Vi er de 14 SpareBank 1-bankenes felles utviklingsselskap. Vår oppgave er å skape de aller beste løsningene og brukeropplevelsene i bransjen – fordi hverdagsøkonomien er viktig for folk. Vi lykkes ved å la kompetanse, læring og frihet definere oss, og fordi vi jobber kompromissløst data- og kundedrevet.</p>
             </div>
         </div>
     </div>
@@ -75,8 +75,8 @@ const IndexPage = (props) => (
         <GridRow reverse={true}>
             <GridCol sm={{ cols: 12 }}>
                 <div className="sb1-vids__preamble">
-                    <h3 className="ffe-h3">Hvordan er det å jobbe hos oss?</h3>
-                    <p className="ffe-body-text">Vi tror et inkluderende miljø som bringer frem det beste i folk, faglig og sosialt, er et bra sted å jobbe. På disse sidene vil vi fortelle litt om hvordan hverdagen vår er!</p>
+                    <h3 className="ffe-h3">Et godt sted å være</h3>
+                    <p className="ffe-body-text">For å kunne yte på jobb, må vi trives på jobb. Våre medarbeidere får derfor stor tillit og mye ansvar, men også den støtten, veiledningen og opplæringen de trenger for å mestre og like jobben sin. Dessuten passer vi på å le sammen. Mye. Det blir nemlig veldig gode løsninger av god stemning.</p>
                 </div>
             </GridCol>
         </GridRow>
