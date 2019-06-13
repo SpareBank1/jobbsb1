@@ -32,5 +32,3 @@ Som alle andre dekker vi mobiltelefon og internett, har noen firmahytter tilgjen
 Velger du oss, håper vi du gjør det fordi du ønsker å være en del av vårt utviklingsmiljø, og fordi du liker vår kultur og måten vi jobber oss fremover på. Hvordan vi er opptatt av å lære av våre feil og hvordan vi aktivt jobber for å bli bedre. Våre banker har en ekstrem lokal forankring – de lever og dør med sine lokalsamfunn, og de følger sine kunder gjennom alle deres livsfaser. Dette smitter over på vår kultur om å ta vare på og støtte hverandre.
 
 Velger du oss får du muligheten til å påvirke hva du bruker tiden din på, og hvilket team du vil bidra i. Finner du ikke riktig team hos oss, trenger du ikke ta jobben. Men det er verdt å sjekke ut. Vi lover!
-
-**[Søk på stillingen](https://www.webcruiter.no/wcmain/CvJobRespond1.aspx?company_id=3670262170&oppdragsnr=3976533286)**
