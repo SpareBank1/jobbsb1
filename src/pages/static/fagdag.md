@@ -17,5 +17,7 @@ På hver konferanse dukker sistatet “Kultur spiser strategi til frokost” opp
 
 ## Open Source
 Noen av fagdagene er dedikert til KodeKatas. Oppgavene finner vi på http://codingdojo.org/
+
 Løsningene legger vi selvfølgelig ut Open Source. Ta en titt på https://github.com/SpareBank1/fagdagen
+
 Kan vi friste med Game of Life implementert i Basic (for kjøring på Commodore 64): https://github.com/SpareBank1/fagdagen/tree/master/KodeKata/game-of-life/C64-Basic
