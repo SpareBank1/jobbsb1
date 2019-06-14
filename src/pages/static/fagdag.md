@@ -14,3 +14,8 @@ For å sikre kontinuerlig læring har vi satt av hver torsdag til fag. Vi kaller
 
 ## “Kultur spiser strategi til frokost”
 På hver konferanse dukker sistatet “Kultur spiser strategi til frokost” opp. Det er ikke uten grunn, og vi bruker Fagdagen til å bygge kultur. Gjennom at vi samles en dag uken for å utlukkende å fokusere på fag, så får vi mulighet til å utvikle en felles SpareBank 1 kultur. Vi ønsker at denne kulturen preges av åpenhet, trygghet og samhold.
+
+## Open Source
+Noen av fagdagene er dedikert til KodeKatas. Oppgavene finner vi på http://codingdojo.org/
+Løsningene legger vi selvfølgelig ut Open Source. Ta en titt på https://github.com/SpareBank1/fagdagen
+Kan vi friste med Game of Life implementert i Basic (for kjøring på Commodore 64): https://github.com/SpareBank1/fagdagen/tree/master/KodeKata/game-of-life/C64-Basic
