@@ -1,5 +1,7 @@
 # Jobbe i SpareBank 1
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SpareBank1/jobbsb1.svg)](https://greenkeeper.io/)
+
 Dette repositoryet inneholder SpareBank 1s rekrutteringssite for designere og utviklere. Siten lages med [GatsbyJS](https://www.gatsbyjs.org) og [SpareBank 1 Designsystem](https://design.sparebank1.no/).
 
 ### Kom i gang
