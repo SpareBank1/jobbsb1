@@ -2,7 +2,7 @@ import React from 'react'
 import Timestamp from 'react-timestamp'
 
 export default ({posts}) => (
-    <div className="sb1-somefeed">
+    <div className="sb1-somefeed" data-testid="instafeed">
         <h3 className="ffe-h3">
             <a href="https://instagram.com/sparebank1design" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1design</a> og <a href="https://instagram.com/sparebank1utvikler" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1utvikler</a> på Instagram
         </h3>
