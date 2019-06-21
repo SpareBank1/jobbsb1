@@ -1,12 +1,12 @@
 import React from "react"
-import { render, cleanup } from 'react-testing-library'
+import { render, cleanup } from '@testing-library/react'
 
 import Instagallery from '../instagallery'
 
 afterEach(cleanup)
 
 describe(`Instagram`, () => {
-  it(`renders children`, () => {
+  it(`exists`, () => {
       const data = {
         allInstaNode: {
             edges: [{
@@ -43,7 +43,9 @@ describe(`Instagram`, () => {
             }],
         },
       }
-    const tree = render(<Instagallery posts={data.allInstaNode} />)
-    expect(tree).toMatchSnapshot();
+
+    const { container } = render(<Instagallery posts={data.allInstaNode} />);
+    const element = container.querySelector('[data-testid="instafeed"]');
+    expect(element).toBeInTheDocument();
   })
 })

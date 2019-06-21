@@ -24,7 +24,7 @@
     "gatsby-remark-copy-linked-files": "^2.0.11",
     "gatsby-remark-images": "^3.0.6",
     "gatsby-source-filesystem": "^2.0.27",
-    "gatsby-source-instagram": "^0.4.0",
+    "gatsby-source-instagram": "^0.5.0",
     "gatsby-source-medium": "^2.0.6",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.17",
@@ -32,7 +32,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
-    "react-timestamp": "^4.4.0"
+    "react-timestamp": "^5.1.0"
   },
   "license": "MIT",
   "scripts": {
@@ -54,7 +54,7 @@
     "jest-dom": "^3.2.2",
     "less": "^3.9.0",
     "prettier": "^1.16.4",
-    "react-testing-library": "^7.0.1"
+    "@testing-library/react": "^8.0.1"
   },
   "repository": {
     "type": "git",

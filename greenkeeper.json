@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "plugins/gatsby-source-hrmanager/package.json"
+      ]
+    }
+  }
+}
