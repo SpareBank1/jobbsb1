@@ -5,13 +5,13 @@ description: "Har du lyst til å bli med å forme vår reise mot fremtiden? Vi e
 pagetype: "opening"
 ---
 
-SB1 Utvikling hjelper bankene og produktselskapene i SB1 Alliansen med å være konkurransedyktige både nå og i fremtiden. For å bidra med dette holder SB1 Utvikling nå på å etablere en avdeling som skal jobbe med arkitektur- og teknologistyring og -utvikling. Målsetningen er å få:
+SpareBank 1 Utvikling hjelper bankene og produktselskapene i SpareBank 1 Alliansen med å være konkurransedyktige både nå og i fremtiden. For å bidra med dette holder SpareBank 1 Utvikling nå på å etablere en avdeling som skal jobbe med arkitektur- og teknologistyring og -utvikling. Målsetningen er å få:
 
 * Tett samhandling med forretningssiden for å forstå behov og gi gode råd om alternativer og konsekvenser
 * Proaktiv arkitektur- og teknologiutvikling for å utnytte muligheter og sikre konkurranseevne på kort og lang sikt
 * Effektiv og tydelig arkitektur- og teknologistyring for å sikre fleksibilitet og kostnadsoptimalisering
 
-For å få til dette må vi jobbe tett med fagmiljø både i SB1 Utvikling samt ute i banker og produktselskaper. Vi må bistå team, prosjekter og initiativ med hensiktsmessige valg av arkitektur og teknologi samtidig som vi jobber for at våre løsninger henger sammen på tvers samt møter behov på kort og lengre sikt. En viktig del av dette arbeidet er å utarbeide og forvalte målbilder og strategier for arkitektur og teknologi. Avdelingen vil dekke en rekke arkitekturperspektiv fra virksomhetsarkitektur, informasjonsarkitektur og løsningsarkitektur til teknologiarkitektur, driftsarkitektur og skyarkitektur.
+For å få til dette må vi jobbe tett med fagmiljø både i SpareBank 1 Utvikling samt ute i banker og produktselskaper. Vi må bistå team, prosjekter og initiativ med hensiktsmessige valg av arkitektur og teknologi samtidig som vi jobber for at våre løsninger henger sammen på tvers samt møter behov på kort og lengre sikt. En viktig del av dette arbeidet er å utarbeide og forvalte målbilder og strategier for arkitektur og teknologi. Avdelingen vil dekke en rekke arkitekturperspektiv fra virksomhetsarkitektur, informasjonsarkitektur og løsningsarkitektur til teknologiarkitektur, driftsarkitektur og skyarkitektur.
 
 Hvis du vil være med på reisen vil du få muligheten til å jobbe med en rekke spennende problemstillinger som:
 * Hvordan skal vi utnytte skytjenester og hvordan skal disse spille sammen med andre plattformer og løsninger?
