@@ -23,15 +23,11 @@ En viktig del av dette arbeidet er å utarbeide og forvalte målbilder og strate
 
 Hvis du vil være med på reisen vil du få muligheten til å jobbe med en rekke spennende og forretningskritiske problemstillinger:
 
-* Hvordan skal vi utnytte skytjenester og hvordan skal disse spille sammen med andre plattformer og løsninger?
-* Hvordan kan vi sikre god utnyttelse av data og hvordan kan vi understøtte økt bruk av maskinlæring?
-* Hvordan får vi bedre kundeinnsikt og setter kunden i senter for vår arkitektur og løsninger?
-* Hva er sentrale egenskaper ved våre ulike arkitekturer?
-* Hvordan legger vi til rette for samspill mellom kanaler og deltagelse i økosystem?
-* Hvordan realiserer vi fleksibilitet i løsninger og plattformer samtidig som de er kostnadseffektive og forvaltbare?
-* Hvilke arkitekturer trenger vi for å understøtte forretningsbehov og hvordan sikrer vi at disse spiller godt sammen?
-* Hvilke endringer i teknologilandskapet ser vi fremover og hvordan kan vi best nyttiggjøre oss disse?
-* Hvordan kan vi best utøve arkitekturstyring i en kompleks virksomhet og som understøtter kontinuerlige leveranser?
+Hvordan skal vi utnytte skytjenester og hvordan skal disse spille sammen med andre plattformer og løsninger? Hvordan kan vi sikre god utnyttelse av data og hvordan kan vi understøtte økt bruk av maskinlæring? Hvordan får vi bedre kundeinnsikt og setter kunden i senter for vår arkitektur og løsninger?
+
+Hva er sentrale egenskaper ved våre ulike arkitekturer? Hvordan legger vi til rette for samspill mellom kanaler og deltagelse i økosystem? Hvordan realiserer vi fleksibilitet i løsninger og plattformer samtidig som de er kostnadseffektive og forvaltbare?
+
+Hvilke arkitekturer trenger vi for å understøtte forretningsbehov og hvordan sikrer vi at disse spiller godt sammen? Hvilke endringer i teknologilandskapet ser vi fremover og hvordan kan vi best nyttiggjøre oss disse? Hvordan kan vi best utøve arkitekturstyring i en kompleks virksomhet og som understøtter kontinuerlige leveranser?
 
 Synes du dette høres spennende ut? Du er når som helst velkommen til å ta en uforpliktende prat med leder for Arkitektur og Teknologi i SpareBank 1 Utvikling, Vegard Hartmann. Telefon [982 19 319](tel:+4798219319) eller e-post [vegard.hartmann@sparebank1.no](mailto:vegard.hartmann@sparebank1.no).
 
