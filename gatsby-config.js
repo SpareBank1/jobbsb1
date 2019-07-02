@@ -35,6 +35,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-143149392-1",
+      },
+    },
+    {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `sparebank1design`,
