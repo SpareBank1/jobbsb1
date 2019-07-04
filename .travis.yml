@@ -13,9 +13,11 @@ deploy:
   on:
     branch: master
 before_script:
-  - "npm i -g gatsby"
-  - "npm i"
+  - npm i -g gatsby
+  - npm i
 script:
-  - "npm run test"
+  - npm run build || travis_terminate 1;
+  - npm run test || travis_terminate 1;
 after_success:
-  - "npm run deploy"
+  - npm run deploy
+  
