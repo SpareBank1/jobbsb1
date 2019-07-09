@@ -47,15 +47,15 @@
     "dev": "rm -rf .cache/* && gatsby develop"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.0.0",
+    "@testing-library/react": "^8.0.1",
     "babel-jest": "^24.8.0",
     "babel-preset-gatsby": "^0.1.11",
     "gh-pages": "^2.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
-    "jest-dom": "^4.0.0",
     "less": "^3.9.0",
-    "prettier": "^1.16.4",
-    "@testing-library/react": "^8.0.1"
+    "prettier": "^1.16.4"
   },
   "repository": {
     "type": "git",
