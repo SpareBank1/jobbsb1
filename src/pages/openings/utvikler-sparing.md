@@ -43,8 +43,7 @@ Våre foredrag på [JavaZone og Smidigkonferansen](https://vimeo.com/album/42572
 * Gode pensjons-, bank- og forsikringsordninger
 
 #### Om oss
-SpareBank 1 Banksamarbeidet DA er eid av 14 selvstendige SpareBank 1-banker og er et innovasjons- og utviklingsselskap for tjenester og løsninger i SpareBank 1-alliansen. Selskapet har 250 ansatte med oppgaver innen IT, markeds- og forretningsutvikling. Selskapet er en proaktiv og innovativ samarbeidspartner og fasilitator for SpareBank 1-bankene.
-SpareBank 1 Banksamarbeidet DA er ansvarlig for å utvikle og levere felles IT- og mobilløsninger, merkevare og markedsføringskonsepter, forretningskonsepter, produkter og tjenester, kompetanse, analyse, prosesser, beste praksisløsninger og innkjøp.
+SpareBank 1 Utvikling er de 14 SpareBank 1-bankenes felles utviklingsselskap. Våre 300 dyktige medarbeidere går på jobb hver dag for å skape, utvikle og forvalte de beste IT-løsningene, tjenestene og brukeropplevelsene i bransjen - fordi hverdagsøkonomien er viktig for både folk og bedrifter. Vi jobber også med markeds- og forretningsutvikling, og er en proaktiv og innovativ samarbeidspartner for SpareBank 1-bankene. Vi vektlegger læring og kompetanse, frihet og trivsel i arbeidshverdagen. Det gjør SpareBank 1 Utvikling til et spennende sted å jobbe, og et godt sted å være.
 
 ####Interessert i stillingen?
 Ta en prat med teamleder **Brit Kristin Kaaresen** på telefon **988 60 034** eller e-post [brit.kaaresen@sparebank1.no](mailto:brit.kaaresen@sparebank1.no).
