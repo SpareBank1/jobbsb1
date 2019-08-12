@@ -30,8 +30,8 @@
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.17",
     "prop-types": "^15.7.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
     "react-timestamp": "^5.1.0"
   },
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.0.0",
-    "@testing-library/react": "^8.0.1",
+    "@testing-library/react": "^9.1.0",
     "babel-jest": "^24.8.0",
     "babel-preset-gatsby": "^0.1.11",
     "gh-pages": "^2.0.1",
