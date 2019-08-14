@@ -3,6 +3,8 @@ path: "/utvikler-sparing"
 title: "Utvikler til team sparing"
 description: "Vi prøver å gi folk gode sparevaner. Derfor fokuserer vi mye på å finne kundenes behov, prøve ut hypoteser og utvikle MVP’er. Vi håper du vil være med på denne reisen."
 pagetype: "opening"
+applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21116&ProjectId=143638&MediaId=4636"
+closingDate: "15.09.2019"
 ---
 
 ## Har du lyst til å bli med på å gjøre 2019 til vårt mest spennende år på spareområdet?

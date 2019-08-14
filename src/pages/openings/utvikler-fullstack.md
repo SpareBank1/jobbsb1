@@ -3,6 +3,8 @@ path: "/utvikler-fullstack"
 title: "Fullstack utvikler? Bli med å utvikle Norges råeste boliglånesøknad!"
 description: "Å kjøpe bolig er noe av det største og viktigste i løpet av livet. Fra man søker etter, finner og til slutt kjøper skal vi gjøre det enkelt og trygt å søke boliglån digitalt. Derfor fokuserer vi på kundenes behov, innhenting av data, utprøving av hypoteser og utvikle MVPer."
 pagetype: "opening"
+applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21111&ProjectId=143636&MediaId=4636"
+closingDate: "08.09.2019"
 ---
 
 ## Er du nysgjerrig og opptatt av teknologi? Liker du å tenke nytt?
@@ -41,7 +43,7 @@ Nysgjerrig på miljøet vårt? Ta gjerne kontakt med teamleder **Margrethe Sæth
 * Svært gode muligheter for faglig og personlig utvikling - fagdag en gang i uken for alle utviklere
 * Utfordrende og varierte arbeidsoppgaver på strategisk viktige satsningsområder
 * Trivelige kollegaer i et topp arbeids- og kompetansemiljø
-* Konkurransedyktige betingelser 
+* Konkurransedyktige betingelser
 * Gode pensjons- og forsikringsordninger
 * Familievennlig arbeidstid - med fleksibilitet i hverdagen og sommertid
 * Moderne lokaler sentralt i Oslo

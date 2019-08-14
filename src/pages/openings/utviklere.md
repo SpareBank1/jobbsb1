@@ -4,6 +4,8 @@ title: "Frontender, backender, fullstack, tech-lead"
 description: "Jobbe i et av Norges triveligste og største inhouse utviklingsmiljøer?"
 pagetype: "opening"
 date: "2019-05-01"
+applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21119&ProjectId=143627&MediaId=4636"
+closingDate: "18.08.2019"
 ---
 
 
