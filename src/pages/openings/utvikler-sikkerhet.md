@@ -3,6 +3,8 @@ path: "/javautvikler-sikkerhet"
 title: "Er du Java-utvikler og interessert i sikkerhet?"
 description: "Vi søker deg som ikke er redd for å utfordre vedtatte sannheter og som kan være med på å bringe teamet som utvikler SpareBank 1 sine sikkerhetsløsninger videre. Du vil jobbe med noe som påvirker hverdagen til veldig mange mennesker, og fokuserer derfor mye på å finne kundenes behov, utvikle MVPer og sørger for at våre løsninger er langt framme teknologisk."
 pagetype: "opening"
+applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21122&ProjectId=143624&MediaId=4636"
+closingDate: "18.08.2019"
 ---
 
 #### Utvikler

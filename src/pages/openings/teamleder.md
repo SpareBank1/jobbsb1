@@ -3,6 +3,8 @@ path: "/teamleder"
 title: "Smidig teamleder til kryssfunksjonelt utviklingsteam"
 description: "Vil du kjempe sammen med oss for en enklere og bedre hverdagsøkonomi for folk flest?"
 pagetype: "opening"
+applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21116&ProjectId=143639&MediaId=4636"
+closingDate: "02.09.2019"
 ---
 
 SpareBank 1 har de senere årene gjort store endringer på hvordan vi jobber med våre digitale løsninger. Vi arbeider målrettet med å skape en utviklingsoperasjon basert på Lean produksjonsfilosofi og smidig-prinsipper. I dag leverer våre 22 kryssfunksjonelle utviklingsteam hyppig, og kan i stor grad påvirke hvordan de best løser sine oppgaver. Fokuset nå er å få teamene til å levere enda bedre ved å måle på hva de oppnår (outcome) og ikke hva de produserer (output). Vi er veldig fornøyd med hvordan teamene presterer, samtidig som vi for lenge siden erkjente at vi alltid vil være på en endringsreise med søken etter forbedringer.
