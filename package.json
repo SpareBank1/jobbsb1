@@ -11,7 +11,7 @@
     "@sb1/ffe-cards-react": "^2.2.5",
     "@sb1/ffe-core": "^14.0.4",
     "@sb1/ffe-grid": "^10.1.5",
-    "@sb1/ffe-grid-react": "^9.1.4",
+    "@sb1/ffe-grid-react": "^10.0.0",
     "@sb1/ffe-webfonts": "^2.0.4",
     "classnames": "^2.2.6",
     "gatsby": "^2.3.35",
