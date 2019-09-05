@@ -37,17 +37,33 @@ img {
 
   &__link {
     &--home {
-      flex-basis: 50%;
+      flex-basis: 70%;
+      color: @ffe-white;
+      font-family: 'MuseoSansRounded-700', arial, sans-serif;
+      font-weight: normal;
+      font-size: 18px;
+      text-decoration: none;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
+
+      @media screen and (min-width: @breakpoint-md) {
+        flex-basis: 50%;
+        font-size: 32px;
+      }
     }
   }
 
   &__logo {
     height: 30px;
-    max-width: 200px;
+    max-width: 40px;
     vertical-align: middle;
+    transition: transform @ffe-transition-duration @ffe-ease;
 
     @media screen and (min-width: @breakpoint-md) {
       height: 40px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
