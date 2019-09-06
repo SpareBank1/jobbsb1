@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Header from '../components/header'
 import SEO from '../components/seo'
 import Instagram from '../components/instagram';
-import Medium from '../components/medium';
+// import Medium from '../components/medium';
 import Jobs from '../components/jobs/jobs'
 // import Img from "gatsby-image"
 
@@ -81,12 +81,12 @@ const IndexPage = (props) => (
             </GridCol>
         </GridRow>
         <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true} bottomPadding={false}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
                 <div className="sb1-video">
                     <iframe width="100%" height="315" title="Utvikler i SpareBank 1" src="https://www.youtube.com/embed/Zs3quTUlzj8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true} bottomPadding={false}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
                 <div className="sb1-video">
                     <iframe width="100%" height="315" title="Teamleder i SpareBank 1" src="https://www.youtube.com/embed/afoKcCZuRes" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
@@ -94,13 +94,13 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    <Grid>
+    {/* <Grid>
         <GridRow topPadding={ true } background="grey-warm">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
                 <Medium />
             </GridCol>
         </GridRow>
-    </Grid>
+    </Grid> */}
 
     <Grid topPadding={ false }>
         <GridRow topPadding={ true } background="grey-warm">
