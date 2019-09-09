@@ -60,6 +60,18 @@ module.exports = {
     //   },
     // },
     {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://medium.com/feed/sparebank1-digital`,
+        name: `sb1digital`,
+        parserOption: {
+          customFields: {
+            item: ['image:url'],
+          },
+        },
+      },
+    },
+    {
       resolve: "gatsby-source-hrmanager",
       options: {
         customerAlias: 'sparebank1'

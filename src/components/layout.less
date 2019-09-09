@@ -306,23 +306,37 @@ img {
     margin: 5px 20px 0 5px;
     display: flex;
 
-    .ffe-image-card {
+    .ffe-text-card {
       width: 290px;
-    }
-
-    .ffe-image-card__image {
-      height: 160px;
-    }
-
-    .ffe-image-card__body {
       flex-grow: 1;
       text-align: left;
       display: flex;
       flex-direction: column;
     }
 
+    .ffe-card-component--text {
+      max-height: 242px;
+      overflow: hidden;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 75px;
+        position: absolute;
+        bottom: 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+      }
+    }
+
+    .ffe-card-component--title {
+      margin-bottom: 16px;
+    }
+
     .ffe-card-component--subtext {
       margin: auto 0 0 0;
+      padding-top: 8px;
     }
   }
 }
