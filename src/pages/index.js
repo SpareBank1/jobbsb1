@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Header from '../components/header'
 import SEO from '../components/seo'
 import Instagram from '../components/instagram';
-import Medium from '../components/medium';
+import RssMedium from '../components/rssMedium';
 import Jobs from '../components/jobs/jobs'
 // import Img from "gatsby-image"
 
@@ -81,12 +81,12 @@ const IndexPage = (props) => (
             </GridCol>
         </GridRow>
         <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true} bottomPadding={false}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
                 <div className="sb1-video">
                     <iframe width="100%" height="315" title="Utvikler i SpareBank 1" src="https://www.youtube.com/embed/Zs3quTUlzj8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true} bottomPadding={false}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
                 <div className="sb1-video">
                     <iframe width="100%" height="315" title="Teamleder i SpareBank 1" src="https://www.youtube.com/embed/afoKcCZuRes" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
@@ -97,7 +97,7 @@ const IndexPage = (props) => (
     <Grid>
         <GridRow topPadding={ true } background="grey-warm">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
-                <Medium />
+                <RssMedium />
             </GridCol>
         </GridRow>
     </Grid>
@@ -110,6 +110,49 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
+    <Grid topPadding={ false }>
+      <GridRow topPadding={ true }>
+          <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
+              <InlineGrid>
+                <GridRow>
+                  <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}  center={true}>
+                    <h3 className="ffe-h3">Nysgjerrig på miljøet vårt? Ikke nøl med å kontakte oss!</h3>
+                  </GridCol>
+                </GridRow>
+                  <GridRow>
+                      <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
+                          <a className="sb1-frontpage-link" href="mailto:kristoffer.berg@sparebank1.no">
+                              <div className="sb1-frontpage-link__circle sb1-frontpage-link__circle--kontakt-kristoffer"></div>
+                              <h4 className="ffe-h5">Kristoffer Berg</h4>
+                              <p className="ffe-small-text">Utviklingsleder</p>
+                          </a>
+                      </GridCol>
+                      <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
+                          <a className="sb1-frontpage-link" href="mailto:stian.conradsen@sparebank1.no">
+                              <div className="sb1-frontpage-link__circle sb1-frontpage-link__circle--kontakt-stian"></div>
+                              <h4 className="ffe-h5">Stian Conradsen</h4>
+                              <p className="ffe-small-text">Utvikler</p>
+                          </a>
+                      </GridCol>
+                      <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
+                          <a className="sb1-frontpage-link" href="mailto:siri.corneliussen@sparebank1.no">
+                              <div className="sb1-frontpage-link__circle sb1-frontpage-link__circle--kontakt-siri"></div>
+                              <h4 className="ffe-h5">Siri Corneliussen</h4>
+                              <p className="ffe-small-text">Fagleder, interaksjonsdesign</p>
+                          </a>
+                      </GridCol>
+                      <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
+                          <a className="sb1-frontpage-link" href="mailto:heidi.stolen@sparebank1.no">
+                              <div className="sb1-frontpage-link__circle sb1-frontpage-link__circle--kontakt-heidi"></div>
+                              <h4 className="ffe-h5">Heidi Lyngvær Stolen</h4>
+                              <p className="ffe-small-text">Fagleder, grafisk design</p>
+                          </a>
+                      </GridCol>
+                  </GridRow>
+              </InlineGrid>
+          </GridCol>
+      </GridRow>
+    </Grid>
   </Layout>
 )
 

@@ -52,11 +52,23 @@ module.exports = {
         username: `sparebank1utvikler`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-medium`,
+    //   options: {
+    //     username: `sparebank1-digital`,
+    //     limit: 200,
+    //   },
+    // },
     {
-      resolve: `gatsby-source-medium`,
+      resolve: `gatsby-source-rss-feed`,
       options: {
-        username: `sparebank1-digital`,
-        limit: 200,
+        url: `https://medium.com/feed/sparebank1-digital`,
+        name: `sb1digital`,
+        parserOption: {
+          customFields: {
+            item: ['image:url'],
+          },
+        },
       },
     },
     {

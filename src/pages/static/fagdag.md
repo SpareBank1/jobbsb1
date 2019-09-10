@@ -1,6 +1,6 @@
 ---
 path: "/fagdag"
-title: "Fagdag i SpareBank 1"
+title: "Fagdag"
 pagetype: "page"
 image: "./img/fagdag.jpg"
 description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"

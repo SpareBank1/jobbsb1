@@ -31,4 +31,8 @@ Hvilke arkitekturer trenger vi for å understøtte forretningsbehov og hvordan s
 
 Synes du dette høres spennende ut? Du er når som helst velkommen til å ta en uforpliktende prat med leder for Arkitektur og Teknologi i SpareBank 1 Utvikling, Vegard Hartmann. Telefon [982 19 319](tel:+4798219319) eller e-post [vegard.hartmann@sparebank1.no](mailto:vegard.hartmann@sparebank1.no).
 
-En rekke stillinger vil bli lagt ut på FINN Jobb i august og september. Du finner oss her: [https://www.finn.no/job/employer/company/616](https://www.finn.no/job/employer/company/616)
+Nå har du mulighet til å bli en del av denne satsingen! Her er rollene vi søker flinke folk til:
+
+* [Virksomhetsarkitekt](https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=143682&DepartmentId=21136&MediaId=4655&SkipAdvertisement=False)
+* [Løsningsarkitekt](https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=143683&DepartmentId=21136&MediaId=4655&SkipAdvertisement=False)
+* [Skyarkitekt](https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=143684&DepartmentId=21136&MediaId=4655&SkipAdvertisement=False)
