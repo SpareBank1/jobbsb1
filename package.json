@@ -6,7 +6,7 @@
   "author": "Anders Johnsen <anders.johnsen@sparebank1.no>",
   "dependencies": {
     "@sb1/ffe-buttons": "^8.1.5",
-    "@sb1/ffe-buttons-react": "^11.2.11",
+    "@sb1/ffe-buttons-react": "^12.0.0",
     "@sb1/ffe-cards": "^7.0.1",
     "@sb1/ffe-cards-react": "^3.0.0",
     "@sb1/ffe-core": "^14.0.4",
