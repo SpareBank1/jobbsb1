@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Header from '../components/header'
 import SEO from '../components/seo'
 import Instagram from '../components/instagram';
-// import Medium from '../components/medium';
+import RssMedium from '../components/rssMedium';
 import Jobs from '../components/jobs/jobs'
 // import Img from "gatsby-image"
 
@@ -94,13 +94,13 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    {/* <Grid>
+    <Grid>
         <GridRow topPadding={ true } background="grey-warm">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
-                <Medium />
+                <RssMedium />
             </GridCol>
         </GridRow>
-    </Grid> */}
+    </Grid>
 
     <Grid topPadding={ false }>
         <GridRow topPadding={ true } background="grey-warm">

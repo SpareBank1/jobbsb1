@@ -27,13 +27,16 @@
     "gatsby-source-filesystem": "^2.0.27",
     "gatsby-source-instagram": "^0.5.1",
     "gatsby-source-medium": "^2.0.6",
+    "gatsby-source-rss-feed": "^1.1.1",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.17",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
-    "react-timestamp": "^5.1.0"
+    "react-timestamp": "^5.1.0",
+    "react-truncate": "^2.4.0",
+    "striptags": "^3.1.1"
   },
   "license": "MIT",
   "scripts": {
