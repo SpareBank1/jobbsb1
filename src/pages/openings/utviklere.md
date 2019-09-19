@@ -5,7 +5,7 @@ description: "Jobbe i et av Norges triveligste og største inhouse utviklingsmil
 pagetype: "opening"
 date: "2019-05-01"
 applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21119&ProjectId=143627&MediaId=4636"
-closingDate: "18.08.2019"
+closingDate: "07.10.2019"
 ---
 
 
@@ -14,7 +14,7 @@ Med et av Norges største inhouse utviklingsmiljøer har SpareBank 1 en unik mul
 
 For å tilrettelegge for god faglig utvikling har vi vi mange fagfora, og vi har nylig innført én fagdag i uka for alle utviklere – der du selv får bestemme hva du skal bruke tiden din på. Vi ser etter deg som er tydelig på hva du kan og ikke kan. Du er tydelig på hva du ønsker og liker å bruke tiden din på. Du er opptatt av å skape gode kundeopplevelser, vant til å tenke "mobile and API first", og ikke minst setter du brukeren foran alt annet.
 
-Nysgjerrig på utviklingsmiljøet vårt? Ikke nøl med å kontakte **Erland Rustebakke** på [905 91 744](tel:+4790591744) eller [erland.rustebakke@sparebank1.no](mailto:erland.rustebakke@sparebank1.no) for en uformell prat. Skulle vi finne tonen, finner vi et tidspunkt for å bli bedre kjent.
+Nysgjerrig på utviklingsmiljøet vårt? Ikke nøl med å kontakte **Erland Rustebakke** ([905 91 744](tel:+4790591744) | [erland.rustebakke@sparebank1.no](mailto:erland.rustebakke@sparebank1.no)) eller teamleder **Brit Kaaresen** ([988 60 034](tel:+4798860034) | [brit.kaaresen@sparebank1.no](mailto:brit.kaaresen@sparebank1.no)) for en uformell prat. Skulle vi finne tonen, finner vi et tidspunkt for å bli bedre kjent.
 
 #### Arbeidsoppgaver
 For å forstå mer om hvordan det er å jobbe sammen med oss, burde du egentlig titte innom Hammersborggata 9 for en kaffekopp. Men det går an å få et innblikk i vår hverdag før vi kommer så langt også. Liker du å jobbe med frontend kan du sjekke ut vårt open source designsystem og lese mer om hvordan vi bygger og bruker det i våre applikasjoner. Er backend mer din greie, kan du sjekke ut noen av våre presentasjoner på JavaZone. Vi har også skrevet litt om hvordan vi jobber på bloggen vår. Anser du deg seg selv som en fullstack-utvikler vil du få muligheten til å bevege deg i alle lag av koden, som i dag består av blant annet Java, Kotlin, JavaScript og React. Du vil også utføre code reviews, følge opp pull requests og jobbe aktivt med forbedringer av arkitektur og kodebase - i tett samarbeid med andre utviklere, designere, arkitekter, testere og produkteiere.
