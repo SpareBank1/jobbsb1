@@ -4,7 +4,7 @@ title: "Utviklingsleder"
 description: "Vil du være med å skape Norges beste utviklingsmiljø?"
 pagetype: "opening"
 applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21081&ProjectId=143707&MediaId=4655"
-closingDate: "03.10.2019"
+closingDate: "07.10.2019"
 ---
 
 SpareBank 1 har de senere år gjort store endringer på hvordan vi jobber med våre kundeløsninger. Vi jobber målrettet med å skape en utviklingsoperasjon basert på Lean produksjonsfilosofi og smidig-prinsipper. I dag leverer våre kryssfunksjonelle utviklingsteam hyppig, og kan i stor grad påvirke hvordan de best løser sine oppgaver. Fokuset nå er å få teamene til å levere enda bedre ved å måle på hva de oppnår (outcome) og ikke hva de produserer (output). Vi er veldig fornøyd med hvordan teamene presterer, samtidig som vi for lenge siden erkjente at vi alltid vil være på en endringsreise med søken etter forbedringer.
