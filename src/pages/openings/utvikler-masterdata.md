@@ -4,7 +4,7 @@ title: "Utvikler"
 description: "Bli med å utvikle Norges beste Masterdataløsning!"
 pagetype: "opening"
 applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21132&ProjectId=143698&MediaId=4655"
-closingDate: "30.09.2019"
+closingDate: "06.10.2019"
 ---
 
 Økt kundeinnsikt gjennom effektiv innsamling, berikelse og tilgjengeliggjøring av data, vil utgjøre et strategisk konkurransefortrinn innen bank og finansnæringen - i tråd med økt digitalisering i kundekanalene. Grunndata er SpareBank 1 sin Masterdataløsning og har en sentral rolle på tvers av alle kanaler og systemer. Formålet med systemet er å møte forventningene om oppdatert, konsistent og tilgjengelig informasjon i kundedialogen.
