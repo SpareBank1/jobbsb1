@@ -18,3 +18,5 @@ Dette skal du få være med å bestemme, men vi kan avsløre så mye som at det 
 Vi ser for oss at du er nysgjerrig og lærevillig, og ikke redd for å vise initiativ. Du har kommet et godt stykke på vei i utdanningsløpet ditt - 3. eller 4. året innen teknologiske fag, og jobber godt med norsk som arbeidsspråk. Teamarbeid gir deg energi, og du trives i skjæringspunktet mellom forretning og teknologi. Du er klar for en spennende sommerjobb i Oslo og kanskje nysgjerrig på hvordan det kan være å jobbe i FinTech etter fullført utdanning.
 
 Vil du vite mer om prosjektet? Ta kontakt med Marthe på [982 94 874](tel:+4798294874) for en prat om du vil. E-post fungerer like bra - [marthe.slaatsveen@sparebank1.no](marthe.slaatsveen@sparebank1.no). I tillegg svarer Lars gjerne på spørsmål – [484 91 978](tel:+4748491978) | [lars.kirkhus@sparebank1.no](mailto:lars.kirkhus@sparebank1.no).
+
+Bli en del av det triveligste utviklingsmiljøet, med de flinkeste folka! Send oss noen ord om deg selv, litt om din motivasjon og en CV. Karakterutskrift/vitnemål legges også ved.
