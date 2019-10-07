@@ -42,4 +42,4 @@ Våre produkteiere er forretningssidens ressurs inn i utviklingsteamene. Det er 
 * Kaffebar, treningsrom, diverse idrettslag og sosiale aktiviteter
 
 #### Har vi vekket en interesse hos deg?
-Ta gjerne kontakt med Erland - [905 91 744](tel:+4790591744) | [erland.rustebakke@sparebank1.no](mailto:erland.rustebakke@sparebank1.no) - eller Kristine - [91584848](tel:+4791584848) | [kristine.ursfjord@sparebank1.no](mailto:kristine.ursfjord@sparebank1.no) - i SpareBank 1 Utvikling for en uformell prat.
+Ta gjerne kontakt med Erland - [905 91 744](tel:+4790591744) | [erland.rustebakke@sparebank1.no](mailto:erland.rustebakke@sparebank1.no) - eller Kristine - [915 84 848](tel:+4791584848) | [kristine.ursfjord@sparebank1.no](mailto:kristine.ursfjord@sparebank1.no) - i SpareBank 1 Utvikling for en uformell prat.
