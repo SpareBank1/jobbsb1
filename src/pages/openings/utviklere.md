@@ -5,7 +5,7 @@ description: "Jobbe i et av Norges triveligste og største inhouse utviklingsmil
 pagetype: "opening"
 date: "2019-05-01"
 applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21119&ProjectId=143627&MediaId=4636"
-closingDate: "07.10.2019"
+closingDate: "03.11.2019"
 ---
 
 
