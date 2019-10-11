@@ -9,13 +9,13 @@
 const path = require("path");
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+    const { createPage } = actions
 
-  const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
-  const openingTemplate = path.resolve(`src/templates/openingTemplate.js`);
-  const genericTemplate = path.resolve(`src/templates/genericTemplate.js`);
+    const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
+    const openingTemplate = path.resolve(`src/templates/openingTemplate.js`);
+    const genericTemplate = path.resolve(`src/templates/genericTemplate.js`);
 
-  return graphql(`
+    return graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
@@ -32,30 +32,30 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors)
-    }
+        if (result.errors) {
+            return Promise.reject(result.errors)
+        }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      if (node.frontmatter.pagetype === 'opening') {
-        createPage({
-          path: node.frontmatter.path,
-          component: openingTemplate,
-          context: {}, // additional data can be passed via context
+        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+            if (node.frontmatter.pagetype === 'opening') {
+                createPage({
+                    path: node.frontmatter.path,
+                    component: openingTemplate,
+                    context: {}, // additional data can be passed via context
+                })
+            } else if (node.frontmatter.pagetype === 'page') {
+                createPage({
+                    path: node.frontmatter.path,
+                    component: pageTemplate,
+                    context: {}, // additional data can be passed via context
+                })
+            } else {
+                createPage({
+                    path: node.frontmatter.path,
+                    component: genericTemplate,
+                    context: {}, // additional data can be passed via context
+                })
+            }
         })
-      } else if (node.frontmatter.pagetype === 'page') {
-        createPage({
-          path: node.frontmatter.path,
-          component: pageTemplate,
-          context: {}, // additional data can be passed via context
-        })
-      } else  {
-        createPage({
-          path: node.frontmatter.path,
-          component: genericTemplate,
-          context: {}, // additional data can be passed via context
-        })
-      }
     })
-  })
 }

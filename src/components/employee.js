@@ -32,11 +32,11 @@ export default () => (
           <small>
             Stilling: {post.node.frontmatter.rolle}
           </small>
-          <br />    
+          <br />
           <Link to={post.node.frontmatter.path} className="ffe-link-text">Les om {post.node.frontmatter.title}  </Link>
-          <hr/>
+          <hr />
         </div>
-        
+
       ))
     )}
   />

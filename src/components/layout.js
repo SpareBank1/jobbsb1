@@ -4,9 +4,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.less'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
+const Layout = ({ children }) => ( <
+    StaticQuery query = { graphql `
       query SiteTitleQuery {
         site {
           siteMetadata {
@@ -14,19 +13,21 @@ const Layout = ({ children }) => (
           }
         }
       }
-    `}
-    render={data => (
-      <>
-        <div className="sb1-layout">
-          {children}
-        </div>
-      </>
-    )}
-  />
+    ` }
+    render = {
+        data => ( <
+            >
+            <
+            div className = "sb1-layout" > { children } <
+            /div> <
+            />
+        )
+    }
+    />
 )
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
 }
 
 export default Layout

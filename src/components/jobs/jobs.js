@@ -4,8 +4,7 @@ import Mjobs from "./mjobs";
 
 export default () => (
 
-    <StaticQuery
-      query={graphql`
+  <StaticQuery query={graphql`
         query hrQuery{
           allHRmanagerJob(
             limit: 20,
@@ -23,25 +22,36 @@ export default () => (
                 AdvertisementUrl
                 LastUpdated
                 Created
+                Advertisements {
+                  Content
+                }
               }
             }
           }
         }
-      `}
+    ` }
 
-      render={data => {
-        return (<Mjobs numHRopenings={0} hrData={[]}/>)
+    render={
+      data => {
+        // return (<Mjobs numHRopenings={0} hrData={[]}/>)
         //Midlertidig utkommentert, HRmanager filtrering må lages
-        // if(data.allHRmanagerJob.edges[0].node.Name==="dummy"){
-        //   return (<Mjobs numHRopenings={0}  hrData={[]}/>)
-        // }else{
-        //   const numOpenings = data.allHRmanagerJob.totalCount > 20 ? 20 : data.allHRmanagerJob.totalCount;
-        //   return (
-        //     <Mjobs numHRopenings={numOpenings} hrData={data.allHRmanagerJob.edges}/>
-        //   )
-        // }
-      } 
+        if (data.allHRmanagerJob.edges[0].node.Name === "dummy") {
+          return (< Mjobs numHRopenings={0}
+            hrData={
+              []
+            }
+          />)
+        }
+        else {
+          const numOpenings = data.allHRmanagerJob.totalCount > 20 ? 20 : data.allHRmanagerJob.totalCount;
+          return (<
+            Mjobs numHRopenings={numOpenings}
+            hrData={data.allHRmanagerJob.edges}
+          />
+          )
+        }
+      }
     }
-    />
-  
+  />
+
 )
