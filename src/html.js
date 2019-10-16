@@ -24,6 +24,8 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+
+          <script src="https://embed.small.chat/TPF8U87D3GPH4JKCGP.js" async></script>
         </body>
       </html>
     )
