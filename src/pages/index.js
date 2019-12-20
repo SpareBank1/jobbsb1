@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { Grid, GridRow, GridCol, InlineGrid } from '@sb1/ffe-grid-react'
+import { TabButton, TabButtonGroup } from '@sb1/ffe-tabs-react';
 import Layout from '../components/layout'
 import Header from '../components/header'
 import SEO from '../components/seo'
@@ -14,11 +15,27 @@ const IndexPage = (props) => (
     <Header/>
     <SEO title="Vi søker nye medarbeidere" keywords={[`sparebank 1`, `utvikling`, `react`, `frontend`, `backend`, `design`, `UX`, `IxD`]} />
 
+    <svg class="blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(300,300)">
+            <path d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z" fill="#005aa4" />
+        </g>
+    </svg>
+
     <div className="sb1-hero">
         <div className="sb1-hero__inner">
+            <div className="sb1-hero__title"> 
+                <h1>SpareBank 1 Utvikling</h1>
+            </div>
             <div className="sb1-hero__preamble">
-                <h1 className="ffe-h2">Et spennende sted å jobbe</h1>
-                <p className="ffe-body-text">Vi er de 14 SpareBank 1-bankenes felles utviklingsselskap. Vår oppgave er å skape de aller beste løsningene og brukeropplevelsene i bransjen – fordi hverdagsøkonomien er viktig for folk. Vi lykkes ved å la kompetanse, læring og frihet definere oss, og fordi vi jobber kompromissløst data- og kundedrevet.</p>
+                <p>Vi er de 14 SpareBank 1-bankenes felles utviklingsselskap. Vår oppgave er å skape de aller beste løsningene og brukeropplevelsene i bransjen – fordi hverdagsøkonomien er viktig for folk. Vi lykkes ved å la kompetanse, læring og frihet definere oss, og fordi vi jobber kompromissløst data- og kundedrevet.</p>
+                <TabButtonGroup>
+                    <TabButton>Ansatte</TabButton>
+                    <TabButton>Jobber</TabButton>
+                    <TabButton>Faglig</TabButton>
+                </TabButtonGroup>
+            </div>
+            <div className="sb1-hero__imagewrap">
+                
             </div>
         </div>
     </div>
