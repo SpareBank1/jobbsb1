@@ -7,11 +7,12 @@ date: "2019-12-20"
 applicationFormUrl: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=143853&DepartmentId=21119&MediaId=4654&SkipAdvertisement=False"
 closingDate: "01.03.2020"
 ---
+
 Er du lidenskapelig opptatt av budsjett og prosess? Brenner du for bedriftsøkonomi og regnskap? Da er nok ikke akkurat denne jobbannonsen noe for deg. Det vi derimot ser etter er noen som har solide kunnskaper innen grunnleggende frontend-teknologier og god helheltlig forståelse for hvordan det som foregår på klientsiden henger sammen. Noen som er opptatt og engasjert i det som foregår i frontend-sfæren, for det er jo et økosystem i stadig endring.
 
 Vi jobber i et lite, fritt, fleksibelt og dyktig team i en stor organisasjon. Dette teamet kommer du til å bli en del av. Vi skal forbedre designsystemet, delte kodemoduler, forenkle mobilutvikling samt jobbe med frotendarkitektur for å nevne noe. Hovedoppgaven din blir å bistå med dette arbeidet. Du får være med på å påvirke valg av teknologi, arbeidsverktøy og ikke minst hvordan teamet skal jobbe for å oppnå målene som er satt.
 
-**Her er noen stikkord vi håper kan fange din interesse:**
+#### Her er noen stikkord vi håper kan fange din interesse:
 * Delbare komponenter
 * Designsystem
 * Webstandarder
@@ -19,7 +20,6 @@ Vi jobber i et lite, fritt, fleksibelt og dyktig team i en stor organisasjon. De
 * Åpen kildekode
 * Brukeropplevelse
 * Responsivt design
-
 
 Med et av Norges største inhouse utviklingsmiljøer har SpareBank 1 en unik mulighet til å tilby oppgaver og ansvar etter hva du ønsker selv. Noe av det første vi kommer til å snakke om når vi møtes, er hva du kan og hva du ønsker å bidra med - og dette trenger ikke nødvendigvis å være akkurat det samme.
 
@@ -37,4 +37,4 @@ Som alle andre dekker vi mobiltelefon og internett, har noen firmahytter tilgjen
 Velger du oss, håper vi du gjør det fordi du ønsker å være en del av vårt utviklingsmiljø, og fordi du liker vår kultur og måten vi jobber oss fremover på. Hvordan vi er opptatt av å lære av våre feil og hvordan vi aktivt jobber for å bli bedre. Våre banker har en ekstrem lokal forankring - de lever og dør med sine lokalsamfunn, og de følger sine kunder gjennom alle deres livsfaser. Dette smitter over på vår kultur om å ta vare på og støtte hverandre.
 
 #### Interessert i stillingen?
-Ta en prat med Erlang, C og JS utvikler [Gunnar Kriik](mailto:gunnar.kriik@sparebank1.no) på telefon [99 561 302](tel:+4799561302), eller CSS guru [Anders Johnsen](mailto:anders.johnsen@sparebank1.no) på telefon [48 2123 73](tel:+48212373). 
+Ta en prat med Erlang, C og JS-utvikler [Gunnar Kriik](mailto:gunnar.kriik@sparebank1.no) på telefon [995 61 302](tel:+4799561302), eller CSS-entusiast [Anders Johnsen](mailto:anders.johnsen@sparebank1.no) på telefon [482 12 373](tel:+48212373). 
