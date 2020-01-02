@@ -33,7 +33,7 @@ exports.sourceNodes = (
 
   // Join apiOptions with the HRmanager API URL
   // ?incads=1&plainads=1 returns Advertisements {Content}
-  const apiUrl = `https://recruiter-api.hr-manager.net/jobportal.svc/${configOptions.customerAlias}/positionlist/json/`
+  const apiUrl = `https://recruiter-api.hr-manager.net/jobportal.svc/${configOptions.customerAlias}/positionlist/json/?mediaid=4636&take=20&incads=yes`
 
   // Gatsby expects sourceNodes to return a promise
   return (
@@ -60,7 +60,12 @@ exports.sourceNodes = (
             "Name": "dummy",
             "ShortDescription": "",
             "AdvertisementUrl": "",
-            "Created":"/Date(1549611757000+0100)/"
+            "Created":"/Date(1549611757000+0100)/",
+            "ProjectLeader": "",
+            "Department":{
+              "Id":0
+            }
+
           })
           // Use Gatsby's createNode helper to create a node from the node data
           createNode(emptyNodeData)

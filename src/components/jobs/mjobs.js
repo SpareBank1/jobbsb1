@@ -32,11 +32,11 @@ export default ({ numHRopenings, hrData }) => (
       <div className="sb1-joblist__list">
 
         { hrData.map(post => (
-          <Job id={post.node.id} path={post.node.AdvertisementUrl} title={post.node.Name} desc={post.node.ShortDescription} target="_blank"/>
+          <Job id={post.node.id} path={post.node.AdvertisementUrl} title={post.node.Name} desc={post.node.ShortDescription} content={post.node.Advertisements[0].Content} target="_blank"/>
         ))}
 
         { data.allMarkdownRemark.edges.map(post => (
-          <Job id={post.node.id} path={post.node.frontmatter.path} title={post.node.frontmatter.title} desc={post.node.frontmatter.description} target="_top"/>
+          <Job id={post.node.id} path={post.node.frontmatter.path} title={post.node.frontmatter.title} desc={post.node.frontmatter.description} content={''} target="_top"/>
         ))}
 
       </div>

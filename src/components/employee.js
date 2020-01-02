@@ -31,20 +31,23 @@ export default () => (
       }
     `}
     render={data => (
-      data.allMarkdownRemark.edges.map((post, index) => (
-        <>
-        {index===4 && <div className="sb1-employees__cards__vacant">Deg?</div>}
-        <div key={post.node.id} className={`sb1-employees__cards-item ${index===1 || index===3 || index===5? 'sb1-employees__cards-item--horizontal':''}`}>
-          <div className={`sb1-employees__cards-item__image ${post.node.frontmatter.imgClass}`}></div>
-          <div className="sb1-employees__cards-item__info">
-            <h3 className="ffe-h5">{post.node.frontmatter.title}</h3>
-            <small>
-              {post.node.frontmatter.rolle}
-            </small>
+      data.allMarkdownRemark.edges
+        .map((post, index) => (
+          <>
+          {index===4 && <div className="sb1-employees__cards__vacant">Deg?</div>}
+          <div key={post.node.id} id={index} className={`sb1-employees__cards-item ${index===1 || index===3 || index===5? 'sb1-employees__cards-item--horizontal':''}`}>
+            <div className={`sb1-employees__cards-item__image ${post.node.frontmatter.imgClass}`}></div>
+            <div className="sb1-employees__cards-item__info">
+              <h3 className="ffe-h5">{post.node.frontmatter.title}</h3>
+              <small>
+                {post.node.frontmatter.rolle}
+              </small>
+            </div>
           </div>
-        </div>
-        </>
-      ))
+          </>
+        )
+        
+      )
     )}
   />
 )

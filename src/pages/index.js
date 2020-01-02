@@ -35,13 +35,11 @@ const IndexPage = (props) => (
                     <TabButton>Faglig</TabButton>
                 </TabButtonGroup>
             </div>
-            <div className="sb1-hero__imagewrap">
-                
-            </div>
+            <div className="sb1-hero__imagewrap"></div>
         </div>
     </div>
 
-    <Grid className="sb1-employees" topPadding={false}>
+    <Grid id="ansatte" className="sb1-employees" topPadding={false}>
         <GridRow>
             <GridCol sm={{ cols: 12 }} className="sb1-employees__cards">
                
@@ -51,7 +49,7 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    <Grid topPadding={false}>
+    <Grid id="jobber" topPadding={false}>
         <GridRow topPadding={ true } background="grey-warm">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
                 <Jobs />
@@ -59,7 +57,7 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    <Grid>
+    <Grid id="faglig">
         <GridRow topPadding={ true }>
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
                 <InlineGrid>
@@ -98,7 +96,6 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    
 
     <Grid>
         <GridRow reverse={true}>
@@ -106,18 +103,6 @@ const IndexPage = (props) => (
                 <div className="sb1-vids__preamble">
                     <h3 className="ffe-h3">Et godt sted å være</h3>
                     <p className="ffe-body-text">For å kunne yte på jobb, må vi trives på jobb. Våre medarbeidere får derfor stor tillit og mye ansvar, men også den støtten, veiledningen og opplæringen de trenger for å mestre og like jobben sin. Dessuten passer vi på å le sammen. Mye. Det blir nemlig veldig gode løsninger av god stemning.</p>
-                </div>
-            </GridCol>
-        </GridRow>
-        <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5, offset: 1 }} center={true}>
-                <div className="sb1-video">
-                    <iframe width="100%" height="315" title="Utvikler i SpareBank 1" src="https://www.youtube.com/embed/Zs3quTUlzj8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
-            </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 5 }} center={true}>
-                <div className="sb1-video">
-                    <iframe width="100%" height="315" title="Teamleder i SpareBank 1" src="https://www.youtube.com/embed/afoKcCZuRes" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </GridCol>
         </GridRow>
