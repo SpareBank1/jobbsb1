@@ -8,6 +8,7 @@ import SEO from '../components/seo'
 import Instagram from '../components/instagram';
 import RssMedium from '../components/rssMedium';
 import Jobs from '../components/jobs/jobs'
+import Employee from '../components/employee'
 // import Img from "gatsby-image"
 
 const IndexPage = (props) => (
@@ -40,16 +41,20 @@ const IndexPage = (props) => (
         </div>
     </div>
 
-    <Grid className="sb1-employees">
+    <Grid className="sb1-employees" topPadding={false}>
         <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
-                <InlineGrid>
-                    <GridRow>
-                        <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
-                           ansatte
-                        </GridCol>
-                    </GridRow>
-                </InlineGrid>
+            <GridCol sm={{ cols: 12 }} className="sb1-employees__cards">
+               
+                <Employee />
+               
+            </GridCol>
+        </GridRow>
+    </Grid>
+
+    <Grid topPadding={false}>
+        <GridRow topPadding={ true } background="grey-warm">
+            <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
+                <Jobs />
             </GridCol>
         </GridRow>
     </Grid>
@@ -93,13 +98,7 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    <Grid>
-        <GridRow topPadding={ true } background="blue-pale">
-            <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
-                <Jobs />
-            </GridCol>
-        </GridRow>
-    </Grid>
+    
 
     <Grid>
         <GridRow reverse={true}>

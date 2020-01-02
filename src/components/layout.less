@@ -6,6 +6,7 @@
 @import '~@sb1/ffe-tabs/less/tabs';
 
 @import 'header';
+@import 'employees';
 
 body {
   font-family: 'MuseoSans-500', arial, sans-serif;
@@ -613,21 +614,3 @@ img {
   }
 }
 
-.sb1-employees{
-  background-color: #F6F6F3;
-  &:before {
-    bottom: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 100%;
-
-    background: inherit;
-    content: '';
-    display: block;
-    height: 210px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; // for Chrome Windows
-  }
-}

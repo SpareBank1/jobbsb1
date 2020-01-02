@@ -1,0 +1,112 @@
+.sb1-employees{
+    margin-top: 40px;
+    background-color: @ffe-grey-warm;
+    &:before {
+      transform: skewY(1.5deg);
+      transform-origin: 100%;
+      background: inherit;
+      content: '';
+      display: block;
+      height: 210px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; // for Chrome Windows
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-item{
+            width: 194px;
+            height: 388px;
+            margin: 5px;
+            background-color: @ffe-white;
+            position: relative;
+            &__image{
+                width: 100%;
+                height: 176px;
+                background-size: cover; 
+                background-position: center;
+                position: relative;
+            }
+            &__info {
+                position: relative;
+                z-index: 1;
+                padding: 70px 20px 20px;
+                &:before {
+                    transform: skewY(3.5deg);
+                    transform-origin: 100%;
+                    background-color: @ffe-white;
+                    content: '';
+                    display: block;
+                    height: 20px;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: -1;
+                    -webkit-backface-visibility: hidden; // for Chrome Windows
+                }
+            }
+            &--horizontal{
+                height: 174px;
+                width: 388px;
+                display: flex;
+                align-self: flex-end;
+                .sb1-employees__cards-item{
+                    &__image{
+                        height: 100%;
+                        width: 176px;
+                    }
+                    &__info {
+                        position: relative;
+                        z-index: 1;
+                        padding: 40px 20px 20px;
+                        &:before {
+                            transform: skewx(-3.5deg);
+                            transform-origin: 100%;
+                            background-color: @ffe-white;
+                            content: '';
+                            display: block;
+                            height: 174px;
+                            left: -6px;
+                            position: absolute;
+                            z-index: -1;
+                            -webkit-backface-visibility: hidden; // for Chrome Windows
+                        }
+                    }
+                }
+            }   
+        }
+
+        &__vacant{
+            //align-self: flex-end;
+            margin: 5px;
+            height: 174px;
+            width: 388px;
+            color: @ffe-white;
+            background-color: @ffe-blue-cobalt;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .siri{
+            background-image: url('../images/sb1dev-siri.jpg');
+        }
+        .heidi{
+            background-image: url('../images/sb1dev-heidi.jpg');
+        }
+        .stian{
+            background-image: url('../images/sb1dev-stian.jpg');
+        }
+        .kristoffer{
+            background-image: url('../images/sb1dev-kristoffer.jpg');
+        }
+    }
+}
+  
