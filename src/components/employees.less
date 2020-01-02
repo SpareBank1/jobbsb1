@@ -36,7 +36,11 @@
             &__info {
                 position: relative;
                 z-index: 1;
-                padding: 70px 20px 20px;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 50%;
                 &:before {
                     transform: skewY(3.5deg);
                     transform-origin: 100%;
@@ -60,12 +64,12 @@
                 .sb1-employees__cards-item{
                     &__image{
                         height: 100%;
-                        width: 176px;
+                        width: 194px;
                     }
                     &__info {
+                        height: 100%;
                         position: relative;
                         z-index: 1;
-                        padding: 40px 20px 20px;
                         &:before {
                             transform: skewx(-3.5deg);
                             transform-origin: 100%;
@@ -73,6 +77,7 @@
                             content: '';
                             display: block;
                             height: 174px;
+                            width: 20px;
                             left: -6px;
                             position: absolute;
                             z-index: -1;
