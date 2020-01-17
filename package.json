@@ -50,7 +50,7 @@
     "dev": "rm -rf .cache/* && gatsby develop"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/jest-dom": "^5.0.0",
     "@testing-library/react": "^9.3.2",
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.1.11",
