@@ -1,20 +1,20 @@
 ---
 path: "/utviklere"
 title: "Utviklere"
-description: "Jobbe i et av Norges triveligste og største inhouse utviklingsmiljøer?"
+description: "Jobbe som utvikler i et av Norges største inhouse utviklingsmiljøer innen finans?"
 pagetype: "opening"
 date: "2019-05-01"
 applicationFormUrl: "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=1889&departmentId=21116&ProjectId=143627&MediaId=4626"
-closingDate: "05.01.2020"
+closingDate: "29.03.2020"
 ---
 
 
 ### Hva vil du jobbe med?
-Med et av Norges største inhouse utviklingsmiljøer har SpareBank 1 en unik mulighet til å tilby oppgaver og ansvar etter hva du ønsker selv. Noe av det første vi kommer til å snakke om når vi møtes, er hva du kan og hva du ønsker å bidra med - og dette trenger ikke nødvendigvis å være akkurat det samme. Hos oss vil du bli en del av et kryssfunksjonelt team, bestående av både ansatte og konsulenter. Vi har totalt 19 team, som alle har høy grad av selvstendighet og stor takhøyde. Du får være med på å påvirke valg av teknologi, arbeidsverktøy og ikke minst hvordan teamet skal jobbe for å oppnå målene som er satt.
+Med et av Norges største inhouse utviklingsmiljøer har SpareBank 1 en unik mulighet til å tilby oppgaver og ansvar etter hva du ønsker selv. Noe av det første vi kommer til å snakke om når vi møtes, er hva du kan og hva du ønsker å bidra med - og dette trenger ikke nødvendigvis å være akkurat det samme. Hos oss vil du bli en del av et kryssfunksjonelt team, bestående av både ansatte og konsulenter. Vi har totalt 23 team, som alle har høy grad av selvstendighet og stor takhøyde. Du får være med på å påvirke valg av teknologi, arbeidsverktøy og ikke minst hvordan teamet skal jobbe for å oppnå målene som er satt.
 
 For å tilrettelegge for god faglig utvikling har vi vi mange fagfora, og vi har nylig innført én fagdag i uka for alle utviklere - der du selv får bestemme hva du skal bruke tiden din på. Vi ser etter deg som er tydelig på hva du kan og ikke kan. Du er tydelig på hva du ønsker og liker å bruke tiden din på. Du er opptatt av å skape gode kundeopplevelser, vant til å tenke "mobile and API first", og ikke minst setter du brukeren foran alt annet.
 
-Nysgjerrig på utviklingsmiljøet vårt? Ikke nøl med å kontakte Brit på [988 60 034](tel:+4798860034) eller [brit.kaaresen@sparebank1.no](mailto:brit.kaaresen@sparebank1.no)) for en uformell prat. Skulle vi finne tonen, finner vi et tidspunkt for å bli bedre kjent.
+Nysgjerrig på utviklingsmiljøet vårt? Ikke nøl med å kontakte Margrethe på [932 12 039](tel:+4793212039) eller [margrethe.johannessen@sparebank1.no](mailto:margrethe.johannessen@sparebank1.no) for en uformell prat. Skulle vi finne tonen, finner vi et tidspunkt for å bli bedre kjent.
 
 #### Arbeidsoppgaver
 For å forstå mer om hvordan det er å jobbe sammen med oss, burde du egentlig titte innom Hammersborggata 9 for en kaffekopp. Men det går an å få et innblikk i vår hverdag før vi kommer så langt også. Liker du å jobbe med frontend kan du sjekke ut vårt open source designsystem og lese mer om hvordan vi bygger og bruker det i våre applikasjoner. Er backend mer din greie, kan du sjekke ut noen av våre presentasjoner på JavaZone. Vi har også skrevet litt om hvordan vi jobber på bloggen vår. Anser du deg seg selv som en fullstack-utvikler vil du få muligheten til å bevege deg i alle lag av koden, som i dag består av blant annet Java, Kotlin, JavaScript og React. Du vil også utføre code reviews, følge opp pull requests og jobbe aktivt med forbedringer av arkitektur og kodebase - i tett samarbeid med andre utviklere, designere, arkitekter, testere og produkteiere.
@@ -33,6 +33,3 @@ Som alle andre dekker vi mobiltelefon og internett, har noen firmahytter tilgjen
 Velger du oss, håper vi du gjør det fordi du ønsker å være en del av vårt utviklingsmiljø, og fordi du liker vår kultur og måten vi jobber oss fremover på. Hvordan vi er opptatt av å lære av våre feil og hvordan vi aktivt jobber for å bli bedre. Våre banker har en ekstrem lokal forankring - de lever og dør med sine lokalsamfunn, og de følger sine kunder gjennom alle deres livsfaser. Dette smitter over på vår kultur om å ta vare på og støtte hverandre.
 
 Velger du oss får du muligheten til å påvirke hva du bruker tiden din på, og hvilket team du vil bidra i. Finner du ikke riktig team hos oss, trenger du ikke ta jobben. Men det er verdt å sjekke ut. Vi lover!
-
-#### Interessert i stillingen?
-Ta kontakt med Teamleder [Margrethe Sæther Johannessen](mailto:margrethe.johannessen@sparebank1.no) på telefon [932 12 039](tel:+4793212039). 
