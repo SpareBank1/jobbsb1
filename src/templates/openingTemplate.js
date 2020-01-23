@@ -70,8 +70,6 @@ export const pageQuery = graphql`
         path
         title
         description
-        applicationFormUrl
-        closingDate
       }
     }
   }
