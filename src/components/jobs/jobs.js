@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Mjobs from "./mjobs";
+import Job from './job'
 
 export default () => (
 
@@ -12,22 +12,24 @@ export default () => (
             sort:{
               fields:Created,
               order:DESC
-            },
-            filter: {Department: {Id: {eq: 21119}}}
+            }
+            filter: {
+              Department: {
+                Name: {regex: "/Digitalbankutvikling ansatte/"}
+              }
+            }
           ) {
             totalCount
             edges {
               node {
                 Id
                 Name
-                ShortDescription
-                AdvertisementUrl
-                LastUpdated
-                Created
-                Advertisements {
-                  Content
+                Department {
+                  Id
+                  Name
                 }
-                StartDate
+                AdvertisementUrl
+                Created
               }
             }
           }
@@ -35,14 +37,20 @@ export default () => (
       `}
 
       render={data => {
-       // return (<Mjobs numHRopenings={0} hrData={[]}/>)
-       // Midlertidig utkommentert, HRmanager filtrering må lages
-        if(data.allHRmanagerJob.edges[0].node.Name==="dummy"){
-          return (<Mjobs numHRopenings={0}  hrData={[]}/>)
-        }else{
-          const numOpenings = data.allHRmanagerJob.totalCount > 20 ? 20 : data.allHRmanagerJob.totalCount;
+        if (data.allHRmanagerJob.edges.length){
+          const hrData = (data.allHRmanagerJob.edges[0].node.Name==="dummy") ? [] : data.allHRmanagerJob.edges;
+
           return (
-            <Mjobs numHRopenings={numOpenings} hrData={data.allHRmanagerJob.edges}/>
+            <div className="sb1-joblist">
+              <h3 className="ffe-h3">Ledige stillinger - vil du være med på laget?</h3>
+              <div className="sb1-joblist__list">
+
+                { hrData.map(post => (
+                  <Job id={post.node.id} path={post.node.AdvertisementUrl} title={post.node.Name} desc={post.node.ShortDescription} target="_blank"/>
+                ))}
+
+              </div>
+            </div>
           )
         }
       } 
