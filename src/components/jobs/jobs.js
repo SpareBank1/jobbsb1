@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Mjobs from './mjobs'
+import Job from './job'
 
 export default () => (
 
@@ -37,10 +37,22 @@ export default () => (
       `}
 
       render={data => {
-        const hrData = (data.allHRmanagerJob.edges[0].node.Name==="dummy") ? [] : data.allHRmanagerJob.edges;
-        return (
-          <Mjobs hrData={hrData}/>
-        )
+        if (data.allHRmanagerJob.edges.length){
+          const hrData = (data.allHRmanagerJob.edges[0].node.Name==="dummy") ? [] : data.allHRmanagerJob.edges;
+
+          return (
+            <div className="sb1-joblist">
+              <h3 className="ffe-h3">Ledige stillinger - vil du være med på laget?</h3>
+              <div className="sb1-joblist__list">
+
+                { hrData.map(post => (
+                  <Job id={post.node.id} path={post.node.AdvertisementUrl} title={post.node.Name} desc={post.node.ShortDescription} target="_blank"/>
+                ))}
+
+              </div>
+            </div>
+          )
+        }
       } 
     }
     />
