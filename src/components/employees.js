@@ -17,7 +17,6 @@ export default () => (
               frontmatter{
                 path
                 title
-                date
                 rolle
               }
             }
@@ -27,14 +26,10 @@ export default () => (
     `}
     render={data => (
       data.allMarkdownRemark.edges.map(post => (
-        <div key={post.node.id}>
-          <h3 className="ffe-h3">{post.node.frontmatter.title}</h3>
-          <small>
-            Stilling: {post.node.frontmatter.rolle}
-          </small>
-          <br />    
-          <Link to={post.node.frontmatter.path} className="ffe-link-text">Les om {post.node.frontmatter.title}  </Link>
-          <hr/>
+        <div key={post.node.id} className="sb1-employee">
+          <h2 className="ffe-h5 sb1-employee__heading">{post.node.frontmatter.title}</h2>
+          <em className="sb1-employee__jobtitle">{post.node.frontmatter.rolle}</em>
+          <Link to={post.node.frontmatter.path} className="ffe-link-text">Les om {post.node.frontmatter.title}</Link>
         </div>
         
       ))

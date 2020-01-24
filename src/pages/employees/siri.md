@@ -1,7 +1,8 @@
 ---
-path: "/ux1"
+path: "/siri"
+pagetype: "employee"
 date: "2019-02-08"
-title: "Bruker Opplevelse"
+title: "Siri"
 rolle: "UX"
 ---
 
