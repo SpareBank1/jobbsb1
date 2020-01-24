@@ -12,6 +12,7 @@
     "@sb1/ffe-core": "^15.3.0",
     "@sb1/ffe-grid": "^11.0.0",
     "@sb1/ffe-grid-react": "^10.1.1",
+    "@sb1/ffe-icons-react": "^7.0.3",
     "@sb1/ffe-webfonts": "^2.1.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.18.7",
