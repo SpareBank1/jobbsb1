@@ -1,6 +1,7 @@
 ---
 path: "/siri"
 date: "2019-01-24"
+pagetype: "employee"
 title: "Siri Corneliussen"
 rolle: "Interaksjonsdesigner"
 image: "./img/siri.jpg"

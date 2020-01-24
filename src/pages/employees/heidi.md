@@ -1,9 +1,11 @@
 ---
 path: "/heidi"
-date: "2019-02-08"
 title: "Heidi Lyngvær Stolen"
+pagetype: "employee"
+image: "./img/sb1dev-heidi.jpg"
+description: "Kreativ problemløser"
+date: "2019-02-08"
 rolle: "Grafisk designer"
-image: "../image/sb1dev-heidi.jpg"
 imgClass: "heidi"
 ---
 

@@ -2,7 +2,7 @@
     margin-top: 40px;
     background-color: @ffe-grey-warm;
     &:before {
-      transform: skewY(1.5deg);
+      transform: skewY(5.5deg);
       transform-origin: 100%;
       background: inherit;
       content: '';
@@ -32,6 +32,8 @@
                 background-size: cover; 
                 background-position: center;
                 position: relative;
+                border-radius: 0 0 86% 50%;
+                overflow: hidden;
             }
             &__info {
                 position: relative;
@@ -41,20 +43,6 @@
                 flex-direction: column;
                 justify-content: center;
                 height: 50%;
-                &:before {
-                    transform: skewY(3.5deg);
-                    transform-origin: 100%;
-                    background-color: @ffe-white;
-                    content: '';
-                    display: block;
-                    height: 20px;
-                    left: 0;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    z-index: -1;
-                    -webkit-backface-visibility: hidden; // for Chrome Windows
-                }
             }
             &--horizontal{
                 height: 174px;
@@ -100,18 +88,7 @@
             align-items: center;
         }
 
-        .siri{
-            background-image: url('../images/sb1dev-siri.jpg');
-        }
-        .heidi{
-            background-image: url('../images/sb1dev-heidi.jpg');
-        }
-        .stian{
-            background-image: url('../images/sb1dev-stian.jpg');
-        }
-        .kristoffer{
-            background-image: url('../images/sb1dev-kristoffer.jpg');
-        }
+
     }
 }
 

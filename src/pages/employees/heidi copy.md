@@ -1,5 +1,5 @@
 ---
-path: "/heidi"
+path: "/heidi2"
 date: "2019-02-08"
 title: "Heidi Lyngvær Stolen"
 rolle: "Grafisk designer"

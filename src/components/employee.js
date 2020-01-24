@@ -16,6 +16,7 @@ export default () => (
               frontmatter {
                 title
                 rolle
+                path
                 imgClass
                 image {
                   childImageSharp {
@@ -34,16 +35,18 @@ export default () => (
       data.allMarkdownRemark.edges
         .map((post, index) => (
           <>
-          {index===4 && <div className="sb1-employees__cards__vacant">Deg?</div>}
-          <div key={post.node.id} id={index} className={`sb1-employees__cards-item ${index===1 || index===3 || index===5? 'sb1-employees__cards-item--horizontal':''}`}>
-            <div className={`sb1-employees__cards-item__image ${post.node.frontmatter.imgClass}`}></div>
+          {index===4 && <article className="sb1-employees__cards__vacant">Deg?</article>}
+          <article key={post.node.id} id={index} className={`sb1-employees__cards-item ${index===1 || index===3 || index===5? 'sb1-employees__cards-item--horizontal':''}`}>
+            <div className={`sb1-employees__cards-item__image`}>
+            {post.node.frontmatter.image && <img src={post.node.frontmatter.image.childImageSharp.fixed.src} alt={post.node.frontmatter.title} />}
+            </div>
             <div className="sb1-employees__cards-item__info">
-              <h3 className="ffe-h5">{post.node.frontmatter.title}</h3>
+              <h3 className="ffe-h5"><a href={post.node.frontmatter.path}>{post.node.frontmatter.title}</a></h3>
               <small>
                 {post.node.frontmatter.rolle}
               </small>
             </div>
-          </div>
+          </article>
           </>
         )
         

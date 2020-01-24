@@ -12,7 +12,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
-  const openingTemplate = path.resolve(`src/templates/openingTemplate.js`);
+  const employeeTemplate = path.resolve(`src/templates/employeeTemplate.js`);
   const genericTemplate = path.resolve(`src/templates/genericTemplate.js`);
 
   return graphql(`
@@ -47,6 +47,12 @@ exports.createPages = ({ actions, graphql }) => {
         createPage({
           path: node.frontmatter.path,
           component: pageTemplate,
+          context: {}, // additional data can be passed via context
+        })
+      } else if (node.frontmatter.pagetype === 'employee') {
+        createPage({
+          path: node.frontmatter.path,
+          component: employeeTemplate,
           context: {}, // additional data can be passed via context
         })
       } else  {
