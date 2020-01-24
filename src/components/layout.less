@@ -16,78 +16,37 @@ img {
   max-width: 100%;
 }
 
-.sb1-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  background-color: @ffe-blue-cobalt;
-  padding: 20px;
-
-  @media screen and (min-width: @breakpoint-md) {
-    padding: 30px 20px;
-  }
-
-  &--opening {
-    background: transparent;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-  }
-
-  &__link {
-    &--home {
-      flex-basis: 70%;
-      color: @ffe-white;
-      font-family: 'MuseoSansRounded-700', arial, sans-serif;
-      font-weight: normal;
-      font-size: 18px;
-      text-decoration: none;
-      text-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
-
-      @media screen and (min-width: @breakpoint-md) {
-        flex-basis: 50%;
-        font-size: 32px;
-      }
-    }
-  }
-
-  &__logo {
-    height: 30px;
-    max-width: 40px;
-    vertical-align: middle;
-    transition: transform @ffe-transition-duration @ffe-ease;
-
-    @media screen and (min-width: @breakpoint-md) {
-      height: 40px;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  &__github-logo {
-    height: 30px;
-    max-width: 40px;
-    vertical-align: middle;
-    transition: transform @ffe-transition-duration @ffe-ease;
-
-    @media screen and (min-width: @breakpoint-md) {
-      height: 40px;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-
 .sb1-hero {
   background-image: url('../images/sb1-hero.jpg');
+  background-color: @ffe-grey-warm;
   background-position: center;
   background-size: cover;
-  margin-bottom: 48px;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: 
+        url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0.0424357C562.413 -0.730717 877.689 9.02771 1440 32.0424V100H0V0.0424357Z' fill='%23F6F6F3'/></svg>");
+    background-size: 102%;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    z-index: 2;
+  }
 
   @media screen and (min-width: @breakpoint-md) {
     height: 650px;
@@ -107,71 +66,39 @@ img {
     margin: 0 auto;
     position: relative;
     padding: 24px;
+    z-index: 3;
   }
 
   &__preamble {
-    background: @ffe-blue-pale;
+    background: rgba(255,255,255,.9);
     padding: 32px;
 
     @media screen and (min-width: @breakpoint-md) {
       position: absolute;
-      bottom: -40px;
+      bottom: 0;
       width: 45%;
       margin-left: calc(8.33333333% + 20px);
     }
   }
+
+  &__nav {
+    text-align: center;
+    margin-top: @ffe-spacing-lg;
+  }
+
+  &__nav-button {
+    border-radius: 24px;
+  }
+
+  &__heading {
+    text-align: center;
+    margin: @ffe-spacing-sm 0 @ffe-spacing-md;
+  }
 }
 
 .sb1-frontpage-link {
-  text-align: center;
   text-decoration: none;
-
-  @media screen and (max-width: @breakpoint-lg) {
-    padding-bottom: 24px;
-  }
-
-  &__circle {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 24px auto;
-    border-radius: 50%;
-    background-color: #ccc;
-    background-image: url('../images/background.png');
-    background-size: 200px 200px;
-    transition: transform @ffe-transition-duration @ffe-ease;
-
-    &--fagdag {
-      background-image: url('../images/fagdag.jpg');
-    }
-
-    &--fagforum {
-      background-image: url('../images/fagforum.png');
-    }
-
-    &--hackathon {
-      background-image: url('../images/hackathon.jpg');
-    }
-
-    &--designsystem {
-      background-image: url('../images/designsystem.jpg');
-    }
-
-    &--kontakt-kristoffer {
-      background-image: url('../images/sb1dev-kristoffer.jpg');
-    }
-
-    &--kontakt-stian {
-      background-image: url('../images/sb1dev-stian.jpg');
-    }
-
-    &--kontakt-siri {
-      background-image: url('../images/sb1dev-siri.jpg');
-    }
-
-    &--kontakt-heidi {
-      background-image: url('../images/sb1dev-heidi.jpg');
-    }
-  }
+  margin-top: @ffe-spacing-xs;
 
   .ffe-h3 {
     transition: color @ffe-transition-duration @ffe-ease;
@@ -195,7 +122,7 @@ img {
 
 .sb1-vids {
   &__preamble {
-    background: @ffe-blue-azure;
+    background: @ffe-blue-pale;
     padding: 32px;
 
     @media screen and (min-width: @breakpoint-lg) {
@@ -203,11 +130,6 @@ img {
       width: 45%;
       margin-right: 8.33333333%;
       margin-top: -72px;
-    }
-
-    .ffe-body-text,
-    .ffe-h3 {
-      color: @ffe-white;
     }
   }
 }
@@ -341,6 +263,53 @@ img {
   }
 }
 
+.sb1-employees {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr [col-start]);
+}
+
+.sb1-employee {
+  text-decoration: none;
+  background-color: @ffe-white;
+  box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.1);
+  margin: @ffe-spacing-sm;
+  padding: 200px @ffe-spacing-sm @ffe-spacing-sm;
+
+  &__contact {
+    list-style: none;
+    padding: 0;
+    margin: @ffe-spacing-sm 0 0;
+
+    li {
+      display: inline;
+    }
+  }
+
+  &__contact-link {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    margin-right: @ffe-spacing-md;
+    background-color: @ffe-blue-azure;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color @ffe-transition-duration @ffe-ease;
+
+    &:hover {
+      background-color: @ffe-blue-royal;
+    }
+  }
+
+  &__contact-link-text {
+    display: inline-block;
+    direction: ltr;
+    text-indent: -999em;
+  }
+}
+
 .sb1-instafeed {
   display: grid;
   grid-template-columns: repeat(2, 1fr [col-start]);
@@ -417,36 +386,48 @@ img {
 }
 
 .sb1-joblist {
-  @media screen and (min-width: @breakpoint-md) {
-    padding: 48px 0;
-  }
+  margin-bottom: @ffe-spacing-xl;
 
   &__list {
-    display: grid;
-    grid-gap: 16px;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-
-    @media screen and (min-width: @breakpoint-md) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 
   &__item {
     text-align: left;
-
-    &--content{
-      text-align: left;
-      height: 100%;
-      margin:0;
-      p{
-        overflow: visible;
-        white-space: normal;
-      }
-    }
   }
 
   &__link {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    color: @ffe-black;
+    text-decoration: none;
+    background: @ffe-grey-warm;
+    padding: @ffe-spacing-sm @ffe-spacing-3xl @ffe-spacing-sm @ffe-spacing-md;
+    margin-bottom: @ffe-spacing-sm;
+    transition: all @ffe-transition-duration @ffe-ease;
+
+    &:hover {
+      color: @ffe-blue-azure;
+    }
+  }
+
+  &__link-icon {   
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 24px;
+    fill: @ffe-blue-azure;
+    transform: rotate(-90deg);
+    transition: all @ffe-transition-duration @ffe-ease;
+    
+    .sb1-joblist__link:hover & {
+      right: 16px;
+    }
   }
 }
 
