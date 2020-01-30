@@ -1,4 +1,5 @@
 .sb1-markdown-employee{
+    margin-bottom: 40px;
     &__layout{
         flex-direction: column-reverse; 
         @media screen and (min-width: @breakpoint-md) {
@@ -6,11 +7,65 @@
         }
     }
     &__image{
-       //width: 250px;
+       max-width: 350px;
+       width: 100%;
    }
-   .content{
-       font-family: 'MuseoSans-300', arial, sans-serif;
-       font-size: 24px;
-       line-height: 36px;
+   .info{
+       &-header{
+           padding-top: 100px;
+           display: flex;
+           justify-content: space-between;
+
+           h1{
+               margin-bottom: 0;
+           }
+           p{
+               margin-top: 0;
+           }
+           &__contact{
+            display: flex;
+            .btn-wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 20px;
+            }
+           }
+
+       }
+       &-content{
+        font-family: 'MuseoSans-300', arial, sans-serif;
+        font-size: 24px;
+        line-height: 36px;
+       }
    }
+
+   &__more{
+       background-color: @ffe-grey-warm;
+       padding-top: 50px;
+       //border-top-left-radius: 40% 10%;
+        border-top-right-radius: 65% 10%;
+       
+        @media screen and (min-width: @breakpoint-md) {
+            //border-top-left-radius: 45% 15%;
+            border-top-right-radius: 60% 25%;
+        }
+        @media screen and (min-width: @breakpoint-lg) {
+            //border-top-left-radius: 45% 15%;
+            border-top-right-radius: 60% 35%;
+        }
+   }
+}
+
+.btn-circle{
+    border: none;
+    border-radius: 50%;
+    background-color: @ffe-blue-azure;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    color: @ffe-white;
+    svg{
+        fill: @ffe-white;
+    }
 }
