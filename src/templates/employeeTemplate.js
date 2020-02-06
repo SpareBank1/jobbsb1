@@ -7,6 +7,7 @@ import { Grid, GridRow, GridCol } from '@sb1/ffe-grid-react'
 import Blob from '../components/blob/blob'
 import {KonvoluttIkon, SnakkebobleIkon} from '@sb1/ffe-icons-react'
 
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -63,7 +64,6 @@ export default function Template({
 
 export const pageQuery = graphql`
   query($path: String!) {
-
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

@@ -238,6 +238,20 @@ img {
   }
 }
 
+.sb1-employees {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr [col-start]);
+}
+
+.sb1-employee {
+  text-decoration: none;
+  background: @ffe-white;
+  box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.1);
+  margin: @ffe-spacing-sm;
+  padding: 0 @ffe-spacing-sm @ffe-spacing-sm;
+}
+
 .sb1-instafeed {
   display: grid;
   grid-template-columns: repeat(2, 1fr [col-start]);
