@@ -14,6 +14,7 @@ exports.createPages = ({ actions, graphql }) => {
   const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
   const openingTemplate = path.resolve(`src/templates/openingTemplate.js`);
   const genericTemplate = path.resolve(`src/templates/genericTemplate.js`);
+  const fagdagTemplate = path.resolve(`src/templates/fagdagTemplate.js`);
 
   return graphql(`
     {
@@ -47,6 +48,12 @@ exports.createPages = ({ actions, graphql }) => {
         createPage({
           path: node.frontmatter.path,
           component: pageTemplate,
+          context: {}, // additional data can be passed via context
+        })
+      } else if (node.frontmatter.pagetype === 'fagdag') {
+        createPage({
+          path: node.frontmatter.path,
+          component: fagdagTemplate,
           context: {}, // additional data can be passed via context
         })
       } else  {

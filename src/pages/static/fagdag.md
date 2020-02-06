@@ -1,7 +1,8 @@
 ---
 path: "/fagdag"
 title: "Fagdag"
-pagetype: "page"
+subtitle: "KAFFE, WIENERPØLSE OG ØL - hold så din keft vi prøver å kode"
+pagetype: "fagdag"
 image: "./img/fagdag.jpg"
 description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"
 ---
