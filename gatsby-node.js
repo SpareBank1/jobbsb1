@@ -50,12 +50,6 @@ exports.createPages = ({ actions, graphql }) => {
           component: pageTemplate,
           context: {}, // additional data can be passed via context
         })
-      } else if (node.frontmatter.pagetype === 'fagdag') {
-        createPage({
-          path: node.frontmatter.path,
-          component: fagdagTemplate,
-          context: {}, // additional data can be passed via context
-        })
       } else  {
         createPage({
           path: node.frontmatter.path,
