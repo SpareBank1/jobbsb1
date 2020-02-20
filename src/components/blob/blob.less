@@ -1,0 +1,107 @@
+.blob{
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    position: absolute;
+    z-index: -1;
+    left: 18%;
+    top: 40%;
+    @media screen and (min-width: @breakpoint-md) {
+        top: 30%;
+    }
+}
+
+.background{
+    &-sand{
+        background-color: @ffe-sand;
+    }
+    &-blue-pale{
+        background-color: @ffe-blue-pale;
+    }
+    &-blue-ice{
+        background-color: @ffe-blue-ice;
+    }
+}
+
+.blob1{
+    animation-name: shape1;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
+@keyframes shape1 {
+    50% {
+        left: 20%;
+        top: 25%;
+        border-top-left-radius: 50% 60%;
+        border-top-right-radius: 50% 60%;
+        border-bottom-left-radius: 50% 40%;
+        border-bottom-right-radius: 50% 40%;
+        width: 200px;
+    }
+    100% {
+        border-radius: 50%;
+        width: 350px;
+    }
+}
+
+.blob2{
+    left: 24%;
+    top: 34%;
+    @media screen and (min-width: @breakpoint-md) {
+        top: 24%;
+    }
+    border-top-left-radius: 40% 50%;
+    border-top-right-radius: 40% 50%;
+    border-bottom-left-radius: 30% 50%;
+    border-bottom-right-radius: 30% 50%;
+
+    animation-name: shape2;
+    animation-duration: 6s;
+    animation-iteration-count: 3;
+}
+@keyframes shape2 {
+    50% {
+        border-radius: 50%;
+        height: 200px;
+    }
+    100%{
+        border-top-left-radius: 40% 50%;
+        border-top-right-radius: 40% 50%;
+        border-bottom-left-radius: 30% 50%;
+        border-bottom-right-radius: 30% 50%;
+        height: 350px;
+    }
+}
+
+.blob3{
+    left: 27%;
+    top: 37%;
+    @media screen and (min-width: @breakpoint-md) {
+        top: 27%;
+    }
+    border-top-left-radius: 40% 50%;
+    border-top-right-radius: 31% 38%;
+    border-bottom-left-radius: 16% 32%;
+    border-bottom-right-radius: 67% 70%;
+
+    animation-name: shape3;
+    animation-duration: 8s;
+    animation-iteration-count: 3;
+}
+@keyframes shape3 {
+    50% {
+        border-radius: 50%;
+        height: 200px;
+        top: 35%;
+    }
+    100%{
+        border-top-left-radius: 40% 50%;
+        border-top-right-radius: 31% 38%;
+        border-bottom-left-radius: 16% 32%;
+        border-bottom-right-radius: 67% 70%;
+        height: 350px;
+    }
+}
