@@ -1,10 +1,10 @@
 ---
 path: "/fagdag"
 title: "Fagdag"
-subtitle: "KAFFE, WIENERPØLSE OG ØL - hold så din keft vi prøver å kode"
+subtitle: "Hørt om fagdagen?"
 pagetype: "fagdag"
 image: "./img/fagdag.jpg"
-description: "Kreativ problemløser? Lyst til å jobbe i team på tvers av fagdisipliner? Med mulighet til å fordype deg faglig?"
+description: "For våre utviklere og designere er én dag i uken dedikert til faglig utvikling. Det som startet som et eksperiment i 2018, er nå en fast aktivitet. Her kan du lese litt mer om hva vi driver med på ukens beste dag!"
 ---
 
 ## “Torsdag er den nye lørdagen!”
