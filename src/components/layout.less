@@ -23,14 +23,31 @@ img {
   background-color: @ffe-grey-warm;
   background-position: center;
   background-size: cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
 
   &::after {
     content: '';
     display: block;
-    background: @ffe-grey-warm;
+    background-image: 
+        url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0.0424357C562.413 -0.730717 877.689 9.02771 1440 32.0424V100H0V0.0424357Z' fill='%23F6F6F3'/></svg>");
+    background-size: 102%;
     height: 100px;
-    margin-top: -100px;
-    border-radius: 0 100% 0 0;;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    z-index: 2;
   }
 
   @media screen and (min-width: @breakpoint-md) {
@@ -51,10 +68,11 @@ img {
     margin: 0 auto;
     position: relative;
     padding: 24px;
+    z-index: 3;
   }
 
   &__preamble {
-    background: rgba(255,255,255,.85);
+    background: rgba(255,255,255,.9);
     padding: 32px;
 
     @media screen and (min-width: @breakpoint-md) {
@@ -63,6 +81,15 @@ img {
       width: 45%;
       margin-left: calc(8.33333333% + 20px);
     }
+  }
+
+  &__nav {
+    text-align: center;
+    margin-top: @ffe-spacing-lg;
+  }
+
+  &__nav-button {
+    border-radius: 24px;
   }
 
   &__heading {
@@ -246,10 +273,43 @@ img {
 
 .sb1-employee {
   text-decoration: none;
-  background: @ffe-white;
+  background-color: @ffe-white;
   box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.1);
   margin: @ffe-spacing-sm;
-  padding: 0 @ffe-spacing-sm @ffe-spacing-sm;
+  padding: 200px @ffe-spacing-sm @ffe-spacing-sm;
+
+  &__contact {
+    list-style: none;
+    padding: 0;
+    margin: @ffe-spacing-sm 0 0;
+
+    li {
+      display: inline;
+    }
+  }
+
+  &__contact-link {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    margin-right: @ffe-spacing-md;
+    background-color: @ffe-blue-azure;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color @ffe-transition-duration @ffe-ease;
+
+    &:hover {
+      background-color: @ffe-blue-royal;
+    }
+  }
+
+  &__contact-link-text {
+    display: inline-block;
+    direction: ltr;
+    text-indent: -999em;
+  }
 }
 
 .sb1-instafeed {

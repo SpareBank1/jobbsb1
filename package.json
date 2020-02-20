@@ -45,8 +45,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "jest",
-    "test-update": "jest --updateSnapshot",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "rm -rf .cache/* && gatsby build && gh-pages -d public",
     "dev": "rm -rf .cache/* && gatsby develop"
   },
@@ -57,7 +56,6 @@
     "babel-preset-gatsby": "^0.1.11",
     "gh-pages": "^2.1.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
     "less": "^3.10.3",
     "prettier": "^1.19.1"
   },

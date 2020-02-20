@@ -8,6 +8,7 @@ import Instagram from '../components/instagram';
 import RssMedium from '../components/rssMedium';
 import Jobs from '../components/jobs/jobs'
 import Employees from '../components/employees'
+import { SecondaryButton, ButtonGroup } from '@sb1/ffe-buttons-react';
 // import Img from "gatsby-image"
 
 const IndexPage = (props) => (
@@ -34,6 +35,19 @@ const IndexPage = (props) => (
                     <h1 className="ffe-h3">SpareBank 1 Utvikling</h1>
                 </div>
                 <p className="ffe-body-text">Vi er de 14 SpareBank 1-bankenes felles utviklingsselskap. Vår oppgave er å skape de aller beste løsningene og brukeropplevelsene i bransjen – fordi hverdagsøkonomien er viktig for folk. Vi lykkes ved å la kompetanse, læring og frihet definere oss, og fordi vi jobber kompromissløst data- og kundedrevet.</p>
+                <nav className="sb1-hero__nav">
+                    <ButtonGroup thin={true}>
+                        <SecondaryButton element="a" href="#ansatte" className="sb1-hero__nav-button">
+                            Ansatte
+                        </SecondaryButton>
+                        <SecondaryButton element="a" href="#jobber" className="sb1-hero__nav-button">
+                            Jobber
+                        </SecondaryButton>
+                        <SecondaryButton element="a" href="#faglig" className="sb1-hero__nav-button">
+                            Faglig
+                        </SecondaryButton>
+                    </ButtonGroup>
+                </nav>
             </div>
         </div>
     </div>
