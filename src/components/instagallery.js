@@ -3,8 +3,8 @@ import Timestamp from 'react-timestamp'
 
 export default ({posts}) => (
     <div className="sb1-somefeed" data-testid="instafeed">
-        <h3 className="ffe-h3">
-            <a href="https://instagram.com/sparebank1design" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1design</a> og <a href="https://instagram.com/sparebank1utvikler" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1utvikler</a> på Instagram
+        <h3 className="ffe-h4">
+            SpareBank 1 Utvikling på Instagram - <a href="https://instagram.com/sparebank1design" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1design</a> / <a href="https://instagram.com/sparebank1utvikler" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1utvikler</a>
         </h3>
 
         <div className='sb1-instafeed sb1-somefeed'>

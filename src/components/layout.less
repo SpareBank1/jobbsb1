@@ -37,19 +37,6 @@ img {
     z-index: 1;
   }
 
-  &::after {
-    content: '';
-    display: block;
-    background-image: 
-        url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0.0424357C562.413 -0.730717 877.689 9.02771 1440 32.0424V100H0V0.0424357Z' fill='%23F6F6F3'/></svg>");
-    background-size: 102%;
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    bottom: -20px;
-    z-index: 2;
-  }
-
   @media screen and (min-width: @breakpoint-md) {
     height: 650px;
   }
@@ -73,7 +60,7 @@ img {
 
   &__preamble {
     background: rgba(255,255,255,.9);
-    padding: 32px;
+    padding: @ffe-spacing-xl;
 
     @media screen and (min-width: @breakpoint-md) {
       position: absolute;
@@ -95,6 +82,33 @@ img {
   &__heading {
     text-align: center;
     margin: @ffe-spacing-sm 0 @ffe-spacing-md;
+  }
+}
+
+.sb1-curved {
+  position: relative;
+  padding-bottom: 30px;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: 
+        url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0.0424357C562.413 -0.730717 877.689 9.02771 1440 32.0424V100H0V0.0424357Z' fill='%23F6F6F3'/></svg>");
+    background-size: 102%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    z-index: 2;
+  }
+
+  &--blue-pale {
+    &::after {
+      background-image: 
+        url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0.0424357C562.413 -0.730717 877.689 9.02771 1440 32.0424V100H0V0.0424357Z' fill='%23DFF1F9'/></svg>");
+    }
   }
 }
 
@@ -125,22 +139,17 @@ img {
 .sb1-vids {
   &__preamble {
     background: @ffe-blue-pale;
-    padding: 32px;
+    padding: @ffe-spacing-xl;
 
     @media screen and (min-width: @breakpoint-lg) {
       align-self: flex-end;
       width: 45%;
       margin-right: 8.33333333%;
-      margin-top: -72px;
     }
   }
 }
 
 .sb1-somefeed {
-  .ffe-h3 {
-    text-align: center;
-  }
-
   &__controls {
     display: flex;
     justify-content: space-between;
@@ -268,20 +277,77 @@ img {
 .sb1-employees {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 1fr [col-start]);
+  margin-bottom: @ffe-spacing-xl;
+  grid-template-columns: repeat(5, 1fr [col-start]);
 }
 
 .sb1-employee {
   text-decoration: none;
   background-color: @ffe-white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
   box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.1);
   margin: @ffe-spacing-sm;
-  padding: 200px @ffe-spacing-sm @ffe-spacing-sm;
+  padding: 180px @ffe-spacing-sm @ffe-spacing-sm;
+  min-height: 315px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url("../images/sb1dev-heidi.jpg");
+    background-size: 102%;
+    background-repeat: no-repeat;
+    height: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 0 91%);
+    transition: background @ffe-transition-duration @ffe-ease;
+  }
+
+  &:nth-child(3),
+  &:nth-child(5),
+  &:nth-child(7),
+  &:nth-child(8) {
+    padding: @ffe-spacing-sm @ffe-spacing-sm @ffe-spacing-sm 200px;
+    grid-column: span 2;
+    min-height: auto;
+    height: 50%;
+    background-size: 50%;
+
+    &::before {
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 50%;
+      clip-path: polygon(0 0%, 98% 0, 92% 100%, 0 100%);
+    }
+  }
+
+  &:nth-child(3),
+  &:nth-child(7) {
+    align-self: end;
+  }
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__jobtitle {
+    color: @ffe-black;
+    font-style: normal;
+  }
 
   &__contact {
     list-style: none;
     padding: 0;
-    margin: @ffe-spacing-sm 0 0;
+    margin: auto 0 0 0;
 
     li {
       display: inline;
@@ -309,6 +375,114 @@ img {
     display: inline-block;
     direction: ltr;
     text-indent: -999em;
+  }
+
+  &--Christian {
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Christian.gif");
+      }
+    }
+  }
+
+  &--Fiona {
+    &::before {
+      background-image: url("../images/Ansatt_Fiona.jpg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Fiona.gif");
+      }
+    }
+  }
+
+  &--Gunnar {
+    &::before {
+      background-image: url("../images/Ansatt_Gunnar.jpg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Gunnar.gif");
+      }
+    }
+  }
+
+  &--Hogne {
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Hogne.gif");
+      }
+    }
+  }
+
+  &--Jonas {
+    &::before {
+      background-image: url("../images/Ansatt_Jonas.jpg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Jonas.gif");
+      }
+    }
+  }
+
+  &--Marthe {
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Marthe.gif");
+      }
+    }
+  }
+
+  &--Ole {
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Ole.gif");
+      }
+    }
+  }
+
+  &--Roar {
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Roar.gif");
+      }
+    }
+  }
+
+  &--Siri {
+    &::before {
+      background-image: url("../images/Ansatt_Siri.jpg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Siri.gif");
+      }
+    }
+  }
+
+  &--Somaiah {
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Somaiah.gif");
+      }
+    }
+  }
+
+  &--Stian {
+    &::before {
+      background-image: url("../images/Ansatt_Stian.jpg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../images/Ansatt_Stian.gif");
+      }
+    }
   }
 }
 

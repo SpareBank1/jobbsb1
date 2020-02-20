@@ -16,7 +16,7 @@ const IndexPage = (props) => (
     <Header/>
     <SEO title="Vi søker nye medarbeidere" keywords={[`sparebank 1`, `utvikling`, `react`, `frontend`, `backend`, `design`, `UX`, `IxD`]} />
 
-    <div className="sb1-hero">
+    <div className="sb1-hero sb1-curved sb1-curved--grey-warm">
         <div className="sb1-hero__inner">
             <div className="sb1-hero__preamble">
                 <div className="sb1-hero__heading">
@@ -53,7 +53,7 @@ const IndexPage = (props) => (
     </div>
 
 
-    <Grid topPadding={ false }>
+    <Grid topPadding={ false } id="ansatte">
         <GridRow topPadding={ true } background="grey-warm">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
                 <div className="sb1-employees">
@@ -63,7 +63,7 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    <Grid>
+    <Grid id="jobber">
         <GridRow topPadding={ true }>
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
                 <Jobs />
@@ -71,7 +71,7 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    <Grid>
+    <Grid id="faglig">
         <GridRow reverse={true}>
             <GridCol sm={{ cols: 12 }}>
                 <div className="sb1-vids__preamble">
@@ -110,8 +110,8 @@ const IndexPage = (props) => (
         </GridRow>
     </Grid>
 
-    <Grid>
-        <GridRow topPadding={ true } background="grey-warm">
+    <Grid className="sb1-curved sb1-curved--blue-pale">
+        <GridRow topPadding={ true }>
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
                 <RssMedium />
             </GridCol>
@@ -119,55 +119,11 @@ const IndexPage = (props) => (
     </Grid>
 
     <Grid topPadding={ false }>
-        <GridRow topPadding={ true } background="grey-warm">
+        <GridRow topPadding={ true } background="blue-pale">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
                 <Instagram />
-                </GridCol>
+            </GridCol>
         </GridRow>
-    </Grid>
-
-    <Grid topPadding={ false }>
-      <GridRow topPadding={ true }>
-          <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
-              <InlineGrid>
-                <GridRow>
-                  <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}  center={true}>
-                    <h3 className="ffe-h3">Nysgjerrig på miljøet vårt? Ikke nøl med å kontakte oss!</h3>
-                  </GridCol>
-                </GridRow>
-                  <GridRow>
-                      <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
-                          <a className="sb1-frontpage-link" href="mailto:kristoffer.berg@sparebank1.no">
-                              <div className="sb1-frontpage-link__circle sb1-frontpage-link__circle--kontakt-kristoffer"></div>
-                              <h4 className="ffe-h5">Kristoffer Berg</h4>
-                              <p className="ffe-small-text">Utviklingsleder</p>
-                          </a>
-                      </GridCol>
-                      <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
-                          <a className="sb1-frontpage-link" href="mailto:stian.conradsen@sparebank1.no">
-                              <div className="sb1-frontpage-link__circle sb1-frontpage-link__circle--kontakt-stian"></div>
-                              <h4 className="ffe-h5">Stian Conradsen</h4>
-                              <p className="ffe-small-text">Utvikler</p>
-                          </a>
-                      </GridCol>
-                      <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
-                          <a className="sb1-frontpage-link" href="mailto:siri.corneliussen@sparebank1.no">
-                              <div className="sb1-frontpage-link__circle sb1-frontpage-link__circle--kontakt-siri"></div>
-                              <h4 className="ffe-h5">Siri Corneliussen</h4>
-                              <p className="ffe-small-text">Fagleder, interaksjonsdesign</p>
-                          </a>
-                      </GridCol>
-                      <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 3 }}>
-                          <a className="sb1-frontpage-link" href="mailto:heidi.stolen@sparebank1.no">
-                              <div className="sb1-frontpage-link__circle sb1-frontpage-link__circle--kontakt-heidi"></div>
-                              <h4 className="ffe-h5">Heidi Lyngvær Stolen</h4>
-                              <p className="ffe-small-text">Fagleder, grafisk design</p>
-                          </a>
-                      </GridCol>
-                  </GridRow>
-              </InlineGrid>
-          </GridCol>
-      </GridRow>
     </Grid>
   </Layout>
 )
