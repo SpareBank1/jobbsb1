@@ -1,0 +1,126 @@
+
+.sb1-fagdag-page{
+    font-size: 24px;
+    font-family: 'MuseoSans-300', arial, sans-serif;
+    &__header{
+        background-color: @ffe-blue-ice;
+    } 
+    .bigtext{
+        margin-top: 40px;
+    }
+
+    .typeSelector{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        color: @ffe-blue-azure;
+        border-color: @ffe-blue-azure;
+        font-size: 24px;
+        line-height: 24px;
+        background-color: transparent;
+    }
+
+    .defaultText1,
+    .defaultText2,
+    .defaultText3,
+    .defaultText4{
+        background-color: @ffe-grey-silver;
+        margin-bottom: 5px;
+    }
+    .defaultText2{
+        margin-bottom: 25px;
+        width: 80%;
+    }
+    .defaultText4{
+        width: 90%;
+    }
+
+    .ani1{
+        animation-name: colorChange1;
+        animation-duration: 2s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+    }
+    @keyframes colorChange1 {
+        to {
+            color: @ffe-purple;
+            font-weight: bold;
+        }
+    }
+
+    .ani2{
+        animation-name: colorChange2;
+        animation-duration: 2s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 5.5s;
+        animation-iteration-count: 1;
+    }
+    @keyframes colorChange2 {
+        to {
+            color: @ffe-green;
+            font-weight: bold;
+        }
+    }
+
+    .ani3{
+        animation-name: colorChange3;
+        animation-duration: 2s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 7s;
+        animation-iteration-count: 1;
+    }
+    @keyframes colorChange3 {
+        to {
+            color: @ffe-orange-fire;
+            font-weight: bold;
+        }
+    }
+
+    .ani4{
+        animation-name: colorChange4;
+        animation-duration: 2s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 8.5s;
+        animation-iteration-count: 1;
+    }
+    @keyframes colorChange4 {
+        to {
+            color: @ffe-blue-azure;
+            font-weight: bold;
+        }
+    }
+
+
+    .typewriter{
+        max-width: 730px;
+
+        p {
+            font-family: monospace;
+            font-size: 22px;
+            overflow: hidden;
+            border-right: .15em solid @ffe-blue-royal;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: 
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
+        }
+    }
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: @ffe-blue-royal }
+    }
+
+
+    
+
+}
