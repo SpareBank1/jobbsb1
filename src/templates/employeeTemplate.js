@@ -6,6 +6,7 @@ import SEO from '../components/seo'
 import { Grid, GridRow, GridCol } from '@sb1/ffe-grid-react'
 import Blob from '../components/blob/blob'
 import {KonvoluttIkon, SnakkebobleIkon} from '@sb1/ffe-icons-react'
+import Employees from '../components/employees'
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -16,12 +17,13 @@ export default function Template({
     <Layout>
       <Header/>
         <SEO title={frontmatter.title} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />      
-        <Grid className="sb1-markdown-employee">
+        <Grid className="sb1-markdown-employee sb1-curved">
           <GridRow className="sb1-markdown-employee__layout">
             <GridCol sm={{ cols: 12 }} md={{ cols: 6, offset:1  }} lg={{ cols: 6, offset:1 }}>
               <div className="info-header">
                 <div className="info-header__info">
-                  <h1 className="ffe-h2">{frontmatter.title}</h1>
+                  <h1 className="ffe-h2">{frontmatter.firstname} {frontmatter.lastname}</h1>
+                  <p className="ffe-smalltext">{frontmatter.fullrole}</p>
                 </div>
                 <div className="info-header__contact">
                   <div className="btn-wrapper">
@@ -44,16 +46,17 @@ export default function Template({
           <Blob color={'sand'} />
         </Grid>
 
-        <div className="sb1-markdown-employee__more">
-          <Grid className="sb1-markdown-employee">
-            <GridRow className="sb1-markdown-employee__layout">
-              <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset:1 }}>
-                <h2 className="ffe-h2">Flere ansatte</h2>
-                <p>Ansatt</p><p>Ansatt</p><p>Ansatt</p><p>Ansatt</p><p>Ansatt</p><p>Ansatt</p><p>Ansatt</p><p>Ansatt</p><p>Ansatt</p><p>Ansatt</p>
-              </GridCol>
+
+        <Grid topPadding={ false } id="ansatte">
+            <GridRow topPadding={ true } background="grey-warm">
+                <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
+                    <div className="sb1-employees">
+                        <Employees />
+                    </div>
+                </GridCol>
             </GridRow>
-          </Grid>
-        </div>
+        </Grid>
+
     </Layout>
   )
 }
@@ -65,7 +68,9 @@ export const pageQuery = graphql`
       frontmatter {
         path
         date
-        title
+        firstname
+        lastname
+        fullrole
         role
         image {
           childImageSharp {
