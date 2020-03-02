@@ -361,7 +361,7 @@ img {
     display: inline-block;
     height: 36px;
     width: 36px;
-    margin-right: @ffe-spacing-md;
+    margin-right: @ffe-spacing-sm;
     background-color: @ffe-blue-azure;
     border-radius: 50%;
     border: none;
@@ -378,6 +378,19 @@ img {
     display: inline-block;
     direction: ltr;
     text-indent: -999em;
+  }
+
+  &__contact-link-icon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: @ffe-white;
+      height: 20px;
+      vertical-align: middle;
+    }
   }
 
   &--Christian {
