@@ -15,7 +15,7 @@ export default () => (
             }
             filter: {
               Department: {
-                Name: {regex: "/Digitalbankutvikling ansatte/"}
+                Name: {regex: "/Digitalbankutvikling ansatte|Informasjonssikkerhet/"}
               }
             }
           ) {
