@@ -12,7 +12,7 @@
 
 
 body {
-  font-family: 'MuseoSans-500', arial, sans-serif;
+  font-family: 'MuseoSans-300', arial, sans-serif;
   line-height: 1.5;
   background: @ffe-white;
 }
@@ -21,8 +21,49 @@ img {
   max-width: 100%;
 }
 
+.ffe-body-text {
+  font-size: 18px;
+  line-height: 1.75em;
+}
+
+.ffe-body-text,
+.ffe-lead-paragraph,
+.ffe-sub-lead-paragraph,
+.ffe-small-text, 
+.ffe-card-component--subtext {
+  font-family: 'MuseoSans-300', arial, sans-serif;
+}
+
+.ffe-h2,
+.ffe-h3,
+.ffe-h4,
+.ffe-h5 {
+  font-family: 'MuseoSans-300', arial, sans-serif;
+  color: @ffe-black;
+}
+
+.ffe-h1 {
+  line-height: 24px;
+  .ffe-fontsize-h3;
+}
+
+.ffe-card-base {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.ffe-small-text {
+  font-size: 16px;
+}
+
+.sb1-smaller-link {
+  display: inline-block;
+  margin-left: @ffe-spacing-sm;
+  font-size: .7em;
+}
+
 .sb1-hero {
-  background-image: url('../images/sb1-hero.jpg');
+  background-image: url('../images/sb1-hero2.jpg');
   background-color: @ffe-grey-warm;
   background-position: center;
   background-size: cover;
@@ -31,7 +72,7 @@ img {
   &::before {
     content: '';
     display: block;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .4);
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +82,7 @@ img {
   }
 
   @media screen and (min-width: @breakpoint-md) {
-    height: 650px;
+    height: 550px;
   }
 
   &--opening {
@@ -64,6 +105,7 @@ img {
   &__preamble {
     background: rgba(255,255,255,.9);
     padding: @ffe-spacing-xl;
+
 
     @media screen and (min-width: @breakpoint-md) {
       position: absolute;
@@ -118,12 +160,17 @@ img {
 .sb1-frontpage-link {
   text-decoration: none;
   margin-top: @ffe-spacing-xs;
+  margin-right: @ffe-spacing-sm;
+  margin-bottom: @ffe-spacing-md;
 
   .ffe-h3 {
     transition: color @ffe-transition-duration @ffe-ease;
   }
 
-  .ffe-h5 {
+  .ffe-h4 {
+    font-family: 'MuseoSans-500', arial, sans-serif;
+    color: @ffe-blue-azure;
+    text-decoration: underline;
     margin-bottom: -8px;
   }
 
@@ -133,21 +180,32 @@ img {
     }
 
     .ffe-h3,
-    .ffe-h5 {
-      color: @ffe-blue-azure;
+    .ffe-h4 {
+      color: @ffe-blue-cobalt;
     }
   }
 }
 
-.sb1-vids {
+.sb1-workplace {
+  position: relative;
+
   &__preamble {
     background: @ffe-blue-pale;
-    padding: @ffe-spacing-xl;
+    padding: @ffe-spacing-sm;
+    z-index: 2;
 
     @media screen and (min-width: @breakpoint-lg) {
       align-self: flex-end;
-      width: 45%;
-      margin-right: 8.33333333%;
+      width: 60%;
+      padding: @ffe-spacing-xl;
+    }
+  }
+
+  &__image {
+    z-index: 1;
+
+    @media screen and (min-width: @breakpoint-lg) {
+      margin-top: -100px;
     }
   }
 }
@@ -226,6 +284,7 @@ img {
 
 .sb1-mediumfeed {
   width: 100%;
+  margin-bottom: @ffe-spacing-xl;
 
   &__inner {
     position: relative;
@@ -254,6 +313,7 @@ img {
       max-height: 242px;
       overflow: hidden;
       position: relative;
+      .ffe-small-text;
 
       &::after {
         content: "";
@@ -268,20 +328,24 @@ img {
 
     .ffe-card-component--title {
       margin-bottom: 16px;
+      text-decoration: underline;
     }
 
     .ffe-card-component--subtext {
       margin: auto 0 0 0;
-      padding-top: 8px;
+      padding-top: @ffe-spacing-sm;
     }
   }
 }
 
 .sb1-employees {
-  display: grid;
-  width: 100%;
-  margin-bottom: @ffe-spacing-xl;
-  grid-template-columns: repeat(5, 1fr [col-start]);
+  @media (min-width: @breakpoint-md) {
+    display: grid;
+    width: 100%;
+    margin-bottom: @ffe-spacing-xl;
+    grid-template-columns: repeat(5, 1fr [col-start]);
+    grid-gap: @ffe-spacing-md;
+  }
 }
 
 .sb1-employee {
@@ -291,7 +355,6 @@ img {
   background-repeat: no-repeat;
   position: relative;
   box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.1);
-  margin: @ffe-spacing-sm;
   padding: 180px @ffe-spacing-sm @ffe-spacing-sm;
   min-height: 315px;
   white-space: nowrap;
@@ -300,9 +363,14 @@ img {
   flex-direction: column;
   justify-content: flex-start;
 
+  @media (max-width: (@breakpoint-md - 1)) {
+    margin: @ffe-spacing-sm;
+  }
+
   &::before {
     content: '';
     display: block;
+    background-color: #cac4c8;
     background-image: url("../images/sb1dev-heidi.jpg");
     background-size: 102%;
     background-repeat: no-repeat;
@@ -315,42 +383,70 @@ img {
     transition: background @ffe-transition-duration @ffe-ease;
   }
 
-  &:nth-child(3),
-  &:nth-child(5),
-  &:nth-child(7),
-  &:nth-child(8) {
+  @media (max-width: (@breakpoint-md - 1)) {
     padding: @ffe-spacing-sm @ffe-spacing-sm @ffe-spacing-sm 200px;
-    grid-column: span 2;
-    min-height: auto;
-    height: 50%;
-    background-size: 50%;
+      grid-column: span 2;
+      min-height: auto;
+      height: 50%;
+      background-size: 50%;
 
-    &::before {
-      background-repeat: no-repeat;
-      height: 100%;
-      width: 50%;
-      clip-path: polygon(0 0%, 98% 0, 92% 100%, 0 100%);
+      &::before {
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 50%;
+        clip-path: polygon(0 0%, 98% 0, 92% 100%, 0 100%);
+      }
+  }
+
+  @media (min-width: @breakpoint-md) {
+    &:nth-child(3),
+    &:nth-child(5),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(10),
+    &:nth-child(12) {
+      padding: @ffe-spacing-sm @ffe-spacing-sm @ffe-spacing-sm 200px;
+      grid-column: span 2;
+      // min-height: auto;
+      min-height: 153px;
+      height: 50%;
+      background-size: 50%;
+
+      &::before {
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 50%;
+        clip-path: polygon(0 0%, 98% 0, 92% 100%, 0 100%);
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(7) {
+      align-self: end;
     }
   }
 
-  &:nth-child(3),
-  &:nth-child(7) {
-    align-self: end;
-  }
-
   &__heading {
+    font-family: 'MuseoSansRounded-300', arial, sans-serif;
     margin: 0;
+    color: @ffe-black;
+    font-size: 18px;
+    font-style: normal;
   }
 
   &__jobtitle {
     color: @ffe-black;
     font-style: normal;
+    font-size: .85em;
   }
 
   &__contact {
     list-style: none;
     padding: 0;
-    margin: auto 0 0 0;
+
+    .sb1-employee & {
+      margin: auto 0 0 0;
+    }
 
     li {
       display: inline;
@@ -361,7 +457,7 @@ img {
     display: inline-block;
     height: 36px;
     width: 36px;
-    margin-right: @ffe-spacing-md;
+    margin-right: @ffe-spacing-sm;
     background-color: @ffe-blue-azure;
     border-radius: 50%;
     border: none;
@@ -380,110 +476,171 @@ img {
     text-indent: -999em;
   }
 
+  &__contact-link-icon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: @ffe-white;
+      height: 20px;
+      vertical-align: middle;
+    }
+  }
+
   &--Christian {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Christian.jpg");
+    }
+
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Christian.gif");
+        background-image: url("../images/employees/Ansatt_Christian.gif");
       }
     }
   }
 
   &--Fiona {
     &::before {
-      background-image: url("../images/Ansatt_Fiona.jpg");
+      background-image: url("../images/employees/Ansatt_Fiona.jpg");
     }
 
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Fiona.gif");
+        background-image: url("../images/employees/Ansatt_Fiona.gif");
+      }
+    }
+  }
+
+  &--Gaute {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Gaute.jpg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../images/employees/Ansatt_Gaute.gif");
       }
     }
   }
 
   &--Gunnar {
     &::before {
-      background-image: url("../images/Ansatt_Gunnar.jpg");
+      background-image: url("../images/employees/Ansatt_Gunnar.jpg");
     }
 
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Gunnar.gif");
+        background-image: url("../images/employees/Ansatt_Gunnar.gif");
+      }
+    }
+  }
+
+  &--Henrik {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Henrik.jpg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../images/employees/Ansatt_Henrik.gif");
       }
     }
   }
 
   &--Hogne {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Hogne.jpg");
+    }
+
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Hogne.gif");
+        background-image: url("../images/employees/Ansatt_Hogne.gif");
       }
     }
   }
 
   &--Jonas {
     &::before {
-      background-image: url("../images/Ansatt_Jonas.jpg");
+      background-image: url("../images/employees/Ansatt_Jonas.jpg");
     }
 
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Jonas.gif");
+        background-image: url("../images/employees/Ansatt_Jonas.gif");
       }
     }
   }
 
   &--Marthe {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Marthe.jpg");
+    }
+
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Marthe.gif");
+        background-image: url("../images/employees/Ansatt_Marthe.gif");
       }
     }
   }
 
   &--Ole {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Ole.jpg");
+    }
+
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Ole.gif");
+        background-image: url("../images/employees/Ansatt_Ole.gif");
       }
     }
   }
 
   &--Roar {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Roar.jpg");
+    }
+
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Roar.gif");
+        background-image: url("../images/employees/Ansatt_Roar.gif");
       }
     }
   }
 
   &--Siri {
     &::before {
-      background-image: url("../images/Ansatt_Siri.jpg");
+      background-image: url("../images/employees/Ansatt_Siri.jpg");
     }
 
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Siri.gif");
+        background-image: url("../images/employees/Ansatt_Siri.gif");
       }
     }
   }
 
   &--Somaiah {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Somaiah.jpg");
+    }
+
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Somaiah.gif");
+        background-image: url("../images/employees/Ansatt_Somaiah.gif");
       }
     }
   }
 
   &--Stian {
     &::before {
-      background-image: url("../images/Ansatt_Stian.jpg");
+      background-image: url("../images/employees/Ansatt_Stian.jpg");
     }
 
     &:hover {
       &::before {
-        background-image: url("../images/Ansatt_Stian.gif");
+        background-image: url("../images/employees/Ansatt_Stian.gif");
       }
     }
   }
@@ -496,6 +653,7 @@ img {
 
   @media screen and (min-width: @breakpoint-md) {
     grid-template-columns: repeat(3, 1fr [col-start]);
+    padding-bottom: @ffe-spacing-xl;
   }
 
   @media screen and (min-width: @breakpoint-lg) {
@@ -571,6 +729,7 @@ img {
     padding: 0;
     margin: 0;
     list-style: none;
+    font-size: 18px;
   }
 
   &__item {
@@ -631,8 +790,8 @@ img {
   h2,
   h3,
   h4 {
-    color: @ffe-blue-royal;
-    font-family: 'MuseoSansRounded-700', arial, sans-serif;
+    font-family: 'MuseoSans-300', arial, sans-serif;
+    color: @ffe-black;
     font-weight: normal;
     margin-bottom: 10px;
     margin-top: 0;
@@ -678,29 +837,10 @@ img {
   }
 }
 
-.sb1-markdown-page {
-  &__header{
-    background-color: @ffe-blue-cobalt;
-    padding: 64px 0 24px 0;
-
-    .ffe-h1,
-    .ffe-lead-paragraph {
-      color: @ffe-white;
-    }
-  }
-
-  &__image {
-    border-radius: 50%;
-    object-fit: contain;
-
-    @media screen and (min-width: @breakpoint-md) {
-      margin-top: -300px;
-    }
-
-    @media screen and (min-width: @breakpoint-lg) {
-      margin-top: -240px;
-      max-width: 100%;
-    }
+.sb1-page {
+  strong {
+    font-weight: normal;
+    font-family: 'MuseoSansRounded-700', arial, sans-serif;
   }
 }
 

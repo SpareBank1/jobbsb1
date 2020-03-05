@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "author": "Anders Johnsen <anders.johnsen@sparebank1.no>",
   "dependencies": {
-    "@sb1/ffe-buttons": "^9.0.0",
-    "@sb1/ffe-buttons-react": "^12.1.5",
+    "@sb1/ffe-buttons": "^9.0.9",
+    "@sb1/ffe-buttons-react": "^12.1.18",
     "@sb1/ffe-cards": "^8.0.0",
     "@sb1/ffe-cards-react": "^3.0.4",
     "@sb1/ffe-core": "^15.3.0",

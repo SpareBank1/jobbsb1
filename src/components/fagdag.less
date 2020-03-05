@@ -1,6 +1,7 @@
 
-.sb1-fagdag-page{
-    font-size: 24px;
+.sb1-page {
+    font-size: 18px;
+    line-height: 1.75em;
     font-family: 'MuseoSans-300', arial, sans-serif;
     &__header{
         background-color: @ffe-blue-ice;
@@ -58,6 +59,14 @@
         font-size: 24px;
         line-height: 24px;
         background-color: transparent;
+        margin: 0 @ffe-spacing-md;
+        padding: 0 @ffe-spacing-lg 0 @ffe-spacing-xs;
+        cursor: pointer;
+
+        &:hover {
+            color: @ffe-blue-royal;
+            border-color: @ffe-blue-royal;
+        }
     }
 
     .defaultText1,
@@ -129,34 +138,6 @@
             color: @ffe-blue-azure;
             font-weight: bold;
         }
-    }
-
-
-    .typewriter{
-        max-width: 730px;
-
-        p {
-            font-family: monospace;
-            font-size: 22px;
-            overflow: hidden;
-            border-right: .15em solid @ffe-blue-royal;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: .15em;
-            animation: 
-                typing 3.5s steps(30, end),
-                blink-caret .5s step-end infinite;
-        }
-    }
-    
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-    }
-    
-    @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: @ffe-blue-royal }
     }
 
     //GRID

@@ -13,21 +13,12 @@ export default () => (
               fields:Created,
               order:DESC
             }
-            filter: {
-              Department: {
-                Name: {regex: "/Digitalbankutvikling ansatte/"}
-              }
-            }
           ) {
             totalCount
             edges {
               node {
                 Id
                 Name
-                Department {
-                  Id
-                  Name
-                }
                 AdvertisementUrl
                 Created
               }
@@ -37,8 +28,9 @@ export default () => (
       `}
 
       render={data => {
-        if (data.allHRmanagerJob.edges.length){
+        if (data.allHRmanagerJob.edges.length > 1) {
           const hrData = (data.allHRmanagerJob.edges[0].node.Name==="dummy") ? [] : data.allHRmanagerJob.edges;
+          
 
           return (
             <div className="sb1-joblist">
@@ -53,6 +45,10 @@ export default () => (
 
               </ul>
             </div>
+          )
+        } else {
+          return(
+            <h3 className="ffe-h3">Ingen ledige stillinger for øyeblikket</h3>
           )
         }
       } 

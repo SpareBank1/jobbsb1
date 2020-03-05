@@ -37,8 +37,8 @@ const FagdagPage = () => {
         <Header/>
         <SEO title="Fagdag" keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />
 
-        <div className="sb1-fagdag-page">
-            <Grid className="sb1-fagdag-page__header">
+        <div className="sb1-page">
+            <Grid className="sb1-page__header">
                 <GridRow>
                 <GridCol sm={{ cols: 12 }}>
                     <div className="hero">
@@ -49,7 +49,7 @@ const FagdagPage = () => {
                 </GridRow>
 
                 <GridRow>
-                <GridCol sm={{ cols: 12 }} md={{ cols: 8, offset: 2 }} className="sb1-fagdag-page__teaser">
+                <GridCol sm={{ cols: 12 }} md={{ cols: 8, offset: 2 }} className="sb1-page__teaser">
                     <h2 className="ffe-h2">Hørt om fagdagen?</h2>
                     <div className="ffe-lead-paragraph">For våre utviklere og designere er én dag i uken dedikert til faglig utvikling. Det som startet som et eksperiment i 2018, er nå en fast aktivitet. Her kan du lese litt mer om hva vi driver med på ukens beste dag!</div>
                     <p className="ffe-lead-paragraph bigtext">Så hva gjør egentlig 
@@ -78,9 +78,7 @@ const FagdagPage = () => {
                     {showUtvikler && 
                     <div className="text-utvikler">
                         <h3 className="ffe-h2">Utviklerens fagdag</h3>
-                        <div className="typewriter">
-                            <p>Torsdag er den nye lørdagen, pleier vi å si.</p>
-                        </div>
+
                         <div className="container">
                             <div className="paragraph-a">
                                 <p>Til vanlig jobber vi i kryssfunksjonelle team, men én hel dag i uke samles alle utviklerne for å jobbe utelukkende med faget vårt. Torsdager hos oss handler om testing av nye teknologier, å skape helt nye løsninger eller gjøre forbedringer på felles kode. Vi deler kunnskap, lærer og feiler sammen – og ikke minst blir vi bedre kjent med hverandre. </p>

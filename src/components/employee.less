@@ -31,11 +31,62 @@
             }
            }
 
+           &__title {
+               margin-top: @ffe-spacing-xs!important;
+
+               @media (min-width: @breakpoint-md) {
+                    display: inline-block;
+                    height: 36px;
+                    line-height: 36px;
+                    background: rgba(0,113,205,.3);
+                    border-radius: 18px;
+                    padding: 0 @ffe-spacing-sm;
+                }
+           }
+
+           &::before {
+            @media (min-width: @breakpoint-md) {
+                content: "";
+                position: absolute;
+                top: 175px;
+                left: 33%;
+                display: block;
+                background: @ffe-blue-pale;
+                width: 67%;
+                height: 700px;
+                z-index: -1;
+            }
+        }
+
        }
        &-content{
         font-family: 'MuseoSans-300', arial, sans-serif;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 18px;
+        line-height: 1.75em;
+
+        p {
+            margin: 0 0 @ffe-spacing-md 0;
+
+            strong {
+                font-weight: normal;
+                font-family: 'MuseoSansRounded-700', arial, sans-serif;
+            }
+
+            > strong {
+                display: block;
+            }
+        }
+
+        &__questions {
+            background: @ffe-grey-warm;
+            padding: @ffe-spacing-md;
+
+            @media (min-width: @breakpoint-md) {
+                padding: @ffe-spacing-2xl;
+                margin-left: -45%;
+                margin-top: -36px;
+            }
+        }
        }
    }
 }

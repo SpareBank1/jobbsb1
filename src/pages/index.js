@@ -9,6 +9,7 @@ import RssMedium from '../components/rssMedium';
 import Jobs from '../components/jobs/jobs'
 import Employees from '../components/employees'
 import { SecondaryButton, ButtonGroup } from '@sb1/ffe-buttons-react';
+import miljo1 from '../images/sb1-miljo1.jpg';
 // import Img from "gatsby-image"
 
 const IndexPage = (props) => (
@@ -32,7 +33,7 @@ const IndexPage = (props) => (
                                 fill="#002776" />
                         </g>
                     </svg>
-                    <h1 className="ffe-h3">SpareBank 1 Utvikling</h1>
+                    <h1 className="ffe-h1">SpareBank 1 Utvikling</h1>
                 </div>
                 <p className="ffe-body-text">Vi er de 14 SpareBank 1-bankenes felles utviklingsselskap. Vår oppgave er å skape de aller beste løsningene og brukeropplevelsene i bransjen – fordi hverdagsøkonomien er viktig for folk. Vi lykkes ved å la kompetanse, læring og frihet definere oss, og fordi vi jobber kompromissløst data- og kundedrevet.</p>
                 <nav className="sb1-hero__nav">
@@ -73,38 +74,37 @@ const IndexPage = (props) => (
 
     <Grid id="faglig">
         <GridRow reverse={true}>
-            <GridCol sm={{ cols: 12 }}>
-                <div className="sb1-vids__preamble">
-                    <h3 className="ffe-h4">Vi jobber i en spennende bransje</h3>
-                    <p className="ffe-body-text">For å kunne yte på jobb, må vi trives på jobb. Våre medarbeidere får derfor stor tillit og mye ansvar, men også den støtten, veiledningen og opplæringen de trenger for å mestre og like jobben sin. Dessuten passer vi på å le sammen. Mye. Det blir nemlig veldig gode løsninger av god stemning.</p>
+            <GridCol sm={{ cols: 12 }} className="sb1-workplace">
+                <div className="sb1-workplace__preamble">
+                    <h3 className="ffe-h3">Vi skaper en enklere, tryggere og mer bærekraftig hverdagsøkonomi</h3>
+                    <p className="ffe-body-text">Vi utvikler og forvalter løsninger som brukes av over 1 million kunder. Det er vi skikkelig stolte av! Her kan du bli enda bedre kjent med selskapet, måten vi jobber på, løsningene vi lager, og ikke minst - ukas aller beste dag: Fagdagen.</p>
                     <InlineGrid>
-                    <GridRow>
-                        <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
-                            <Link className="sb1-frontpage-link" to="/fagdag/">
-                                <h3 className="ffe-h5">Fagdag</h3>
-                                <p className="ffe-small-text">Individuell faglig utvikling og felles kompetanseheving.</p>
-                            </Link>
-                        </GridCol>
-                        <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
-                            <Link className="sb1-frontpage-link" to="/fagforum/">
-                                <h3 className="ffe-h5">Fagforum</h3>
-                                <p className="ffe-small-text">Arena for kompetansedeling og erfaringsutveksling.</p>
-                            </Link>
-                        </GridCol>
-                        <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
-                            <Link className="sb1-frontpage-link" to="/hackathon/">
-                                <h3 className="ffe-h5">Hackathon</h3>
-                                <p className="ffe-small-text">Dedikert tid til å jobbe med ideer vi tror på og brenner for.</p>
-                            </Link>
-                        </GridCol>
-                        <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
-                            <Link className="sb1-frontpage-link" to="/designsystem/">
-                                <h3 className="ffe-h5">Designsystem</h3>
-                                <p className="ffe-small-text">Felles språk og delte ressurser for design og utvikling.</p>
-                            </Link>
-                        </GridCol>
-                    </GridRow>
-                </InlineGrid>
+                        <GridRow>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/omoss/">
+                                    <h3 className="ffe-h4">Dette er SpareBank 1 Utvikling</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/jobbehososs/">
+                                    <h3 className="ffe-h4">Sånn er det å jobbe hos oss</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/dettelagervi/">
+                                    <h3 className="ffe-h4">Dette driver vi med</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/fagdag/">
+                                    <h3 className="ffe-h4">Hørt om fagdagen?</h3>
+                                </Link>
+                            </GridCol>
+                        </GridRow>
+                    </InlineGrid>
+                </div>
+                <div className="sb1-workplace__image">
+                    <img src={miljo1} alt="Miljøbilde fra SpareBank 1" />
                 </div>
             </GridCol>
         </GridRow>
