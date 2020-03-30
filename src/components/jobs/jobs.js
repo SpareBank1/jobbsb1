@@ -13,21 +13,12 @@ export default () => (
               fields:Created,
               order:DESC
             }
-            filter: {
-              Department: {
-                Name: {regex: "/Digitalbankutvikling ansatte|Informasjonssikkerhet/"}
-              }
-            }
           ) {
             totalCount
             edges {
               node {
                 Id
                 Name
-                Department {
-                  Id
-                  Name
-                }
                 AdvertisementUrl
                 Created
               }
