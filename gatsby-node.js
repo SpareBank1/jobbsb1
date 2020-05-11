@@ -12,8 +12,8 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
-  const openingTemplate = path.resolve(`src/templates/openingTemplate.js`);
   const genericTemplate = path.resolve(`src/templates/genericTemplate.js`);
+  const employeeTemplate = path.resolve(`src/templates/employeeTemplate.js`);
 
   return graphql(`
     {
@@ -37,10 +37,10 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      if (node.frontmatter.pagetype === 'opening') {
+      if (node.frontmatter.pagetype === 'employee') {
         createPage({
           path: node.frontmatter.path,
-          component: openingTemplate,
+          component: employeeTemplate,
           context: {}, // additional data can be passed via context
         })
       } else if (node.frontmatter.pagetype === 'page') {

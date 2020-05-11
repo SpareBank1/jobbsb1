@@ -14,7 +14,7 @@ export default function Template({
         <div className="container">
         <div className="post">
             <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.rolle}</h2>
+            <h2>{frontmatter.role}</h2>
             <div
             className="content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -33,7 +33,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
-        rolle
+        role
       }
     }
   }

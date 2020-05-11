@@ -42,8 +42,8 @@ function prev(e) {
 
 export default ({posts}) => (
     <div className='sb1-mediumfeed sb1-somefeed'>
-        <h3 className="ffe-h3">
-            <a href="https://medium.com/sparebank1-digital" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1-digital</a> på Medium
+        <h3 className="ffe-h4">
+            SpareBank 1 Utvikling på Medium <span className="sb1-smaller-link"><a href="https://medium.com/sparebank1-digital" className="ffe-link-text ffe-link-text--no-underline" target="_blank" rel="noopener noreferrer">@sparebank1-digital</a></span>
         </h3>
 
         <div className="sb1-somefeed__track">
@@ -70,7 +70,7 @@ export default ({posts}) => (
                                             <React.Fragment>
                                                 <Title overflowEllipsis={false}>{ item.node.title }</Title>
                                                 <Text>
-                                                    <Truncate lines={10} width={226} ellipsis="...">
+                                                    <Truncate lines={7} ellipsis="...">
                                                         { striptags(item.node.content.encoded) }
                                                     </Truncate>
                                                 </Text>
