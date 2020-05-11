@@ -1,6 +1,6 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Mjobs from "./mjobs";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Job from './job';
 
 export default () => (
 
@@ -19,9 +19,7 @@ export default () => (
               node {
                 Id
                 Name
-                ShortDescription
                 AdvertisementUrl
-                LastUpdated
                 Created
               }
             }
@@ -30,16 +28,29 @@ export default () => (
       `}
 
       render={data => {
-        return (<Mjobs numHRopenings={0} hrData={[]}/>)
-        //Midlertidig utkommentert, HRmanager filtrering må lages
-        // if(data.allHRmanagerJob.edges[0].node.Name==="dummy"){
-        //   return (<Mjobs numHRopenings={0}  hrData={[]}/>)
-        // }else{
-        //   const numOpenings = data.allHRmanagerJob.totalCount > 20 ? 20 : data.allHRmanagerJob.totalCount;
-        //   return (
-        //     <Mjobs numHRopenings={numOpenings} hrData={data.allHRmanagerJob.edges}/>
-        //   )
-        // }
+        if (data.allHRmanagerJob.edges.length > 1) {
+          const hrData = (data.allHRmanagerJob.edges[0].node.Name==="dummy") ? [] : data.allHRmanagerJob.edges;
+          
+
+          return (
+            <div className="sb1-joblist">
+              <h3 className="ffe-h3">Ledige stillinger - vil du være med på laget?</h3>
+              <ul className="sb1-joblist__list">
+
+                { hrData.map(post => (
+                  <li>
+                    <Job id={post.node.id} path={post.node.AdvertisementUrl} title={post.node.Name} desc={post.node.ShortDescription} target="_blank"/>
+                  </li>
+                ))}
+
+              </ul>
+            </div>
+          )
+        } else {
+          return(
+            <h3 className="ffe-h3">Ingen ledige stillinger for øyeblikket</h3>
+          )
+        }
       } 
     }
     />

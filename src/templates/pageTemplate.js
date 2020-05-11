@@ -15,29 +15,37 @@ export default function Template({
     <Layout>
       <Header/>
       <SEO title={frontmatter.title} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />
-      <div className="sb1-markdown-page">
-        <Grid className="sb1-markdown-page__header">
-          <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }} lg={{ cols: 6, offset: 1 }}>
-              <h1 className="ffe-h1">{frontmatter.title}</h1>
-              <div className="ffe-lead-paragraph">{frontmatter.description}</div>
-              </GridCol>
-          </GridRow>
-        </Grid>
-        <Grid>
-          <GridRow>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 8 }} lg={{ cols: 6, offset: 1 }}>
-              <div
-                className="content sb1-markdown"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
-            </GridCol>
-            <GridCol sm={{ cols: 12 }} md={{ cols: 4 }} lg={{ cols: 4 }} end={true}>
-              <img src={frontmatter.image.childImageSharp.fixed.src} alt={frontmatter.title} className="sb1-markdown-page__image" />
-            </GridCol>
-          </GridRow>
-        </Grid>
-      </div>
+
+      <div className="sb1-page">
+            <Grid className="sb1-page__header">
+                <GridRow>
+                <GridCol sm={{ cols: 12 }}>
+                    <div className="hero">
+                        <img src={frontmatter.image.childImageSharp.fluid.originalImg} alt={frontmatter.title} className="hero-image" />
+                        <h1 className="ffe-h1 hero-circle">{frontmatter.title}</h1>
+                    </div>
+                </GridCol>
+                </GridRow>
+
+                <GridRow>
+                <GridCol sm={{ cols: 12 }} md={{ cols: 8, offset: 2 }} className="sb1-page__teaser">
+                    <h2 className="ffe-h2">{frontmatter.subtitle}</h2>
+                    <div className="ffe-lead-paragraph">{frontmatter.description}</div>
+                </GridCol>
+                </GridRow>
+            </Grid>
+
+            <Grid>
+                <GridRow>
+                <GridCol sm={{ cols: 12 }}>
+                  <div
+                    className="content sb1-markdown"
+                    dangerouslySetInnerHTML={{ __html: html }}
+                  />
+                </GridCol>
+                </GridRow>
+            </Grid>
+        </div>
     </Layout>
   )
 }
@@ -50,11 +58,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        subtitle
         description
         image {
           childImageSharp {
-            fixed(width: 640, height: 640) {
-              src
+            fluid {
+              originalImg
             }
           }
         }
