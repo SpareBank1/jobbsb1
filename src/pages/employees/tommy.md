@@ -12,7 +12,7 @@ email: "tommy.skogstad@sparebank1.no"
 
 Det var da Tommy gikk på universitet at han skjønte at han hadde et hode for koding. At han tenkte på riktig måte for å løse problemer. I SpareBank 1 Utvikling får han gjøre nettopp det – og trives aller best når han får grave seg ned i et komplekst problem og være i sin egen boble.
 
-Tommy er veldig interessert i film, og gjerne de litt særere variantene. Hankan for eksempel sette pris på en god Bollywood-film eller en koreansk flick. Beste film noensinne er likevel Memento. Tommy har to bonusbarn ogto katter, Gro og Grokk. Hans favorittårstid er våren, og det kjæreste han eier er den stasjonære PC-en hjemme. Det er i hvert fall den han har investert mest penger i.
+Tommy er veldig interessert i film, og gjerne de litt særere variantene. Han kan for eksempel sette pris på en god Bollywood-film eller en koreansk flick. Beste film noensinne er likevel Memento. Tommy har to bonusbarn og to katter, Gro og Grokk. Hans favorittårstid er våren, og det kjæreste han eier er den stasjonære PC-en hjemme. Det er i hvert fall den han har investert mest penger i.
 
 ### Bli bedre kjent med Tommy her
 

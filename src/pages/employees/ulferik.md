@@ -10,9 +10,9 @@ fullrole: "Utvikler og Birkebeiner"
 email: "ulf.erik.forsbakk@sparebank1.no"
 ---
 
-Ulf Erik lærte seg å kode som tenåring, og tre tiår senere har han drømmejobben som utvikler i SpareBank 1 Utvikling. Han tror folk ville blittoverrasket over hvor fremoverlent SpareBank 1 Utvikling er. At banken følger med i timen. I dag jobber han med løsninger som gjør livene enklerefor folk, og det liker han veldig godt. Og det har han gjort lenge. Som ung isfiskeentusiast skrev han et program som registrerte fangst og beregnet resultatlister for isfiskekonkurranser.
+Ulf Erik lærte seg å kode som tenåring, og tre tiår senere har han drømmejobben som utvikler i SpareBank 1 Utvikling. Han tror folk ville blitt overrasket over hvor fremoverlent SpareBank 1 Utvikling er. At banken følger med i timen. I dag jobber han med løsninger som gjør livene enklere for folk, og det liker han veldig godt. Og det har han gjort lenge. Som ung isfiskeentusiast skrev han et program som registrerte fangst og beregnet resultatlister for isfiskekonkurranser.
 
-På fritiden er Ulf Erik aktiv i skisporet, og ikke for å skryte så er han ganskegod. Så god at han stiller på elitelinja på Vasaloppet og Birken. Det kjæreste han eier er hytta på Sjusjøen. Den er han glad i. Han er også et matvrak, og mat er en viktig del av hverdagen – selv om han ikke selv ikkekategoriserer seg som en gourmettype.
+På fritiden er Ulf Erik aktiv i skisporet, og ikke for å skryte så er han ganske god. Så god at han stiller på elitelinja på Vasaloppet og Birken. Det kjæreste han eier er hytta på Sjusjøen. Den er han glad i. Han er også et matvrak, og mat er en viktig del av hverdagen – selv om han ikke selv kategoriserer seg som en gourmettype.
 
 ### Bli bedre kjent med Ulf Erik her
 
@@ -37,7 +37,7 @@ Arbeidsmiljøet.
 Trene og finne på ting med barna mine. Generelt glad i å være på tur i skogen og i fjellet.
 
 **Én grunn til at utviklere burde jobbe i SpareBank 1 Utvikling?**
-Muligheten til å utvikle seg faglig, uten at det går på bekostning av familie ogfritid.
+Muligheten til å utvikle seg faglig, uten at det går på bekostning av familie og fritid.
 
 **Beste serie noensinne?**
 Breaking Bad og Sopranos.
@@ -46,7 +46,7 @@ Breaking Bad og Sopranos.
 Netflix.
 
 **Din ideelle søndag?**
-Starter med å løpe en lang tur i marka sammen med noen kompiser, så lager jeg meg noe mat som jeg tar med i sofaen og ser på en spennende fjelletappe i Tour de France. Stikkepå kino på kvelden.
+Starter med å løpe en lang tur i marka sammen med noen kompiser, så lager jeg meg noe mat som jeg tar med i sofaen og ser på en spennende fjelletappe i Tour de France. Stikke på kino på kvelden.
 
 **Fagdag eller fredag?**
 Fagdag.

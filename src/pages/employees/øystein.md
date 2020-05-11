@@ -22,7 +22,7 @@ email: "oystein.molnes@sparebank1.no"
 På universitetet. Musikkteknologi på NTNU.
 
 **Dummeste og mest ubrukelige du har kodet?**
-En ubrukelig talegjenkjenningsapp som skulle brukes på et museum. Den skullevære for et utdødd språk, et gammelt indianerspråk. Men den funket dårlig.
+En ubrukelig talegjenkjenningsapp som skulle brukes på et museum. Den skulle være for et utdødd språk, et gammelt indianerspråk. Men den funket dårlig.
 
 **Drømmeprosjekt å kode på?**
 Prosjekter som faktisk kan hjelpe folk, ikke bare gjøre ting enklere, men som kan redde folk.
@@ -64,7 +64,7 @@ Før.
 3 år.
 
 **Best med kollegaene dine?**
-Folk vil hverandre vel her, ikke mye spissealbuer.
+Folk vil hverandre vel her, ikke mye spisse albuer.
 
 **Favoritt GIT-kommando?**
 Git reset hard.

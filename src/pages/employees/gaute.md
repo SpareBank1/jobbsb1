@@ -10,7 +10,7 @@ fullrole: "Teamleder og fotballspiller på lavt nivå (ifølge ham selv)"
 email: "gaute.borgenholt@sparebank1.no"
 ---
 
-Kort forklart går jobben til Gaute ut på å tilrettelegge for at andre kan gjørejobben sin. Hos SpareBank 1 Utvikling leder han et team som bygger plattformen utviklerne får utfolde seg på. Han synes det beste med jobbener friheten, og å jobbe med noe som har en mening.
+Kort forklart går jobben til Gaute ut på å tilrettelegge for at andre kan gjøre jobben sin. Hos SpareBank 1 Utvikling leder han et team som bygger plattformen utviklerne får utfolde seg på. Han synes det beste med jobben er friheten, og å jobbe med noe som har en mening.
 
 Gaute er en type som er veldig engasjert i det han driver med. Hans seneste syssel har vært et intenst arbeid med å gro gress på takterrassen. Han spiser aldri lunsj foran PC-en, favorittspillene er fra utgiveren Blizzard og det kjæreste han eier er ting han har arvet fra sine besteforeldre. Han har ingen mal for den perfekte søndagen – for Gautes del kan alt mulig skje, eller absolutt ingenting.
 
