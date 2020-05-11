@@ -1,6 +1,6 @@
 # Jobbe i SpareBank 1
 
-[![Build Status](https://travis-ci.org/SpareBank1/jobbsb1.svg?branch=master)](https://travis-ci.org/SpareBank1/jobbsb1) [![Greenkeeper badge](https://badges.greenkeeper.io/SpareBank1/jobbsb1.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/SpareBank1/jobbsb1.svg?branch=master)](https://travis-ci.org/SpareBank1/jobbsb1)
 
 Dette repositoryet inneholder SpareBank 1s rekrutteringssite for designere og utviklere. Siten lages med [GatsbyJS](https://www.gatsbyjs.org) og [SpareBank 1 Designsystem](https://design.sparebank1.no/).
 

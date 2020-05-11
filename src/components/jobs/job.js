@@ -2,7 +2,6 @@
 import React from 'react'
 import ChevronIkon from '@sb1/ffe-icons-react/lib/chevron-ikon';
 
-
 export default ({id, path, title, target}) => {
 
   return(
