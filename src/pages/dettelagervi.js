@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Header from '../components/header'
 import { Grid, GridRow, GridCol } from '@sb1/ffe-grid-react'
@@ -88,6 +89,9 @@ const DettelagerviPage = () => {
                         <p>
                             Vi er en gjeng som er glade i å lese, og koser oss med Unicorn Project – men Accelerate er bibelen vår. Vi ønsker å få alle endringer ut i produksjon så fort de er klare. Ingen kø, ingen lager, ingen ventetid. Hos oss går det i små, hyppige releaser. Vi har faktisk over 2000 releaser i året.
                         </p>
+                        <p>
+                            <Link to="/#ansatte">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
+                        </p>
                     </div>
                     }
 
@@ -115,6 +119,9 @@ const DettelagerviPage = () => {
 
                         <p>
                             Vi jobber med samfunnskritiske tjenester som betaling og boliglån, som brukes av hundretusenvis av mennesker, og vi legger til rette for alt fra hverdagslige kjøp på matbutikken til realisering av boligdrømmen. Vi hjelper forbrukere til å gjennomføre oppgaver de i utgangspunktet ikke gleder seg til, til noe overraskende enkelt, oversiktlig og til og med engasjerende. Og vi hjelper bankene til å formidle tips og råd (og produkter) som gir folk bedre oversikt og bedre økonomi.
+                        </p>
+                        <p>
+                            <Link to="/#ansatte">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
                         </p>
                     </div>
                     }
