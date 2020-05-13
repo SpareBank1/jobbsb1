@@ -57,9 +57,13 @@ img {
 }
 
 .sb1-smaller-link {
-  display: inline-block;
-  margin-left: @ffe-spacing-sm;
+  display: block;
   font-size: .7em;
+
+  @media (min-width: @breakpoint-md) {
+    display: inline-block;
+    margin-left: @ffe-spacing-sm;
+  }
 }
 
 .sb1-hero {
