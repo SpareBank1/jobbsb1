@@ -3,40 +3,56 @@
     font-size: 18px;
     line-height: 1.75em;
     font-family: 'MuseoSans-300', arial, sans-serif;
-    &__header{
+
+    &__header {
         background-color: @ffe-blue-ice;
-    } 
-    .hero{
+    }
+    
+    .hero {
         position: relative;
-        &-image{
-            position: relative;
-            z-index: 1;
+        display: flex;
+        text-align: center;
+        height: 300px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: @breakpoint-md) {
+            height: 540px;            
         }
-        &-circle{
-            position: absolute;
-            top: @ffe-spacing-xs;
-            left: @ffe-spacing-sm;
-            z-index: 2;
-            background-color: @ffe-white;
+
+        &-circle {
+            background-color: rgba(255, 255, 255, .7);
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            opacity: 0.7;
+            width: 250px;
+            height: 250px;
             color: @ffe-black;
+            position: absolute;
+            left: 50%;
+            margin-left: -125px;
+            top: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
-            @media screen and (min-width: @breakpoint-md) {
-                top: @ffe-spacing-lg;
-                left: @ffe-spacing-2xl;
-                width: 300px;
-                height: 300px;
-            }
-            @media screen and (min-width: @breakpoint-lg) {
-                top: 100px;
-                left: @ffe-spacing-3xl;
+            z-index: 2;
+
+            @media (min-width: @breakpoint-md) {
                 width: 400px;
                 height: 400px;
+                left: 75px;
+                top: 75px;
+                margin-left: 0;
+            }
+        }
+
+        &-image {
+            width: 200%;
+            max-width: none;
+            z-index: 1;
+
+            @media (min-width: @breakpoint-md) {
+                width: 100%;
+                max-width: 100%;
             }
         }
     }
