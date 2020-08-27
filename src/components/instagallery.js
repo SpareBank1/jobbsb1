@@ -1,5 +1,5 @@
 import React from 'react'
-import Timestamp from 'react-timestamp'
+// import Timestamp from 'react-timestamp'
 
 export default ({posts}) => (
     <div className="sb1-somefeed" data-testid="instafeed">
@@ -40,9 +40,9 @@ export default ({posts}) => (
                                         <div className="sb1-instafeed__meta-item sb1-instafeed__meta-item--caption">
                                             { item.node.caption }
                                         </div>
-                                        <div className="sb1-instafeed__meta-item sb1-instafeed__meta-item--timestamp">
+                                        {/* <div className="sb1-instafeed__meta-item sb1-instafeed__meta-item--timestamp">
                                             <Timestamp time={ item.node.timestamp }/>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </a>
                             </div>
