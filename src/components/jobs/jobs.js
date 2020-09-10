@@ -28,7 +28,7 @@ export default () => (
       `}
 
       render={data => {
-        if (data.allHRmanagerJob.edges.length > 1) {
+        if (data.allHRmanagerJob.edges.length > 0) {
           const hrData = (data.allHRmanagerJob.edges[0].node.Name==="dummy") ? [] : data.allHRmanagerJob.edges;
           
 

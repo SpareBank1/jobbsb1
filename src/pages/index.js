@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import { Grid, GridRow, GridCol, InlineGrid } from '@sb1/ffe-grid-react'
 import Layout from '../components/layout'
 import Header from '../components/header'
@@ -10,7 +10,6 @@ import Jobs from '../components/jobs/jobs'
 import Employees from '../components/employees'
 import { SecondaryButton, ButtonGroup } from '@sb1/ffe-buttons-react';
 import miljo1 from '../images/sb1-miljo1.jpg';
-// import Img from "gatsby-image"
 
 const IndexPage = (props) => (
   <Layout>
@@ -129,15 +128,3 @@ const IndexPage = (props) => (
 )
 
 export default IndexPage
-
-export const pageQuery = graphql`
-  query {
-    hackathon: file(relativePath: { eq: "Hackathon-logo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
