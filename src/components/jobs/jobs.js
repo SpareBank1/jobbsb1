@@ -6,25 +6,28 @@ export default () => (
 
     <StaticQuery
       query={graphql`
-        query hrQuery{
-          allHRmanagerJob(
-            limit: 20,
-            sort:{
-              fields:Created,
-              order:DESC
-            }
-          ) {
-            totalCount
-            edges {
-              node {
+      query hrQuery {
+        allHRmanagerJob(
+          limit: 20, 
+          sort: {fields: Created, order: DESC}, 
+          filter: {Department: {Id: {eq: 21110}}}) 
+          {
+          totalCount
+          edges {
+            node {
+              Id
+              Name
+              AdvertisementUrl
+              Created
+              Department {
                 Id
                 Name
-                AdvertisementUrl
-                Created
               }
             }
           }
         }
+      }
+      
       `}
 
       render={data => {
