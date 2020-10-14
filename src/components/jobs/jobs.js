@@ -10,7 +10,7 @@ export default () => (
         allHRmanagerJob(
           limit: 20, 
           sort: {fields: Created, order: DESC}, 
-          filter: {Department: {Name: {eq: "Digitalbankutvikling ansatte"}}}) 
+          filter: {Department: {Id: {in: [21149,21110]}}}) 
           {
           totalCount
           edges {
@@ -27,7 +27,6 @@ export default () => (
           }
         }
       }
-      
       `}
 
       render={data => {
