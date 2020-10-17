@@ -41,7 +41,7 @@ const IndexPage = (props) => (
                             Ansatte
                         </SecondaryButton>
                         <SecondaryButton element="a" href="#jobber" className="sb1-hero__nav-button">
-                            Jobber
+                            Ledige stillinger
                         </SecondaryButton>
                         <SecondaryButton element="a" href="#faglig" className="sb1-hero__nav-button">
                             Faglig
