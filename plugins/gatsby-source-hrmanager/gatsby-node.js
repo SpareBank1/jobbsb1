@@ -60,9 +60,12 @@ exports.sourceNodes = (
             "LastUpdated": "/Date(1549611757000+0100)/",
             "Id": 007,
             "Name": "dummy",
-            "ShortDescription": "",
             "AdvertisementUrl": "",
-            "Created":"/Date(1549611757000+0100)/"
+            "Created":"/Date(1549611757000+0100)/",
+            "Department": {
+              "Name": "",
+              "Id": 1
+            }
           })
           // Use Gatsby's createNode helper to create a node from the node data
           createNode(emptyNodeData)
