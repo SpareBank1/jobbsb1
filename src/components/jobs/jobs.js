@@ -3,14 +3,14 @@ import { StaticQuery, graphql } from 'gatsby';
 import Job from './job';
 
 export default () => (
-//avd: Design, Digitalbankutvikling ansatte, Arkitektur og teknologi
+//avd: Design, Digitalbankutvikling ansatte, Arkitektur og teknologi, Fagsystemer og tjenestekjøp, Informasjonssikkerhet
     <StaticQuery
       query={graphql`
       query hrQuery {
         allHRmanagerJob(
           limit: 20, 
           sort: {fields: Created, order: DESC}, 
-          filter: {Department: {Id: {in: [21149,21110,21136,21139]}}}) 
+          filter: {Department: {Id: {in: [21149,21110,21136,21139,21102]}}}) 
           {
           totalCount
           edges {
