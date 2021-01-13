@@ -28,7 +28,7 @@
     "gatsby-remark-copy-linked-files": "^2.3.12",
     "gatsby-remark-images": "^3.3.27",
     "gatsby-source-filesystem": "^2.3.26",
-    "gatsby-source-instagram": "^0.8.0",
+    "gatsby-source-instagram": "^0.9.0",
     "gatsby-source-medium": "^2.3.10",
     "gatsby-source-rss-feed": "^1.2.0",
     "gatsby-transformer-remark": "^2.8.30",
