@@ -119,7 +119,7 @@ const IndexPage = (props) => (
 
     <Grid topPadding={ false }>
         <GridRow topPadding={ true } background="blue-pale">
-            <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={true}>
+            <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={false}>
                 <Instagram />
             </GridCol>
         </GridRow>

@@ -40,18 +40,18 @@ module.exports = {
         trackingId: "UA-143149392-1",
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `3270750488`,
-      },
-    },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `11452000456`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `3270750488`,
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `11452000456`,
+    //   },
+    // },
     // {
     //   resolve: `gatsby-source-medium`,
     //   options: {
