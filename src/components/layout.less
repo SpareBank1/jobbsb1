@@ -411,7 +411,8 @@ img {
     &:nth-child(8),
     &:nth-child(10),
     &:nth-child(12),
-    &:nth-child(15) {
+    &:nth-child(15),
+    &:nth-child(17) {
       padding: @ffe-spacing-sm @ffe-spacing-sm @ffe-spacing-sm 200px;
       grid-column: span 2;
       // min-height: auto;
@@ -588,6 +589,18 @@ img {
     &:hover {
       &::before {
         background-image: url("../images/employees/Ansatt_Marthe.gif");
+      }
+    }
+  }
+
+  &--Meena {
+    &::before {
+      background-image: url("../images/employees/Ansatt_Meena.jpg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../images/employees/Ansatt_Meena.jpg");
       }
     }
   }

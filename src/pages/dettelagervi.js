@@ -12,17 +12,26 @@ import dettelagerviHero from '../images/dettelagervi-hero.jpg';
 const DettelagerviPage = () => {
 
     const [showUtvikler, setShowUtvikler] = useState(false);
-    const [showDesigner, setshowDesigner] = useState(false);
+    const [showDesigner, setShowDesigner] = useState(false);
+    const [showTester, setShowTester] = useState(false);
 
     const showText = (e) => {
         const type = e.target.value;
 
         if (type==='utviklere'){
+            setShowDesigner(false);
+            setShowTester(false);
             setShowUtvikler(true);
-            setshowDesigner(false);
-        }else{
+        }
+        if (type==='designere'){
             setShowUtvikler(false);
-            setshowDesigner(true);
+            setShowTester(false);
+            setShowDesigner(true);
+        }
+        if (type==='testere'){
+            setShowUtvikler(false);
+            setShowDesigner(false);
+            setShowTester(true);
         }
     };
 
@@ -51,6 +60,7 @@ const DettelagerviPage = () => {
                             <option value="placeholder" disabled>folkene våre</option>
                             <option value="designere">designerne våre</option>
                             <option value="utviklere">utviklerne våre</option>
+                            <option value="testere">testerne våre</option>
                         </Dropdown>
                     </p>
                 </GridCol>
@@ -61,7 +71,7 @@ const DettelagerviPage = () => {
                 <GridRow>
                 <GridCol sm={{ cols: 12 }}>
 
-                    {(!showUtvikler && !showDesigner) && <>
+                    {(!showUtvikler && !showDesigner && !showTester) && <>
                     <div className="defaultText1">&nbsp;</div>
                     <div className="defaultText2">&nbsp;</div>
                     <div className="defaultText3">&nbsp;</div>
@@ -69,61 +79,88 @@ const DettelagerviPage = () => {
                     </>}
         
                     {showUtvikler && 
-                    <div className="text-utvikler">
-                        <p>
-                            Vi lager løsninger som betyr noe i folks hverdag. SpareBank 1 er landets nest største finansgruppering, og det betyr at systemene, tjenestene og produktene vi jobber med er viktige for mange. Faktisk berører løsningene våre over én million mennesker hver eneste dag. Derfor er vi naturlig nok veldig opptatt av å lære av våre feil og aktivt jobbe for å bli bedre.    
-                        </p>
+                        <div className="text-utvikler">
+                            <p>
+                                Vi lager løsninger som betyr noe i folks hverdag. SpareBank 1 er landets nest største finansgruppering, og det betyr at systemene, tjenestene og produktene vi jobber med er viktige for mange. Faktisk berører løsningene våre over én million mennesker hver eneste dag. Derfor er vi naturlig nok veldig opptatt av å lære av våre feil og aktivt jobbe for å bli bedre.    
+                            </p>
 
-                        <p>
-                            Måten både utviklerne og designerne hos oss jobber er blant annet inspirert av boken «Radical focus». Vi kickstarter uken med å samle hele det kryssfunksjonelle teamet (de har vi 25 av) – og spør “Hvordan ligger vi an i forhold til målene vi har satt oss” og “hva må vi ha fokus på denne uken for å nå målet?”. Vi blir enige om de viktigste oppgavene, som vi forplikter oss til i felleskap og som vi strekker oss for å levere innen fredag. Fredager handler om å feire det vi har fått til og dele hva vi har lært. Resultatet er felles stolthet over det vi har fått til sammen. 
-                        </p>
+                            <p>
+                                Måten utviklerne, designerne og testerne hos oss jobber er blant annet inspirert av boken <a class="ffe-link-text" rel="noreferrer" target="_blank" href="https://www.amazon.com/Radical-Focus-Achieving-Important-Objectives-ebook/dp/B01BFKJA0Y">«Radical focus»</a>. Vi kickstarter uken med å samle hele det kryssfunksjonelle teamet (de har vi 25 av) – og spør “Hvordan ligger vi an i forhold til målene vi har satt oss” og “hva må vi ha fokus på denne uken for å nå målet?”. Vi blir enige om de viktigste oppgavene, som vi forplikter oss til i felleskap og som vi strekker oss for å levere innen fredag. Fredager handler om å feire det vi har fått til og dele hva vi har lært. Resultatet er felles stolthet over det vi har fått til sammen. 
+                            </p>
 
-                        <p>
-                            Vi jobber alltid hypotesedrevet, og basert på måling av brukeroppførsel. Vi sitter veldig tett på brukerne, og tar til oss titusenvis av gode og dårlige tilbakemeldinger årlig.
-                        </p>
-                            
-                        <p>
-                            Vi vil jo ikke lage noe kundene ikke vil ha. Derfor tester vi alltid ut hypoteser før vi koder løsningen. Utvikling er å løse problemer, og av og til skriver vi kode for å gjøre det, men det er viktig for oss å ikke skrive en masse kode som ikke gir kundeverdi.
-                        </p>
+                            <p>
+                                Vi jobber alltid hypotesedrevet, og basert på måling av brukeroppførsel. Vi sitter veldig tett på brukerne, og tar til oss titusenvis av gode og dårlige tilbakemeldinger årlig.
+                            </p>
+                                
+                            <p>
+                                Vi vil jo ikke lage noe kundene ikke vil ha. Derfor tester vi alltid ut hypoteser før vi koder løsningen. Utvikling er å løse problemer, og av og til skriver vi kode for å gjøre det, men det er viktig for oss å ikke skrive en masse kode som ikke gir kundeverdi.
+                            </p>
 
-                        <p>
-                            Vi er en gjeng som er glade i å lese, og koser oss med Unicorn Project – men Accelerate er bibelen vår. Vi ønsker å få alle endringer ut i produksjon så fort de er klare. Ingen kø, ingen lager, ingen ventetid. Hos oss går det i små, hyppige releaser. Vi har faktisk over 2000 releaser i året.
-                        </p>
-                        <p>
-                            <Link to="/#ansatte">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
-                        </p>
-                    </div>
+                            <p>
+                                Vi er en gjeng som er glade i å lese, og koser oss med Unicorn Project – men Accelerate er bibelen vår. Vi ønsker å få alle endringer ut i produksjon så fort de er klare. Ingen kø, ingen lager, ingen ventetid. Hos oss går det i små, hyppige releaser. Vi har faktisk over 2000 releaser i året.
+                            </p>
+                            <p>
+                                <Link to="/#ansatte" className="ffe-link-text">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
+                            </p>
+                        </div>
                     }
 
                     {showDesigner && 
-                    <div className="text-designer">
-                        <p>
-                            Vi lager løsninger som betyr noe i folks hverdag. SpareBank 1 er landets nest største finansgruppering, og det betyr at systemene, tjenestene og produktene vi jobber med er viktige for mange. Faktisk berører løsningene våre over én million mennesker hver eneste dag. Derfor er vi naturlig nok veldig opptatt av å lære av våre feil og aktivt jobbe for å bli bedre.    
-                        </p>
+                        <div className="text-designer">
+                            <p>
+                                Vi lager løsninger som betyr noe i folks hverdag. SpareBank 1 er landets nest største finansgruppering, og det betyr at systemene, tjenestene og produktene vi jobber med er viktige for mange. Faktisk berører løsningene våre over én million mennesker hver eneste dag. Derfor er vi naturlig nok veldig opptatt av å lære av våre feil og aktivt jobbe for å bli bedre.    
+                            </p>
 
-                        <p>
-                            Måten både utviklerne og designerne hos oss jobber er blant annet inspirert av boken «Radical focus». Vi kickstarter uken med å samle hele det kryssfunksjonelle teamet (de har vi 25 av) – og spør “Hvordan ligger vi an i forhold til målene vi har satt oss” og “hva må vi ha fokus på denne uken for å nå målet?”. Vi blir enige om de viktigste oppgavene, som vi forplikter oss til i felleskap og som vi strekker oss for å levere innen fredag. Fredager handler om å feire det vi har fått til og dele hva vi har lært. Resultatet er felles stolthet over det vi har fått til sammen. 
-                        </p>
+                            <p>
+                                Måten utviklerne, designerne og testerne hos oss jobber er blant annet inspirert av boken <a class="ffe-link-text" rel="noreferrer" target="_blank" href="https://www.amazon.com/Radical-Focus-Achieving-Important-Objectives-ebook/dp/B01BFKJA0Y">«Radical focus»</a>. Vi kickstarter uken med å samle hele det kryssfunksjonelle teamet (de har vi 25 av) – og spør “Hvordan ligger vi an i forhold til målene vi har satt oss” og “hva må vi ha fokus på denne uken for å nå målet?”. Vi blir enige om de viktigste oppgavene, som vi forplikter oss til i felleskap og som vi strekker oss for å levere innen fredag. Fredager handler om å feire det vi har fått til og dele hva vi har lært. Resultatet er felles stolthet over det vi har fått til sammen. 
+                            </p>
 
-                        <p>
-                            Vi jobber alltid hypotesedrevet, og basert på måling av brukeroppførsel. Vi sitter veldig tett på brukerne, og tar til oss titusenvis av gode og dårlige tilbakemeldinger årlig.
-                        </p>
+                            <p>
+                                Vi jobber alltid hypotesedrevet, og basert på måling av brukeroppførsel. Vi sitter veldig tett på brukerne, og tar til oss titusenvis av gode og dårlige tilbakemeldinger årlig.
+                            </p>
 
-                        <p>
-                            Landsdekkende spørreundersøkelser, trafikklogging, tilbakemeldinger og 1:1-samtaler med kunder gir oss et rikt bilde av hva kundene trenger for å få en bedre hverdagsøkonomi.
-                        </p>
+                            <p>
+                                Landsdekkende spørreundersøkelser, trafikklogging, tilbakemeldinger og 1:1-samtaler med kunder gir oss et rikt bilde av hva kundene trenger for å få en bedre hverdagsøkonomi.
+                            </p>
 
-                        <p>
-                            Vi tester ting tidlig i produksjon, og er ikke redd for å teste noe som ikke er fiks ferdig. Tvert imot: Er man ikke bittelitt flau over det man legger ut, så har man ikke testet tidlig nok.
-                        </p>
+                            <p>
+                                Vi tester ting tidlig i produksjon, og er ikke redd for å teste noe som ikke er fiks ferdig. Tvert imot: Er man ikke bittelitt flau over det man legger ut, så har man ikke testet tidlig nok.
+                            </p>
 
-                        <p>
-                            Vi jobber med samfunnskritiske tjenester som betaling og boliglån, som brukes av hundretusenvis av mennesker, og vi legger til rette for alt fra hverdagslige kjøp på matbutikken til realisering av boligdrømmen. Vi hjelper forbrukere til å gjennomføre oppgaver de i utgangspunktet ikke gleder seg til, til noe overraskende enkelt, oversiktlig og til og med engasjerende. Og vi hjelper bankene til å formidle tips og råd (og produkter) som gir folk bedre oversikt og bedre økonomi.
-                        </p>
-                        <p>
-                            <Link to="/#ansatte">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
-                        </p>
-                    </div>
+                            <p>
+                                Vi jobber med samfunnskritiske tjenester som betaling og boliglån, som brukes av hundretusenvis av mennesker, og vi legger til rette for alt fra hverdagslige kjøp på matbutikken til realisering av boligdrømmen. Vi hjelper forbrukere til å gjennomføre oppgaver de i utgangspunktet ikke gleder seg til, til noe overraskende enkelt, oversiktlig og til og med engasjerende. Og vi hjelper bankene til å formidle tips og råd (og produkter) som gir folk bedre oversikt og bedre økonomi.
+                            </p>
+                            <p>
+                                <Link to="/#ansatte" className="ffe-link-text">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
+                            </p>
+                        </div>
+                    }
+
+                    {showTester && 
+                        <div className="text-tester">
+                            <p>
+                                Vi lager løsninger som betyr noe i folks hverdag. SpareBank 1 er landets nest største finansgruppering, og det betyr at systemene, tjenestene og produktene vi jobber med er viktige for mange. Faktisk berører løsningene våre over én million mennesker hver eneste dag. Derfor er vi naturlig nok veldig opptatt av å lære av våre feil og aktivt jobbe for å bli bedre.
+                            </p>
+
+                            <p>
+                                Måten utviklerne, designerne og testerne hos oss jobber er blant annet inspirert av boken <a class="ffe-link-text" rel="noreferrer" target="_blank" href="https://www.amazon.com/Radical-Focus-Achieving-Important-Objectives-ebook/dp/B01BFKJA0Y">«Radical focus»</a>. Vi kickstarter uken med å samle hele det kryssfunksjonelle teamet (de har vi 25 av) – og spør “Hvordan ligger vi an i forhold til målene vi har satt oss” og “hva må vi ha fokus på denne uken for å nå målet?”. Vi blir enige om de viktigste oppgavene, som vi forplikter oss til i felleskap og som vi strekker oss for å levere innen fredag. Fredager handler om å feire det vi har fått til og dele hva vi har lært. Resultatet er felles stolthet over det vi har fått til sammen.
+                            </p>
+
+                            <p>
+                                Vi jobber alltid hypotesedrevet, og basert på måling av brukeroppførsel. Vi sitter veldig tett på brukerne, og tar til oss titusenvis av gode og dårlige tilbakemeldinger årlig.
+                            </p>
+                            
+                            <p>
+                                Kundene våre forventer at tjenestene våre er tilgjengelig når de trenger det, enten det er i lunsjpausen eller etter leggetid for ungene. Det krever sikre, stabile og brukervennlige løsninger. Vi jobber innenfor et regulert domene og tenker risiko i alt vi gjør. Liten risiko for kundene våre, kun automatisert test før vi releaser. Stor risiko, da må vi teste verdikjeder, automatisk og manuelt, kanskje vi kjører sikkerhets- og ytelsestest også.
+                            </p>
+
+                            <p>
+                                Vi er opptatt av riktig kvalitet til rett tid og leter hele tiden etter bedre måter å kvalitetssikre koden og leveransene våre på. Vi har både fokus på shift left, tidlig test og shift right, overvåkning i produksjon. Vi liker også open source godt og deler gjerne egenutviklede verktøy eksternt.
+                            </p>
+                            <p>
+                                <Link to="/#ansatte" className="ffe-link-text">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
+                            </p>
+                        </div>
                     }
                 </GridCol>
                 </GridRow>
