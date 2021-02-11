@@ -9,7 +9,7 @@ export default () => (
     query={graphql`
       query employeeQuery{
         allMarkdownRemark(
-          limit: 17,
+          limit: 20,
           filter: { fileAbsolutePath: {regex : "\/employees/"} },
           sort: {fields: [frontmatter___firstname], order: ASC},
         ){
