@@ -1,5 +1,6 @@
 ---
 path: "/siri"
+classname: "siri"
 pagetype: "employee"
 date: "2019-02-08"
 firstname: "Siri"

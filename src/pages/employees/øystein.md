@@ -1,5 +1,6 @@
 ---
 path: "/øystein"
+classname: "oystein"
 pagetype: "employee"
 date: "2019-02-08"
 firstname: "Øystein"

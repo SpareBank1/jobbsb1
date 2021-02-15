@@ -1,5 +1,6 @@
 ---
 path: "/ulf"
+classname: "ulf"
 pagetype: "employee"
 date: "2019-02-08"
 firstname: "Ulf"

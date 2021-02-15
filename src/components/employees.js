@@ -17,6 +17,7 @@ export default () => (
             node{
               frontmatter{
                 path
+                classname
                 firstname
                 role
                 email
@@ -28,7 +29,7 @@ export default () => (
     `}
     render={data => (
       data.allMarkdownRemark.edges.map(post => (
-        <Link to={post.node.frontmatter.path} key={post.node.id} className={classNames('sb1-employee', 'sb1-employee--' + post.node.frontmatter.firstname)}>
+        <Link to={post.node.frontmatter.path} key={post.node.id} className={classNames('sb1-employee', 'sb1-employee--' + post.node.frontmatter.classname)}>
           <h2 className="sb1-employee__heading">{post.node.frontmatter.firstname}</h2>
           <em className="sb1-employee__jobtitle">{post.node.frontmatter.role}</em>
           <ul className="sb1-employee__contact">
