@@ -14,7 +14,7 @@ export default function Template({
   return (
     <Layout>
       <Header/>
-      <SEO title={frontmatter.title} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />
+      <SEO title={frontmatter.subtitle} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />
 
       <div className="sb1-page">
             <Grid className="sb1-page__header">

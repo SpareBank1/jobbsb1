@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `SpareBank 1 Utvikling`,
-    description: `.`,
+    titleTemplate: `%s | SpareBank 1 Utvikling`,
+    description: `Dette er SpareBank 1 Utvikling, og på denne siden kan du bli bedre kjent med hvem vi er, hva vi gjør og hvordan vi jobber – gjennom oss som faktisk jobber her.`,
     author: `@antidecaf`,
+    image: "/images/sb1miljo.jpg",
+    url: "https://sparebank1.dev",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
