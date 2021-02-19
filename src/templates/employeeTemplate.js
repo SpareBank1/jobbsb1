@@ -15,7 +15,7 @@ export default function Template({
   return (
     <Layout>
       <Header/>
-        <SEO title={frontmatter.title} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />      
+        <SEO title={frontmatter.firstname} keywords={[`sparebank 1`, `karriere`, `stilling`, `utvikling`, `design`]} />      
         <Grid className="sb1-markdown-employee">
           <GridRow className="sb1-markdown-employee__layout">
           <GridCol sm={{ cols: 12 }} md={{ cols: 4, offset:1 }}>
