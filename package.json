@@ -16,6 +16,8 @@
     "@sb1/ffe-grid-react": "^10.1.1",
     "@sb1/ffe-icons-react": "^7.2.13",
     "@sb1/ffe-webfonts": "^2.1.0",
+    "babel-jest": "^24.9.0",
+    "babel-preset-gatsby": "^0.1.11",
     "classnames": "^2.2.6",
     "gatsby": "^2.24.51",
     "gatsby-image": "^2.4.16",
@@ -33,6 +35,9 @@
     "gatsby-source-rss-feed": "^1.2.0",
     "gatsby-transformer-remark": "^2.8.30",
     "gatsby-transformer-sharp": "^2.5.13",
+    "identity-obj-proxy": "^3.0.0",
+    "less": "^3.12.2",
+    "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -45,20 +50,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby clean && gatsby develop",
+    "dev": "npm run develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "rm -rf .cache/* && gatsby build && gh-pages -d public",
-    "dev": "rm -rf .cache/* && gatsby develop"
-  },
-  "devDependencies": {
-    "babel-jest": "^24.9.0",
-    "babel-preset-gatsby": "^0.1.11",
-    "gh-pages": "^2.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "less": "^3.12.2",
-    "prettier": "^1.19.1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
