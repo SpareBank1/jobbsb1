@@ -1,7 +1,5 @@
 # Jobbe i SpareBank 1
 
-[![Build Status](https://travis-ci.com/SpareBank1/jobbsb1.svg?branch=master)](https://travis-ci.com/SpareBank1/jobbsb1)
-
 Dette repositoryet inneholder SpareBank 1s rekrutteringssite for designere og utviklere. Siten lages med [GatsbyJS](https://www.gatsbyjs.org) og [SpareBank 1 Designsystem](https://design.sparebank1.no/).
 
 ### Kom i gang
@@ -27,7 +25,7 @@ Deploy til [github pages](https://sparebank1.github.io/jobbsb1/):
 ```bash
 npm run deploy
 ```
-**Merge til master branch vil føre til at Travis bygger og publiserer**
+**Merge til master branch vil føre til at repoet bygges og publiseres med en [github workflow](https://github.com/SpareBank1/jobbsb1/tree/master/.github/workflows)**
 
 ### Tester
 
