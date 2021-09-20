@@ -14,24 +14,34 @@ const DettelagerviPage = () => {
     const [showUtvikler, setShowUtvikler] = useState(false);
     const [showDesigner, setShowDesigner] = useState(false);
     const [showTester, setShowTester] = useState(false);
+    const [showArkitekt, setShowArkitekt] = useState(false);
 
     const showText = (e) => {
         const type = e.target.value;
 
         if (type==='utviklere'){
+            setShowArkitekt(false);
             setShowDesigner(false);
             setShowTester(false);
             setShowUtvikler(true);
         }
         if (type==='designere'){
+            setShowArkitekt(false);
             setShowUtvikler(false);
             setShowTester(false);
             setShowDesigner(true);
         }
         if (type==='testere'){
+            setShowArkitekt(false);
             setShowUtvikler(false);
             setShowDesigner(false);
             setShowTester(true);
+        }
+        if (type==='arkitekter'){
+            setShowUtvikler(false);
+            setShowDesigner(false);
+            setShowTester(false);
+            setShowArkitekt(true);
         }
     };
 
@@ -61,6 +71,7 @@ const DettelagerviPage = () => {
                             <option value="designere">designerne våre</option>
                             <option value="utviklere">utviklerne våre</option>
                             <option value="testere">testerne våre</option>
+                            <option value="arkitekter">arkitektene våre</option>
                         </Dropdown>
                     </p>
                 </GridCol>
@@ -71,7 +82,7 @@ const DettelagerviPage = () => {
                 <GridRow>
                 <GridCol sm={{ cols: 12 }}>
 
-                    {(!showUtvikler && !showDesigner && !showTester) && <>
+                    {(!showUtvikler && !showDesigner && !showTester && !showArkitekt) && <>
                     <div className="defaultText1">&nbsp;</div>
                     <div className="defaultText2">&nbsp;</div>
                     <div className="defaultText3">&nbsp;</div>
@@ -157,6 +168,24 @@ const DettelagerviPage = () => {
                             <p>
                                 Vi er opptatt av riktig kvalitet til rett tid og leter hele tiden etter bedre måter å kvalitetssikre koden og leveransene våre på. Vi har både fokus på shift left, tidlig test og shift right, overvåkning i produksjon. Vi liker også open source godt og deler gjerne egenutviklede verktøy eksternt.
                             </p>
+                            <p>
+                                <Link to="/#ansatte" className="ffe-link-text">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
+                            </p>
+                        </div>
+                    }
+
+                    {showArkitekt && 
+                        <div className="text-arkitekt">
+                            <p>Vi motiveres av at vi gjør en forskjell, både for selskapene i SpareBank 1 og deres kunder. Vi lager løsninger som betyr noe i folks hverdag. SpareBank 1 er landets nest største finansgruppering, og det betyr at systemene, tjenestene og produktene vi jobber med er viktige for mange. Faktisk berører løsningene våre over én million mennesker hver eneste dag. Derfor er vi naturlig nok veldig opptatt av å lære av våre feil og aktivt jobbe for å bli bedre.</p>
+
+                            <p>Vi har løsninger som brukes av mange, både kunder, i bank og de andre selskapene i alliansen. Den store bredden i løsninger gjør at vi får jobbet med mange ulike utfordringer. De spennende og varierte oppgavene er noe vi setter pris på, og vi får jobbet med mange ulike plattformer og teknologier.</p>
+
+                            <p>Løsningene våre utvikles av kryss-funksjonelle, autonome produktteam og vi har interne produktteam som forvalter IT-plattformer. Som arkitekter jobber vi gjerne innen et domene, enten et forretningsmessig som sparing eller finansiering, eller et mer teknisk som integrasjon eller skyplattform. Vi jobber derfor som regel på tvers av og med team, og vi jobber tett mot forretningssiden både i eget selskap og i bankene.</p>
+
+                            <p>Ingen dager er like, og vi jobber med alt fra løsningsarkitektur for produkter eller i prosjekter til å utarbeide retningslinjer for å sikre etterlevelse av lover og forskrifter. Hvis vi skal trekke frem en fellesnevner for det vi jobber med er det at vi jobber med problemløsning. Enten det er å finne en god løsning på et problem kunder har, hvordan vi oppnår robuste verdikjeder, eller hvilken teknologi vi bør benytte.</p>
+
+                            <p>Vår visjon er å gi SpareBank 1 helhetlige og fremtidsrettede løsninger med god kvalitet. Vi setter retning, er proaktive og tett på forretningsutvikling. Vi er en premissgiver, rådgiver og samtalepartner når det gjelder arkitektur og teknologi.</p>
+
                             <p>
                                 <Link to="/#ansatte" className="ffe-link-text">Her kan du bli enda bedre kjent med oss og folka som jobber her.</Link>
                             </p>
