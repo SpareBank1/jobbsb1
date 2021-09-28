@@ -3,6 +3,8 @@ name: build github pages
 on:
   push:
     branches: [ master ]
+  schedule:
+    - cron:  '30 5,12,19 * * *'
   workflow_dispatch:
 
 jobs:
