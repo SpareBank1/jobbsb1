@@ -32,7 +32,7 @@ const IndexPage = (props) => (
     </div>
 
       <Grid topPadding={ false } id="utviklere">
-          <GridRow topPadding={ true } background="grey-warm">
+          <GridRow topPadding={ true } background="sand-30">
               <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
                   <div className="sb1-employees">
                       <Developers />
