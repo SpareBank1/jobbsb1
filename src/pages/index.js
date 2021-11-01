@@ -54,7 +54,7 @@ const IndexPage = (props) => (
 
 
     <Grid topPadding={ false } id="ansatte">
-        <GridRow topPadding={ true } background="grey-warm">
+        <GridRow topPadding={ true } background="sand-30">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }}>
                 <div className="sb1-employees">
                     <Employees />
@@ -118,7 +118,7 @@ const IndexPage = (props) => (
     </Grid>
 
     <Grid topPadding={ false }>
-        <GridRow topPadding={ true } background="blue-pale">
+        <GridRow topPadding={ true } background="frost-30">
             <GridCol sm={{ cols: 12 }} md={{ cols: 10, offset: 1 }} center={false}>
                 <Instagram />
             </GridCol>

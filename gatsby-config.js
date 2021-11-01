@@ -43,6 +43,12 @@ module.exports = {
         trackingId: "UA-143149392-1",
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-WC73TLN",
+      },
+    },
     // {
     //   resolve: `gatsby-source-instagram`,
     //   options: {
