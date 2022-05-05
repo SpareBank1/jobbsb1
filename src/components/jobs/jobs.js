@@ -10,7 +10,7 @@ export default () => (
         allHRmanagerJob(
           limit: 20, 
           sort: {fields: Created, order: DESC}, 
-          filter: {Department: {Id: {in: [21149,21110,21136,21139,21102,21126,21100,21097,21132,21795,21796,21801]}}}) 
+          filter: {Department: {Id: {in: [21149,21110,21136,21139,21102,21126,21100,21097,21132,21795,21796,21801,21866,21867,21868]}}}) 
           {
           totalCount
           edges {
