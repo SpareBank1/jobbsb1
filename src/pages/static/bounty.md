@@ -3,11 +3,10 @@ path: "/bounty"
 title: "Bug bounty"
 subtitle: "Finnerlønn for sårbarheter"
 pagetype: "page"
-image: "./img/jobbehososs-hero.jpg"
-description: "Bla bal"
+image: "./img/bounty.jpg"
+description: ""
 ---
 
-SpareBank 1 Utvikling gjør mye for å sørge for at løsningene vi jobber med skal være sikre. Samtidig endrer teknologien seg stadig, løsningene er komplekse, og vi tror vi har sårbarheter ingen har funnet ennå. Derfor betaler vi opp til €5000 i finnerlønn for nye sårbarheter i bug bounty-programmet vårt, og håper du vil være med å lete!
+SpareBank 1 Utvikling gjør mye for å sikre løsningene vi lager. Samtidig tror vi at vi har sårbarheter ingen har funnet ennå. Vi håper du vil hjelpe oss å lete, og derfor betaler vi opp til 5000 euro i finnerlønn for nye sårbarheter.
 
-Vi bruker bug bounty-plattformen https://www.intigriti.com/. 
-Send brukernavnet på Intigriti til bugbounty@sparebank1.no, så får du en invitasjon til programmet.
+Det private bug bounty-programmet vårt ligger hos [Intigriti](https://www.intigriti.com/). Send brukernavnet ditt der til bugbounty@sparebank1.no, så inviterer vi deg!
