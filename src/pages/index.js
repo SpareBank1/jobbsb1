@@ -99,6 +99,31 @@ const IndexPage = (props) => (
                                     <h3 className="ffe-h4">Hørt om fagdagen?</h3>
                                 </Link>
                             </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/worklifebalance/">
+                                    <h3 className="ffe-h4">Work life balance</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/rauskultur/">
+                                    <h3 className="ffe-h4">Raus kultur</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/trygghet/">
+                                    <h3 className="ffe-h4">Trygghet og gode ordninger</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/samfunnsnytte/">
+                                    <h3 className="ffe-h4">Samfunnsnytte</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/selvstendighet/">
+                                    <h3 className="ffe-h4">Selvstendighet og deling</h3>
+                                </Link>
+                            </GridCol>
                         </GridRow>
                     </InlineGrid>
                 </div>
