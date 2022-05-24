@@ -33,10 +33,10 @@ exports.sourceNodes = (
 
   // Join apiOptions with the HRmanager API URL
   // ?incads=1&plainads=1 returns Advertisements {Content}
-  //const apiUrl = `https://recruiter-api.hr-manager.net/jobportal.svc/${configOptions.customerAlias}/positionlist/json/?mediaid=4636&take=20`
-  const apiUrl = `https://recruiter-api.hr-manager.net/jobportal.svc/${configOptions.customerAlias}/positionlist/json/?mediaid=4655&take=20`
+  // const apiUrl = `https://recruiter-api.hr-manager.net/jobportal.svc/${configOptions.customerAlias}/positionlist/json/?mediaid=4655&take=20`
+  // Dedicated mediaid for sparebank1.dev: 4737
+  const apiUrl = `https://recruiter-api.hr-manager.net/jobportal.svc/${configOptions.customerAlias}/positionlist/json/?mediaid=4737&take=20`
   
-
   // Gatsby expects sourceNodes to return a promise
   return (
     // Fetch a response from the apiUrl
