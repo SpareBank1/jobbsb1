@@ -5,12 +5,12 @@ date: "2020-12-01"
 firstname: "Jonas"
 lastname: "Jore"
 image: "../../images/developers/Ansatt_Jonas_profil.jpg"
-role: "Utvikler"
+role: "Android Utvikler"
 fullrole: "Utvikler og problemløser"
 email: "jonas.jore@sparebank1.no"
 ---
 
-Jonas lever for gode strukturer i prosjekter, og å skjule kompleks logikk bak et brukervennlig abstraksjonsnivå. Kanskje ikke så rart at hans favorittdings er en Rubiks kube. Jonas fikk øynene opp for koding på høgskolen, og lærte seg resten selv etter det. Det dummeste han har kodet er en nettskraperapplikasjon bygd på PHP, som var utviklet for å hente ned et par hundre PDF-er spredd over 15 nettsteder. Denne skulle brukes én gang før den ble slettet og aldri brukt igjen. I SpareBank 1 Utvikling har han mange hatter som fullstack-utvikler, men det beste han vet er å begynne på blanke ark med nye features.
+Jonas lever for gode strukturer i prosjekter, og å skjule kompleks logikk bak et brukervennlig abstraksjonsnivå. Kanskje ikke så rart at hans favorittdings er en Rubiks kube. Jonas fikk øynene opp for koding på høgskolen med programmeringsspråket PHP, og lærte seg resten selv etter det. I SpareBank 1 Utvikling har han mange hatter som fullstack-utvikler og Android-Utvikler, men det beste han vet er å begynne på blanke ark med nye features.
 
 Høsten er Jonas’ favorittårstid. Beste filmen noensinne er Eternal Sunshine of the Spotless Mind, og det kjæreste han eier er gitaren sin. Han lager heller middag enn å ta oppvasken, og søndager bruker han helst til å sove lenge, kode hobbyprosjekter og å ta seg en løpetur.
 
@@ -19,19 +19,19 @@ Høsten er Jonas’ favorittårstid. Beste filmen noensinne er Eternal Sunshine 
 <div class="info-content__questions">
 
 **Favorittkodespråk?**
-Kotlin og JavaScript.
+Kotlin, Rust og JavaScript.
 
 **Dark mode I OS-et?**
 Ja!
 
 **Drømmeprosjekt?**
-Oversiktssiden i banken.
+Så lenge jeg jobber med noe som føles samfunnsnyttig så er det mitt drømmeprosjekt.
 
 **Hva ville folk blitt overrasket over med SpareBank 1 Utvikling?**
 Da jeg begynte her trodde jeg det skulle være mye folk i dresser og snakk om bankvirksomhet og finans. Det var det ikke. Du jobber med folk som heller er lik deg selv. Det er lave skuldre og et trygt sted å lufte meninger.
 
 **Hører på mens du jobber?**
-Black metal.
+Black metal, eller en god podcast.
 
 **Nettleser?**
 Firefox.
@@ -40,7 +40,7 @@ Firefox.
 Hund.
 
 **A- eller B-menneske?**
-A.
+Er definitivt et B menneske.
 
 **Beste spill?**
 Borderlands 3.
