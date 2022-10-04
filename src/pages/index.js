@@ -9,7 +9,7 @@ import RssMedium from '../components/rssMedium';
 import Jobs from '../components/jobs/jobs'
 import Employees from '../components/employees'
 import { SecondaryButton, ButtonGroup } from '@sb1/ffe-buttons-react';
-import miljo1 from '../images/sb1-miljo1.jpg';
+import miljo2 from '../images/sb1-miljo2.jpg';
 
 const IndexPage = (props) => (
   <Layout>
@@ -138,7 +138,7 @@ const IndexPage = (props) => (
                     </InlineGrid>
                 </div>
                 <div className="sb1-workplace__image">
-                    <img src={miljo1} alt="Miljøbilde fra SpareBank 1" />
+                    <img src={miljo2} alt="Miljøbilde fra SpareBank 1" />
                 </div>
             </GridCol>
         </GridRow>
