@@ -5,7 +5,7 @@ import Header from '../components/header'
 import { Grid, GridRow, GridCol } from '@sb1/ffe-grid-react'
 import SEO from '../components/seo'
 import Dropdown from '@sb1/ffe-dropdown-react';
-import dettelagerviHero from '../images/dettelagervi-hero.jpg';
+import miljo202232 from '../images/miljo2022-3-2.jpg';
 
 
 
@@ -55,7 +55,7 @@ const DettelagerviPage = () => {
                 <GridRow>
                 <GridCol sm={{ cols: 12 }}>
                     <div className="hero">
-                        <img alt="Dette lager vi" src={dettelagerviHero} className="hero-image"/>
+                        <img alt="Dette lager vi" src={miljo202232} className="hero-image"/>
                         <h1 className="ffe-h1 hero-circle">Dette driver vi med</h1>
                     </div>
                 </GridCol>
