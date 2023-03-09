@@ -115,6 +115,11 @@ const IndexPage = (props) => (
                                 </Link>
                             </GridCol>
                             <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/utviklerverdier/">
+                                    <h3 className="ffe-h4">Verdier vi utviklere tror på</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
                                 <Link className="sb1-frontpage-link" to="/samfunnsnytte/">
                                     <h3 className="ffe-h4">Samfunnsnytte</h3>
                                 </Link>
