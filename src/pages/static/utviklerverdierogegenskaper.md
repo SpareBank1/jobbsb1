@@ -5,8 +5,7 @@ subtitle: "Hvilke verdier og egenskaper setter vi pris på?"
 pagetype: "page"
 image: "./img/gladeutviklere.jpg"
 description: "Det er viktig at alle forstår hvilke verdier og egenskaper vi setter pris på i Utvikleravdelingen.
-Når dette er åpent, kan en bruke dette som inspirasjon til hvor en vil bidra, og på områder det kan være nyttig å jobbe med.
-Det blir også lettere å forstå hvordan lønnsvurderingen foregår. Lønnsvurderingen er hovedsaklig basert på disse verdiene."
+Når dette er åpent, kan en bruke dette som inspirasjon til hvor en vil bidra, og på områder det kan være nyttig å jobbe med."
 ---
 
 # Verdier, egenskaper og aktiviteter vi setter pris på
