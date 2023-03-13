@@ -36,7 +36,7 @@ Gjør godt arbeid i teamet. Det er det aller viktigste. Det gjør at vi sammen l
 
 ## Del kunnskapen din og tiden din med andre
 ### Hvorfor det?
-* Kunnskapen vår er det viktigste verktøyen vårt som utviklere. Når vi deler den med andre, gir vi andre bedre verktøy å jobbe med. Vi blir alle bedre på jobben vår, og den blir mer gøy
+* Kunnskapen vår er det viktigste verktøyet vårt som utviklere. Når vi deler den med andre, gir vi andre bedre verktøy å jobbe med. Vi blir alle bedre i jobben vår, og den blir mer gøy
 * Det er lærerikt å lære bort det vi kan. Da lærer vi det også enda bedre selv.
 ### Hvordan gjør jeg det?
 * Parprogrammer
@@ -74,8 +74,8 @@ Gjør godt arbeid i teamet. Det er det aller viktigste. Det gjør at vi sammen l
 ## Tenk helhetlig
 ### Hvorfor det?
 * Vi forstår hvorfor vi lager det vi gjør
-* Når vi forstår helheten i domenet eller problemet vi skal løse, så er det mye større sannsynlighet for at vi lager rett løsning
-* Mye lettere å forstå hvem som bør involveres i oppgaven – kanskje problemet viser seg også å kunne berøre flere team eller kundereiser?
+* Når vi forstår helheten i domenet eller problemet vi skal løse, så er det større sannsynlighet for at vi lager rett løsning
+* Lettere å forstå hvem som bør involveres i oppgaven – kanskje problemet viser seg også å kunne berøre flere team eller kundereiser?
 ### Hvordan gjør jeg det?
 * Jobb skikkelig med problemstillingen dere har fått
 * Tenk på om flere kan ha glede av løsningen: Bidra til det felles skriptrammeverket Bob, Designsystemet eller lag biblioteker med fellesfunksjonalitet
@@ -90,6 +90,6 @@ Gjør godt arbeid i teamet. Det er det aller viktigste. Det gjør at vi sammen l
 * Gir økt grad av eierskap – vi bryr oss ekstra
 ### Hvordan gjør jeg det?
 * Si fra om utfordringer – og hjelp til med å løse dem
-* Har du en ide, så jobb for å få realisert
+* Har du en ide, så jobb for å få den realisert
 * Bidra i rekruttering: intervjuer, delta på stand, følg opp sommerstudenter
 * Bidra sosialt, både i teamet og i avdelingen
