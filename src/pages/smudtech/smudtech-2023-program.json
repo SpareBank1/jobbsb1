@@ -1,0 +1,844 @@
+[
+  {
+    "title": "Introduksjon",
+    "description": "Intro v/ Espen Kjølberg - Administrerende direktør i SpareBank 1 Utvikling<br/>Keynote v/ Astrid Undheim - Konserndirektør for Teknologi og utvikling i SMN",
+    "time": {
+      "start": 1130,
+      "startEnd": "11:30 - 12:00",
+      "duration": 30
+    },
+    "track": "intro",
+    "presenters": [
+      {
+        "name": "Espen Kjølberg",
+        "position": "Administrerende direktør",
+        "department": "SpareBank 1 Utvikling",
+        "link": "/speakers/espen",
+        "image": "esp.jpg"
+      },
+      {
+        "name": "Astrid Undheim",
+        "position": "Konsern direktør",
+        "department": "Teknologi og utvikling i SMN",
+        "link": "/speakers/astrid",
+        "image": "astridUn.jpg"
+      }
+    ],
+    "tags": [
+      "tagsNetwork"
+    ]
+  },
+  {
+    "title": "Web- och nativeteknologi i mobilbanken",
+    "description": "Mobilbankappen ær utan tvivel vår absolut viktigaste kanal.  Øver 90% av trafiken ær idag i appen, medan bruket av web browser fortsätter att långsamt men säkert gå ner. Paradoxalt nog ær appen tekniskt sett till større delen utvecklad med webteknologi - inte native appteknologi.  Hade det inte varit mer logiskt om appen istället før implementerad med native appteknologi?   Att  vi har en hybrid app idag ær ingen tillfällighet; det finns en klar förankring i vår historik och kultur.   Som med de flesta teknologivalg så finns det både før- och nackdelar med vår hybrida appstrategi.  Bli med och hør mer om dessa och vilka möjligheter hybrid ger oss framöver!",
+    "time": {
+      "start": 1200,
+      "startEnd": "12:00 - 12:45",
+      "duration": 45
+    },
+    "track": "1",
+    "presenters": [
+      {
+        "name": "Nils Jonas Gustav Nordstrand",
+        "bio": "Generalist med erfarenhet från olika områden. P.t. driver jag primært med iOS-utveckling.",
+        "position": "Utvikler",
+        "department": "Fagmiljø for Utvikling",
+        "link": "/speakers/jonas",
+        "image": "jonas.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Digitalt utenforskap - hva er det og hvordan jobber bankene med dette?",
+    "description": "Digitalt utenforskap innebærer manglende tilgang til eller mulighet til å bruke digitale tjenester som er nødvendige for å få innfridd sine rettigheter. Vi kommer til å snakke om hva digitalt utenforskap er, hvem det rammer og hvordan vi kan forsøke å løse det.",
+    "time": {
+      "start": 1200,
+      "startEnd": "12:00 - 12:45",
+      "duration": 45
+    },
+    "track": "2",
+    "presenters": [
+      {
+        "name": "Bernadette Ann Eirheim",
+        "position": "Designer",
+        "department": "Fagmiljø for Design",
+        "link": "/speakers/bernadette",
+        "image": "bernadette.jpg"
+      },
+      {
+        "name": "Cassandra Taraldset",
+        "position": "Designer",
+        "department": "Fagmiljø for Design",
+        "link": "/speakers/cassandra",
+        "image": "cassandra.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Ukrainakrigen: sky, sikkerhet og strøm",
+    "description": "Ukrainakrigen er ikke bare en fysisk krig den er også stor innenfor cyberområdet. Lær mer om hvordan skyleverandørene og andre har hjulpet Ukraina, hvordan hackere har fått en rolle i krigføring.<br/>En annen konsekvens av krigen er mangel på energi og potensiell strømrasjonering, hvordan håndterer skyleverandørene dette?",
+    "time": {
+      "start": 1200,
+      "startEnd": "12:00 - 12:45",
+      "duration": 45
+    },
+    "track": "3",
+    "presenters": [
+      {
+        "name": "Vidar Hagen",
+        "bio": "Skyarkitekt i SpareBank 1 Utvikling med fokus på skymigrering og innovasjon i sky. Har jobbet med sky fulltid siden 2016 og i SB1U siden 2020",
+        "position": "",
+        "department": "",
+        "link": "/speakers/vidar",
+        "image": "vidar.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": " Smarthus 101",
+    "description": "En intro til hvordan gjøre hjemmet ditt smartere og samtidig kanskje spare litt penger. En første tanke er å se litt på hva finnes av smarte devicer og protokoller (z-wave, zigbee, wifi etc) og hva trengs for å koble alt sammen. Vil bruke en del eksempler fra ting jeg har hjemme.",
+    "time": {
+      "start": 1200,
+      "startEnd": "12:00 - 12:45",
+      "duration": 45
+    },
+    "track": "4",
+    "presenters": [
+      {
+        "name": "Lars Kirkhus",
+        "bio": "Nerd som elsker nye duppedingser. Har i flere år forsøkt å gjøre hverdagen litt smartere.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/lars-kirkhus",
+        "image": "lars-kirkhus.jpg"
+      },
+      {
+        "name": "Nils Ole Hernes",
+        "position": "",
+        "department": "",
+        "link": "/speakers/nils",
+        "image": "nils-ole.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Bli en guru på regulære uttrykk (regex)",
+    "description": "Det er potensialet for å kunne øke hastigheten betydelig med «korrekt» regex-uttrykk. Nyttige beste praksis i hverdagen.",
+    "time": {
+      "start": 1200,
+      "startEnd": "12:00 - 12:45",
+      "duration": 45
+    },
+    "track": "5",
+    "presenters": [
+      {
+        "name": "Kjell Arne Rekaa",
+        "bio": "20 år som programutvikler - 13 år som selvstendig i inn- og utland. Siste 13 år i SpareBank 1 som arkitekt og nå i Linux-team.",
+        "position": "Systemadministrator",
+        "department": "FM Infrastruktur og",
+        "link": "/speakers/kjell",
+        "image": "kjell.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Grønt lys-prinsippet: Med mål om en selvdreven Windows-plattform",
+    "description": "Fra rødt lys til grønt lys. Hvordan WindowsPlattformen gradvis har blitt automatisert og hvordan dette frigjør tid og ressurser til å utnytte eksisterende data og levere verdiøkende tjenester til bankene.",
+    "time": {
+      "start": 1245,
+      "startEnd": "12:45 - 13:00",
+      "duration": 10
+    },
+    "track": "5",
+    "presenters": [
+      {
+        "name": "Ole Rindalsholt",
+        "position": "",
+        "department": "",
+        "link": "/speakers/carl",
+        "image": "ole-rindalsholt.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Mentale modeller for etisk design",
+    "description": "Hvordan vi forstår etikk, moral og oss selv styrer hvilke løsninger vi velger i alt av design og teknologiutvikling. Denne lyntalen presenterer på tørrvittig vis ulike måter å forstå etikk og moral, og hvordan det er nyttig i arbeidet vi gjør, og beriker det.",
+    "time": {
+      "start": 1245,
+      "startEnd": "12:45 - 13:00",
+      "duration": 15
+    },
+    "track": "2",
+    "presenters": [
+      {
+        "name": "Eivind Freng Dale",
+        "position": "Designer",
+        "department": "",
+        "link": "/speakers/eivind",
+        "image": "eivind.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Stressmestring- noen verktøy for å håndtere stress",
+    "description": "Hvordan få den berømte kokeplata på 0; noen verktøy for å bidra når vi er i hamsterhjulet<br/>Hvordan oppdaget at du går med kokeplata på når den skal være på 0?<br/>Og hva kan vi gjøre for å få kokeplata på 0?<br/>Det vil gis noen konkrete og lette verktøy underveis i «lyntalen» (lyntalen=foredraget)",
+    "time": {
+      "start": 1245,
+      "startEnd": "12:45 - 13:00",
+      "duration": 10
+    },
+    "track": "3",
+    "presenters": [
+      {
+        "name": "Karianne Arnesen",
+        "bio": "Jeg har jobbet i SB1 Utvikling siden 2016, jobber som prosjektkoordinator. Jeg jobber med prosjekt, UBW og konsulent innleie. Jeg er opptatt av hvordan vi mennesker har det, både på jobb og privat. Ved siden av jobben har jeg de siste 1,5 årene studert Enhetsterapi Mestringsmedisin; og min hovedoppgave er stressmestring(som jeg skriver på i disse dager).",
+        "position": "",
+        "department": "",
+        "link": "/speakers/karianne-arnesen",
+        "image": "karianne-arnesen.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Infrastrukturendringer med hvilepuls",
+    "description": "Hvordan er det AWS Plattform leverer hyppige endringer med Infrastruktur som kode og test dreven utvikling. Jeg viser hvordan teamet bruker testing for å ivareta kvalitet og stabilitet i digitalbankens produksjonsmiljøer, og hvordan vi har gjort det tusenvis av ganger allerede?",
+    "time": {
+      "start": 1245,
+      "startEnd": "12:45 - 13:00",
+      "duration": 10
+    },
+    "track": "4",
+    "presenters": [
+      {
+        "name": "Lars Haugan",
+        "position": "Plattformutvikler",
+        "department": "AWS Plattform",
+        "link": "/speakers/lars-haugan",
+        "image": "lars-haugan.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Canary deploys - hvordan vi tenker utrulling av nettbanken skal virke i 2023",
+    "description": "Hva er canary deploys og hvordan kan vi bruke det for hurtig utrulling og oppdage feil før de får stor kundekonsekvens?",
+    "time": {
+      "start": 1245,
+      "startEnd": "12:45 - 13:00",
+      "duration": 10
+    },
+    "track": "1",
+    "presenters": [
+      {
+        "name": "Carl Henrik Holth Lunde",
+        "position": "",
+        "department": "",
+        "link": "/speakers/carl",
+        "image": "Carl_Henrik_Holth_Lunde.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Pause",
+    "description": "",
+    "time": {
+      "start": 1300,
+      "startEnd": "13:00 - 13:15",
+      "duration": 15
+    },
+    "track": "pause",
+    "tags": []
+  },
+  {
+    "title": "Det er en bedrager blant oss",
+    "description": "Bedragersyndromet er kanskje noe alle har kjent på en gang i livet, men hva er det og hvordan oppstår det egentlig? Jeg vil ta et lite dykk ulike temaer som hvordan det ble oppdaget, ulike varianter av syndromet og mye mer. Kan man gjøre noe for å føle seg mindre som en bedrager eller bli kvitt det? Dette skal alt krydres med egne erfaringer fra SB1U.",
+    "time": {
+      "start": 1315,
+      "end": 1400,
+      "startEnd": "13:15 - 14:00",
+      "duration": 45
+    },
+    "track": "1",
+    "presenters": [
+      {
+        "name": "Karianne Kristiansen",
+        "bio": "Karianne har jobbet som utvikler i SB1U i litt over tre år. Selv om hun er ansatt som fullstackutvikler, er det frontend og UU hun finner mest engasjerende. I løpet av de siste årene har også psykisk helse på arbedisplassen blitt et område hun ønsker å sette fokus på.",
+        "position": "Utvikler",
+        "department": "Fagmiljø for Utvikling",
+        "link": "/speakers/karianne",
+        "image": "Karianne_Kristiansen.jpg"
+      }
+    ],
+    "tags": [
+      "tagsNetwork"
+    ]
+  },
+  {
+    "title": "Jakten på samsynt autonomi - Hvordan lykkes når uforutsigbarhet råder? ",
+    "description": "Vår tid preges av uforutsigbarhet og endring der organisasjoner må håndtere et stadig økende tempo. Til tross for at mye energi legges på å møte dette behovet er resultatet variabelt. Jo større organisasjon, desto vanskeligere å skape farten som kreves kan det virke som. Hva bør man egentlig fokusere på når ustabilitet råder og kompleksitet gjør det uklart hva som skal til for å nå våre mål?<br\/><br\/>\\“History will teach us nothing\\”, sang artisten Sting. Vi vil imidlertid se nærmere på hvordan en gigantisk fiasko for over 200 år siden ble grunnlaget for en radikal kursendring. Møt en akterutseilt organisasjon på søken etter å skape det mest effektive systemet innen sin bransje. Dette er historien om jakten på samsynt autonomi hos en aktør som gjerne er forbundet med noe helt annet. Har Sting rett? Eller kan vi dra nytte av andres dyrekjøpte erfaringer mens vi strever med å legge taylorismens arv bak oss?",
+    "time": {
+      "start": 1315,
+      "startEnd": "13:15 - 13:45",
+      "duration": 30
+    },
+    "track": "2",
+    "presenters": [
+      {
+        "name": "Kristoffer Berg",
+        "bio": "Kristoffer er Lean/agile coach i SpareBank 1 Utvikling. Han er opptatt av tverrfaglige produktteam som løpende skaper kunde- og forretningsverdi med rett kvalitet. Spesielt interessert i strukturert problemløsning, kontinuerlig forbedring og servant leadership. Inspirert av smidig-prinsipper og Lean produksjonsfilosofi.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/kristoffer",
+        "image": "kristoffer.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Økt sikkerhet med applikasjonstilpasset Java runtime ",
+    "description": "Vi har hele tiden både kjente og ukjente sårbarheter i produksjon og vi benytter en rekke tiltak for å sterkt redusere sannsynligheten for og konsekvensen av et vellykket angrep.<br\/>Java har selv ytterligere to viktige generiske sikkerhetsstiltak vi ikke har i utstrakt bruk i dag og som vi med få grep kan aktivere uten å endre selve applikasjonskoden:<br\/>\t1) Skreddersy Java runtime til applikasjonen ved å kun inkludere nødvendige moduler (vi trenger bare en brøkdel).<br\/>\t2) Ta i bruk det innebygde deserialiseringsfilteret.<br\/>Foredraget går gjennom disse sikkerhetstiltakene og viser hvorfor og hvordan du tar de i bruk.",
+    "time": {
+      "start": 1315,
+      "end": 1400,
+      "startEnd": "13:15 - 14:00",
+      "duration": 45
+    },
+    "track": "4",
+    "presenters": [
+      {
+        "name": "Øyvind Horneland",
+        "bio": "Øyvind er en sikkerhetsinteressert Java-utvikler, som gjennom 20 år i bransjen nå trives godt med å passe på SB1SK og tilgrensende systemer. Liker å følge med på utviklingen av Java og JVM i OpenJDK.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/oyvind-horneland",
+        "image": "Oyvind_Horneland.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Thinking inside the box",
+    "description": "Hvordan jobbe bedre med og tenke på innovasjon med utgangspunkt i de rammene vi har.",
+    "time": {
+      "start": 1315,
+      "startEnd": "13:15 - 13:45",
+      "duration": 30
+    },
+    "track": "3",
+    "presenters": [
+      {
+        "name": "Ola Einang",
+        "position": "Designer",
+        "department": "Fagmiljø Design",
+        "link": "/speakers/ola-einang",
+        "image": "Ola_Einang.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Mobilapp-testing? Ja, du kan!",
+    "description": "Mange er flinke til å teste apper\/webapper, men kanskje føler seg usikre på hvordan de burde teste mobilapper. <br\/>Vi i SpareBank 1 vil dele hvordan vi har arbeidet med det og prøver å svare:<br\/>•\tHvordan kan jeg teste en mobilapp bra nok? \/ Hvilke områder er viktige?<br\/>•\tHvordan kan jeg forberede meg for å teste mobilapper?<br\/>•\tHvilke verktøy finnes som kan hjelpe meg?<br\/>•\tHvordan begynner jeg å automatisere testing av mobilapper?<br\/>•\tEr det noen gylne regler på hvordan automatisere? <br\/>•\tHva har vi lært når det gjelder testing av mobilapper funksjonelt og automatisk?",
+    "time": {
+      "start": 1315,
+      "startEnd": "13:15 - 13:45",
+      "duration": 30
+    },
+    "track": "5",
+    "presenters": [
+      {
+        "name": "Rafael Tello",
+        "bio": "Jeg jobber med testautomatisering av mobilapper, hovedsakelig Android og som person, tar jeg gjerne imot en utfordring og gjør den om til noe gøy",
+        "position": "Testleder",
+        "department": "Fagmiljø Test",
+        "link": "/speakers/rafael",
+        "image": "Rafael_Tello.jpg"
+      },
+      {
+        "name": "Sahdia Moghal",
+        "bio": "Sahdia er en dreven testleder med over et tiår erfaring innen faget. Hun har de siste årene jobbet som både backend- og frontend-tester av mobilapplikajsoner hos både Ruter og SpareBank 1. Brenner for test og kvalitetssikring på interessante og spennende måter!",
+        "position": "Testleder",
+        "department": "Fagmiljø Test",
+        "link": "/speakers/sahdia",
+        "image": "Sahdia_Moghal.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Smidig Utvikling i skyen med skaffold og kubernetes        ",
+    "description": "Ole Kristian vil vise hvordan verktøyet skaffold kan brukes for å gi korte iterasjoner på utvikling mot sky/kubernetes",
+    "time": {
+      "start": 1415,
+      "end": 1500,
+      "startEnd": "14:15 - 15:00",
+      "duration": 45
+    },
+    "track": "3",
+    "presenters": [
+      {
+        "name": "Ole Kristian Sunde",
+        "bio": "Bygger kontainerplattform i AWS",
+        "position": "Utvikler",
+        "department": "Fagmiljø for Utvikling",
+        "link": "/speakers/ole",
+        "image": "Ole_Kristian_Sunde.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Workshop: \"Bærekraftig [inn]kjøp\"",
+    "description": "Samarbeider du med leverandører til SB1U? Du synes at bærekraft er viktig, men vet ikke helt hva du skal tenke på når du gjør et kjøp.Kanskje har du hørt om åpenhetsloven og vet at du burde stille spørsmål til leverandører, men hvilke og hvordan?Bli med på en praktisk workshop med nyttig læring om hvordan fremme bærekraft ved ditt neste kjøp! PS! Max 15 deltakere. Førstemann til mølla!",
+    "time": {
+      "start": "workshop",
+      "startEnd": "13:15 - 14:00 og 15:15 - 16:00",
+      "duration": 45
+    },
+    "track": "workshop",
+    "presenters": [
+      {
+        "name": "Kristin Kahrik",
+        "bio": "Kristin er en hands-on innkjøper som liker å utfordre \"sånn har det alltid vært\". I sin jobb er hun spesielt opptatt av hva leverandører til SB1U gjør for å skåne klima og miljø, samt hvordan de bidrar til mer rettferdig og mangfoldig verdenssamfunn. Hun er tilhenger av å gjøre ting enkelt og har sterk tro på at alle monner drar, særlig når det kommer til bærekraft.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/kristin-kahrik",
+        "image": "Kristin_Kahrik.jpg"
+      },
+      {
+        "name": "Nanna Matilda Ringstad",
+        "bio": "Nanna er fersk fagleder for bærekraft i Utvikling. Hun jobber til daglig for å operasjonalisere selskapets ambisjon om å integrere bærekraft i alt vi gjør. Det gjenstår en god del, men vi er i gang 😊 Nanna har lang fartstid innen bærekraftsområdet og har tidligere jobbet i PwC, Finansforbundet og SEB.",
+        "position": "Fagleder Bærekraft",
+        "department": "",
+        "link": "/speakers/nanna",
+        "image": "Nanna_Matilda_Ringstad.jpg"
+      },
+      {
+        "name": "Knut Halvorsen",
+        "bio": "Knut har lang erfaring med innkjøp og noen års erfaring med bærekraft. Han vet hvor han skal, helst sammen med kolleger som vet mer – noe det er mange av! Hovedjobb for tiden er bærekraftig innkjøp. Om bærekraft virker vanskelig er det bare å komme seg over dørstokken og kjøre på. Han sier det virker - hver gang.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/knut-halvorsen",
+        "image": "knut-halvorsen.png"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Arkitektur og smidig vekst ",
+    "description": "Hva er arkitektur sin rolle i en voksende smidig virksomhet som vår?<br/>Hva skjer i en voksende virksomhet, hva skal til for å bevare det beste vi har og samtidig utvikle mer fart og leveransekraft?<br/>Kan vi være like smidige i en stor organisasjon og hvilken rolle kan arkitektur spille?",
+    "time": {
+      "start": 1345,
+      "startEnd": "13:45 - 14:00",
+      "duration": 10
+    },
+    "track": "2",
+    "presenters": [
+      {
+        "name": "Jørn Erik Sikkerbøl",
+        "bio": "Jeg er nysgjerrig og søker hele tiden ny kunnskap på teknologi og prosesser.  For tiden deltar jeg på et utdanningsprogram i regi av NTNU som handler om digital transformasjon og bærekraft i finanssektoren. I min karriere har jeg jobbet i ulike bransjer og med ulike spennende teknologier – blant annet lage distribuerte kontroll- og sikkerhet systemer, en verdensledende flerfase strømnings simulator, skape et enklere Helse-Norge ved hjelp av felles innbygger portal og forme nye digitale hjemme oppfølgings konsepter. Siden ‘90 tallet har jeg fokusert mest på arkitektur, innovasjon, produktutvikling, teknologi og organisasjonsutvikling.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/jorn",
+        "image": "jorn.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Hjelp! Passordet mitt blir hacket",
+    "description": "Om kort tid skal vi endre passordpolicy, noe som betyr at blant annet lengden på passord økes. I denne presentasjonen skal vi demonstrere hvorfor lengden på passord er avgjørende for om en angriper klarer å knekke det eller ikke.",
+    "time": {
+      "start": 1345,
+      "startEnd": "13:45 - 14:00",
+      "duration": 15
+    },
+    "track": "3",
+    "presenters": [
+      {
+        "name": "Tom-André Røgden",
+        "position": "",
+        "department": "",
+        "link": "/speakers/tom-andre",
+        "image": "Tom-Andre_Rogden.jpg"
+      },
+      {
+        "name": "Trym Skilleås",
+        "position": "",
+        "department": "",
+        "link": "/speakers/trym",
+        "image": "Trym_Skilleas.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Hexagonal arkitektur - en teknikk for å isolere forretningslogikk fra rammeverk og eksterne avhengigheter",
+    "description": "Hexagonal architecture vil hjelpe deg med å lage og teste forretningslogikken uten å bli påvirket av infrastruktur. Hexagonal architecture er en arkitekturstil som ble definert i 2005 av Alistair Cockburn. Den kan ses på som en videreutvikling av den kanskje mer kjente 'layred architecture' stilen og forsøker å løse problemet med kobling mellom forretningslogikk og infrastruktur.",
+    "time": {
+      "start": 1345,
+      "startEnd": "13:45 - 14:00",
+      "duration": 15
+    },
+    "track": "5",
+    "presenters": [
+      {
+        "name": "Morten Ilebrekke ",
+        "bio": "Jobber som backend utvikler i Mobilbank Plattform og startet i Sparebank1 i sommeren 2019. Før Sparebank1 jobbet jeg noen år som systemingeniør og prosjektleder før jeg startet med software utvikling i 1999.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/morten",
+        "image": "morten.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Pause",
+    "description": "",
+    "time": {
+      "start": 1400,
+      "startEnd": "14:00 - 14:15",
+      "duration": 15
+    },
+    "track": "pause",
+    "tags": []
+  },
+  {
+    "title": "Hvordan oppleve mye høyere fart og kvalitet med hyppige prodsettinger",
+    "description": "For 10 år siden (?) måtte vi fly inn release-ansvarlig fra Bodø ved prodsettinger. Mye har skjedd siden det, og i dag er de fleste enige om at hyppige prodsettinger er bra og viktig.   Vi har testet å ta dette et skritt lenger, ved å bryte ned hver feature og endringer i enda mindre prodsettinger som gjerne går ut flere ganger daglig.   Hva er poenget med det og hva oppnår vi? Hvordan skal dere kode for at dette skal være mulig? Det skal vi vise i dag med fersk erfaring fra virkeligheten.",
+    "time": {
+      "start": 1415,
+      "end": 1500,
+      "startEnd": "14:15 - 15:00",
+      "duration": 45
+    },
+    "track": "1",
+    "presenters": [
+      {
+        "name": "Asgaut Mjølne",
+        "bio": "Mann fra Jæren som brenner spesielt for parprogrammering, jobbe sammen, godt kodedesign og god kultur. Er opptatt av å hele tiden være i utvikling, både på jobb og privat. Elsker skikkelig svensk, mørkbrent kaffe.",
+        "position": "Utvikler",
+        "department": "Fagmiljø for Utvikling",
+        "link": "/speakers/asgaut",
+        "image": "asgaut.jpg"
+      },
+      {
+        "name": "Ola Hast",
+        "position": "Utvikler",
+        "department": "Fagmiljø for Utvikling",
+        "link": "/speakers/ola",
+        "image": "Ola_Hast.jpg"
+      }
+    ],
+    "tags": [
+      "tagsNetwork"
+    ]
+  },
+  {
+    "title": "Slacking og hacking - hvordan vi jobber med utviklereffektivitet i SpareBank 1",
+    "description": "Hverdagen til en utvikler kan være preget av mange avbrudd. Møter, Slackmeldinger og mye yak shaving gjør at det er vanskelig å oppnå flyt. I dette foredraget vil jeg fortelle hvordan vi i SpareBank 1 gjennom bruk av parprogrammering, egenutviklede verktøy, utvikleropplevelsesteam, samt god planlegging, prøver å skape en bra utviklerhverdag.",
+    "time": {
+      "start": 1415,
+      "end": 1500,
+      "startEnd": "14:15 - 15:00",
+      "duration": 45
+    },
+    "track": "2",
+    "presenters": [
+      {
+        "name": "Stian Conradsen",
+        "bio": "Utvikler med interesse for alt fra kode til folk. Fornøyde utviklere koder bedre :)",
+        "position": "Utvikler",
+        "department": "Fagmiljø for Utvikling",
+        "link": "/speakers/stian",
+        "image": "stian.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Glem Excel, bruk Lister i Sharepoint og krydre den med Power Automate",
+    "description": "Hva kan man bruke lister i Sharepoint til og hvordan automatisere prosesser med Power Automate.",
+    "time": {
+      "start": 1415,
+      "end": 1500,
+      "startEnd": "14:15 - 15:00",
+      "duration": 45
+    },
+    "track": "4",
+    "presenters": [
+      {
+        "name": "Frank Robert Asphaug",
+        "bio": "Jobbet i SpareBank 1 i 23 år. Alle år med samhandlingsløsninger som Notes og Sharepoint.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/frank",
+        "image": "frank.jpg"
+      },
+      {
+        "name": "Jens Bjørnfot",
+        "bio": "Jobber i Fagmiljø Microsoft med Power Plattformen og da primært med Power Automate (arbeidsflyter) og Power Apps, apper som kan kjøres i nettleser eller mobile enheter og inneholder logikk og kan kobles til forskjellige datakilder. Jobber også med SharePoint og andre tjenester i M365.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/jens",
+        "image": "Jens_Bjornfot.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Hvordan teknologi kontinuerlig påvirker betalingsområdet",
+    "description": "Betalingsområdet har alltid vært preget av teknologiske nyvinninger, betalingskort har gått fra visittkort, til magnetstripe, til chip, til kontaktløs og til mobil NFC. På andre fronter ser vi at identitet har gått fra det å kjenne person, til fysisk oppmøte,  til PKI infrastruktur som BankID og nå til biometriske apper. På andre områder ser vi at bruk av ny API-teknologi åpner løsningene til bankene på nye måter, et stikkord her er PSD2!",
+    "time": {
+      "start": 1415,
+      "startEnd": "14:15 - 14:45",
+      "duration": 30
+    },
+    "track": "5",
+    "presenters": [
+      {
+        "name": "Øystein Lysvik",
+        "bio": "Øystein har opprinnelig bakgrunn fra IT-utvikling, og har jobbet i SpareBank 1 siden 1998. Kortbetaling har vært i fokus i mer enn 20 år, både internt i alliansen og i form av deltagelse i ulike bransjefora innenfor Norsk betalingsformidling.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/oystein",
+        "image": "Oystein_Lysvik.png"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "SpareBank 1 Regnskap - (snart) best på banktjenester for bedrifter        ",
+    "description": "Vi skal fortelle om hvordan SpareBank 1 Regnskap skal bli Norges beste og mest effektive regnskapssystem ved å ta i bruk SpareBank 1's digitale banktjenester.",
+    "time": {
+      "start": 1445,
+      "startEnd": "14:45 - 15:00",
+      "duration": 15
+    },
+    "track": "5",
+    "presenters": [
+      {
+        "name": "Sondre Pedersen Solberg",
+        "position": "",
+        "department": "",
+        "link": "/speakers/sondre",
+        "image": "Sondre_Pedersen_Solberg.jpg"
+      },
+      {
+        "name": "Morten Henning Nygård",
+        "position": "",
+        "department": "",
+        "link": "/speakers/morten-henning",
+        "image": "Morten_Henning_Nygaard.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Pause",
+    "description": "",
+    "time": {
+      "start": 1500,
+      "startEnd": "15:00 - 15:15",
+      "duration": 15
+    },
+    "track": "pause",
+    "tags": []
+  },
+  {
+    "title": "Breaking Old Habits: From Fragile to Agile",
+    "description": "Har du noen gang lurt på hvordan et team kan endre hele sin måte å jobbe på? I dette foredraget vil man få innsikt i hvordan Team Azure gikk fra et sårbart utviklingsløp til et mer agilt og produktivt team. Gjennom denne sesjonen vil du også kunne få verdifulle tips og triks på hvordan du kan implementere en lignende tilnærming for ditt team.",
+    "time": {
+      "start": 1515,
+      "end": 1600,
+      "startEnd": "15:15 - 16:00",
+      "duration": 45
+    },
+    "track": "2",
+    "presenters": [
+      {
+        "name": "Erhan Mikael Sanlioglu",
+        "position": "",
+        "department": "",
+        "link": "/speakers/erhan",
+        "image": "erhan.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Skykostnader - Bevissthet og fallgruver",
+    "description": "Med overgang til sky endres også prismodellene. FinOps blir mer aktuelt, og flere må ha et forhold til hvordan kostnader beregnes. Volumbaserte pay-as-you-go metoder er det nye, og krever nye tankemåter for et bredt spekter av IT roller. Innlegget her tenkes å ta for seg skykostnader, FinOps og hva som er lurt å tenke over i sky. Temaet er aktuelt uavhengig av skyleverandør, men ettersom jeg har mest kjennskap til AWS, blir det mest om AWS.",
+    "time": {
+      "start": 1515,
+      "end": 1600,
+      "startEnd": "15:15 - 16:00",
+      "duration": 45
+    },
+    "track": "3",
+    "presenters": [
+      {
+        "name": "Fredrik Gjein Andersen",
+        "bio": "Jobbet det meste av karrieren som Linux sysadmin, og nærmer seg nå 2 år i AWS Core. Trives med IT drift og liker å være innom mange ulike områder i den sfæren.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/fredrik",
+        "image": "fredrik.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Produktutviklingen som skapte 10 000 nye fondskunder (og hvorfor ett utviklingsteam alene ikke kan få det til)",
+    "description": "Etableringen og lanseringen av fondspakken SpareBank 1s utvalgte krevde et heftig samarbeid på tvers mellom nettsider, marked, datadrevne aktiviteter, utviklingsteam og forretning. Hør historien om denne reisen som resulterte i 10 000 nye fondskunder.",
+    "time": {
+      "start": 1515,
+      "end": 1600,
+      "startEnd": "15:15 - 16:00",
+      "duration": 45
+    },
+    "track": "4",
+    "presenters": [
+      {
+        "name": "Sondre Kverneng Nordnes",
+        "bio": "Med bakgrunn som leder for kundesenteret i SpareBank 1 Nord-Norge, i markedsavdelingen i SpareBank 1 Utvikling og siden februar 2022 området Forretningsutvikling i SpareBank 1 Forvaltning har jeg en bred forståelse av og har lang fartstid i å utnytte kraften i alliansen. Jeg brenner for ambisiøse mål og å bruke data i å utvikle vårt tilbud til kundene. Er aktiv sparer og syns samfunnsoppdraget vårt om å øke sparingen i samfunnet er ganske kult.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/sondre-nordnes",
+        "image": "Sondre_Kverneng_Nordnes.jpg"
+      },
+      {
+        "name": "Elvira Semenova",
+        "bio": "Jeg jobber som UX-designer i team Nettsider. Det er varierende oppgaver jeg jobber med på teamet, men Sparing har vært i fokus i det siste året. Det er veldig spennende for meg å jobber med noe som er så viktig og utfordrende for folk som sparing og er lærerikt for meg personlig. Jeg synes det er veldig gøy å jobbe i tverrfaglige team hvor vi sammen lager de beste løsningene for både bankene og kundene våre.",
+        "position": "Designer",
+        "department": "Fagmiljø Design",
+        "link": "/speakers/citona",
+        "image": "elvira_semenova_720.png"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Zero trust - hvordan vi sikrer digitalbanken i AWS i 2023",
+    "description": "Fokus på sikkerhet er ikke blitt mindre de siste årene, og havner stadi høyere opp på agendaen. Skyreisen til AWS har gitt oss nye muligheter for å tenke nytt og implementere nye sikkerhetsbariærer. Vi tar praktiske demonstasjoner av hacking som viser hvorfor vi trenger nye sikkerhetsmodeller, hva som skal til for å implementere det, og ikke minst de gevinstene det gir oss.",
+    "time": {
+      "start": 1515,
+      "end": 1600,
+      "startEnd": "15:15 - 16:00",
+      "duration": 45
+    },
+    "track": "5",
+    "presenters": [
+      {
+        "name": "Carl Henrik Holth Lunde",
+        "position": "",
+        "department": "AWS Plattform",
+        "link": "/speakers/carl",
+        "image": "Carl_Henrik_Holth_Lunde.jpg"
+      },
+      {
+        "name": "Lars Haugan",
+        "position": "",
+        "department": "AWS Plattform",
+        "link": "/speakers/lars-haugan",
+        "image": "lars-haugan.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Fagdagen i SB1U - Er den bare et gode eller fører den også til innovasjon?",
+    "description": "Jeg jobber nå med masteroppgave på NTNU innen organisasjon og ledelse med fordypning i innovasjon. Jeg har valgt meg ut fagdagen som tema og det jeg skal finne ut er om fagdagen fører til innovasjon i selskapet. Tenkte derfor at dette kanskje kunne være passende for en liten lyntale hvor jeg kan presentere mine funn",
+    "time": {
+      "start": 1515,
+      "startEnd": "15:15 - 15:45",
+      "duration": 30
+    },
+    "track": "1",
+    "presenters": [
+      {
+        "name": "Håvard Holje",
+        "bio": "Håvard har siden oktober 2021 vært teamleder for Boligreisen, og er såpass interessert i organisasjon og ledelse at han nettopp har fullført en mastergrad ved NTNU hvor han skrev om fagdagen i SB1U. Håvard har vært i bransjen i over 15 år og har bl. annet jobbet som fullstackutvikler, tester/testleder, teamleder, prosjekt -og programleder.",
+        "position": "",
+        "department": "",
+        "link": "/speakers/havard",
+        "image": "Havard_Holje.jpg"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "title": "Pause",
+    "description": "",
+    "time": {
+      "start": 1600,
+      "startEnd": "16:00 - 16:15",
+      "duration": 15
+    },
+    "track": "pause",
+    "tags": []
+  },
+  {
+    "title": "Paneldebatt",
+    "description": "Moderator: Jonas Nordstrand <br/><br/> Panelet består av: <br/><br/> * <b>Vegard Hartmann</b> - IT-direktøren vår<br/> * <b> Astrid Undheim</b> - Konserndirektær for Teknologi og utvikling i SMN<br/> * <b>Andreas Kemkers</b> - Utvikler i SB1U<br/> * <b>Nils Brede Moe </b> - Sjefsforsker fra SINTEF Digital",
+    "time": {
+      "start": 1615,
+      "startEnd": "16:15 - 17:00",
+      "duration": 45
+    },
+    "track": "paneldebatt",
+    "presenters": [
+      {
+        "name": "Jonas Nordstrand",
+        "bio": "Moderator",
+        "position": "",
+        "department": "",
+        "link": "/speakers/vegard",
+        "image": "jonas.jpg"
+      },
+      {
+        "name": "Vegard Hartman",
+        "bio": "IT-direktøren vår",
+        "position": "",
+        "department": "",
+        "link": "/speakers/vegard",
+        "image": "veg.jpg"
+      },
+      {
+        "name": "Astrid Undheim",
+        "bio": "Konserndirektær for Teknologi og utvikling i SMN",
+        "position": "",
+        "department": "",
+        "link": "/speakers/vegard",
+        "image": "astridUn.jpg"
+      },
+      {
+        "name": "Andreas Kemkers",
+        "bio": "Utvikler i SB1U",
+        "position": "",
+        "department": "",
+        "link": "/speakers/vegard",
+        "image": "andreas.jpg"
+      },
+      {
+        "name": "Nils Brede Moe",
+        "bio": "Sjefsforsker fra SINTEF Digital",
+        "position": "",
+        "department": "",
+        "link": "/speakers/vegard",
+        "image": "nils.jpg"
+      }
+    ],
+    "tags": []
+  }
+]
