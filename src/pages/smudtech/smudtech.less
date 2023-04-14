@@ -1,0 +1,621 @@
+.smudtech-page {
+  background-color: #D8E9F2;
+
+  .smudtech-agenda-container {
+    padding-bottom: 100px;
+  }
+
+  .smudtech-header {
+    &.smudtech-hero {
+      padding: 0;
+    }
+    .hero--container {
+      position: relative;
+      color: #002776;
+    }
+    .hero--content {
+      position: absolute;
+      top: 64px;
+      left: 64px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .smud-tech-logo {
+      border-right: 2px solid #002776;
+      padding-right: 18px;
+      margin-right: 18px;
+    }
+    .logo-background {
+      margin-left: -19px;
+    }
+    .logo-text {
+      margin-top: 0px;
+    }
+
+    .countdown-text {
+      color: #002776;
+    }
+
+    .countdown-timer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+    }
+    .time-cookie {
+      margin-right: 18px;
+
+    }
+
+    .container {
+      margin: 0;
+      padding: 0 0 122px;
+      background-color: #D8E9F2;
+      display: flex;
+      min-width: 100%;
+      flex-direction: row;
+    }
+  } // .smudtech-header {
+
+  @media screen and (max-width: 640px) {
+    .smud-tech-logo {
+        margin-top: -46px;
+        margin-left: -30px;
+        width: 120px;
+    }
+    .logo-text {
+    }
+    header > .container {
+        flex-direction: column;
+    }
+    header .countdown-timer {
+        margin: 0 30px;
+    }
+  }
+
+  .double-img--container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+
+  .circleImg {
+    border-radius: 100%;
+    /* border: 1px solid black; */
+    width: 80px;
+    min-height: 80px;
+    position: relative;
+    align-self: center;
+    margin-top: -50px;
+  }
+
+  .session--content:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 20px #888;
+    cursor: pointer;
+  }
+
+  .session--content:hover .circleImg {
+    box-shadow: 0px 0px 20px #888;
+  }
+
+  .paneldebatt-members {
+    width: 65%;
+    text-align: left;
+    margin: auto;
+    margin-left: 35%;
+  }
+
+  .small-heading {
+    font-size: var(--ifm-h5-font-size);
+    font-style: SpareBank1-regular;
+    font-weight: bold;
+    color: #002776;
+    margin-bottom: 10px;
+  }
+  .text-faded {
+    color: #777;
+  }
+
+  .smudtech-agenda {
+    position: relative;
+    display: grid;
+    /* margin-left: 90px;
+      margin-top: 40px; */
+    margin: auto;
+
+    width: 90%;
+    height: 8%;
+
+
+
+    grid-gap: 1em;
+    grid-template-rows:
+      /* [tracks] auto [time-1200] 1fr [time-1230] 2fr [time-1300] 1fr [time-1330] 1fr [time-1400] 1fr [time-1430] 1fr [time-1500] 1fr [time-1530] 1fr [time-1600] 1fr [time-1630] 1fr [time-1700] 1fr; */
+      [program-title] auto [tracks] auto [time-1130] auto [time-1200]auto [time-1215] auto [time-1230] auto [time-1245] auto [time-1300]auto [time-1315] auto [time-1330] auto [time-1345] auto [time-1400]auto [time-1415] auto [time-1430] auto [time-1445] auto [time-1500]auto [time-1515] auto [time-1530] auto [time-1545] auto [time-1600]auto [time-1615] auto [time-1630] auto [time-1645] auto [time-1700] auto [time-workshop] auto;
+
+    /* Note 1:
+        Use 24hr time for gridline names for simplicity
+
+        Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+        Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+        */
+
+    grid-template-columns:
+      [times] 2em [track-1-start] 1fr [track-1-end track-2-start] 1fr [track-2-end track-3-start] 1fr [track-3-end track-4-start] 1fr [track-4-end track-5-start]1fr [track-5-end];
+  }
+
+  .st-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .track-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+  }
+
+  .track-buttons button {
+    flex-grow: 1;
+    max-width: 120px;
+    min-width: 100px;
+    padding: 12px 18px;
+    display: inline-block;
+    border-radius: 5px;
+    color: black;
+    background-color: #005aa4;
+    border: none;
+    font-size: 14px;
+    margin-right: 5px;
+    white-space: nowrap;
+    margin-top: 5px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+
+  .track-buttons button.selected {
+    background-color: #4f82c0;
+    color: #9d9ba3;
+  }
+
+  .time-slot {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .track-slot {
+    display: none;
+    text-align: center;
+    color: #000;
+    font-size: 1em !important;
+    /* hidden on small screens and browsers without grid support */
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 2;
+    height: 100px;
+  }
+
+  .track-slot .track-inner {
+    text-align: left;
+  }
+
+  .track-slot .track-title {}
+
+  .track-slot .track-number {
+    font-size: 3em;
+  }
+
+  .track-slot .track-location {
+    display: block;
+    opacity: 0.5;
+    margin-top: -15px;
+    grid-row: tracks;
+  }
+
+  .track-slot-1 {
+    grid-area: tracks / track-1 / tracks / track-1;
+    background: #A5cbe0;
+  }
+
+  .track-slot-2 {
+    grid-area: tracks / track-2 / tracks / track-2;
+    background: #F8E9DD;
+  }
+
+  .track-slot-3 {
+    grid-area: tracks / track-3 / tracks / track-3;
+    background: #B3D6CA;
+  }
+
+  .track-slot-4 {
+    grid-area: tracks / track-4 / tracks / track-4;
+    background: #D3D3EA;
+  }
+
+  .track-slot-5 {
+    grid-area: tracks / track-5 / tracks / track-5;
+    background: #FAC8A7;
+  }
+
+  #spor1 {
+    background-color: #A5cbe0;
+  }
+
+  #spor2 {
+    background-color: #F8E9DD;
+  }
+
+  #spor3 {
+    background-color: #B3D6CA;
+  }
+
+  #spor4 {
+    background-color: #D3D3EA;
+  }
+
+  #spor5 {
+    background-color: #FAC8A7;
+  }
+
+  .track-name-1 {
+    grid-column: track-1 / track-1;
+  }
+
+  .track-name-2 {
+    grid-column: track-2 / track-2;
+  }
+
+  .track-name-3 {
+    grid-column: track-3 / track-3;
+  }
+
+  .track-name-4 {
+    grid-column: track-4 / track-4;
+  }
+
+  .track-name-5 {
+    grid-column: track-5 / track-5;
+  }
+
+  .track-name-fill-width {
+    grid-column: track-1-start/track-5-end;
+  }
+
+  .session-type-intro .session-title,
+  .session-type-paneldebatt .session-title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .stream-description {
+    text-align: center;
+  }
+
+  .stream-description .stream-description-text {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  .stream-description .stream-description-note {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  @supports(display:grid) {
+    /*@media screen and (min-width:1000px) {*/
+
+
+    .track-slot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0 10px;
+      position: sticky;
+      top: 0;
+      /* z-index: 1000; */
+      /* background-color: rgba(255, 255, 255, .9); */
+    }
+
+    /*}*/
+  }
+
+  /* Small-screen & fallback styles */
+  .session {
+    margin: 10px;
+    margin-bottom: 1em;
+    text-align: center;
+
+  }
+
+  .session p {
+
+    text-align: left;
+
+  }
+
+  @supports(display:grid) {
+    @media screen and (min-width: 1000px) {
+      .session {
+        margin: 0;
+      }
+    }
+  }
+
+  .session {
+    padding-top: 50px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+
+  .session-logo {
+    display: none;
+  }
+
+  .session-logo.session-lightning {
+    display: block;
+    position: absolute;
+    right: 15px;
+  }
+
+  .session--content {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    padding: 12px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    color: #262626;
+    text-decoration: none;
+  }
+
+  .session-title,
+  .session-time,
+  .session-track,
+  .session-presenter {
+    display: block;
+  }
+
+  .session-title {
+    font-size: 12px;
+    margin-top: 14px;
+  }
+
+  .session-time {
+    margin-top: auto;
+  }
+
+  .label-pink {
+    padding: 4px 18px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #F7C6C7;
+    font-size: 12px
+  }
+
+  .session-presenter {
+    font-size: 20px;
+    font-style: SpareBank1-regular;
+    font-weight: bold;
+    text-align: center;
+    color: #002776;
+    margin-bottom: auto;
+  }
+
+  .session-title,
+  .time-slot {
+    margin: 2;
+  }
+
+  .session-title a {
+    color: black;
+    text-decoration-style: nonde;
+  }
+
+  .navbar__link:hover {
+    color: white;
+  }
+
+  .navbar__brand:hover {
+    color: white;
+  }
+
+  .session-title a:hover {
+    font-style: SpareBank1-regular;
+  }
+
+  .session-title a:focus {
+    outline: 2px dotted rgba(255, 255, 255, 0.8);
+  }
+
+  .track-slot,
+  .time-slot {
+    font-weight: bold;
+    font-size: .75em;
+  }
+
+  .track-all {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    color: #000;
+    box-shadow: none;
+  }
+
+  .text {
+    max-width: 750px;
+    font-size: 18px;
+    margin: 0 auto 50px;
+  }
+
+  .meta {
+    color: #555;
+    font-style: SpareBank1-regular;
+  }
+
+  .meta a {
+    color: #555;
+  }
+
+  hr {
+    margin: 40px 0;
+  }
+
+
+  h2 {
+    color: #002776;
+  }
+
+  .margin-bottom--sm img {
+    display: inline;
+    max-width: 100px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+
+  .modal {
+    height: 80vh;
+    width: 80vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 0 100px;
+    box-shadow: 0px 0px 5px #ccc;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .modal .double-img--container {
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+  .modal>.circleImg {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .modal .session-presenter h5 {
+    font-size: 18px;
+  }
+
+  .modal p {
+    text-align: center;
+  }
+
+  .modal-title {
+    font-weight: bold;
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  footer.footer {
+    padding: 30px;
+    overflow-x: hidden;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  @media screen and (max-width: 920px) {
+    .hero .container {
+      padding-bottom: 20px;
+    }
+
+    .hero .countdown-timer {
+      margin-top: -76px;
+      z-index: 2;
+    }
+
+    .modal {
+      padding: 0 10px;
+      overflow-y: scroll;
+    }
+
+    .track-slot {
+      display: none;
+    }
+
+    .track-slot.track-slot-1,
+    .track-slot.track-slot-2,
+    .track-slot.track-slot-3,
+    .track-slot.track-slot-4,
+    .track-slot.track-slot-5 {
+      grid-area: tracks / track-1 / tracks / track-5;
+    }
+    
+    .session-type-paneldebatt .circleImg {
+      width: 60px;
+      min-height: 60px;
+    }
+
+    .track-slot.track-slot-visible {
+      display: flex;
+    }
+
+    .session {
+      display: none;
+    }
+
+    .session.track-name-fill-width {
+      display: block;
+    }
+
+    .session.track-name-1,
+    .session.track-name-2,
+    .session.track-name-3,
+    .session.track-name-4,
+    .session.track-name-5 {
+      grid-column: track-1-start/track-5-end;
+    }
+
+    .session.track-visible {
+      display: block;
+    }
+
+    .paneldebatt-members {
+      width: 80%;
+      margin-left: auto;
+    }
+
+    .time-slot {
+      padding-left: 20px;
+    }
+
+    .smudtech-agenda {
+      padding-top: 20px;
+    }
+
+    .show-mobile {
+      display: block;
+    }
+
+    .show-mobile-flex {
+      display: flex;
+    }
+  }
+}

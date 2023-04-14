@@ -144,6 +144,11 @@ const IndexPage = (props) => (
                                     <h3 className="ffe-h4">Anti-svindel</h3>
                                 </Link>
                             </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/smudtech-2023/">
+                                    <h3 className="ffe-h4">SmudTech-konferansen 2023</h3>
+                                </Link>
+                            </GridCol>
                         </GridRow>
                     </InlineGrid>
                 </div>
