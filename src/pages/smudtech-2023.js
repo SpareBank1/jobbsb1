@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import Header from '../components/header'
 import { Grid, GridRow, GridCol } from '@sb1/ffe-grid-react'
 import SEO from '../components/seo'
-import * as programJson from "./smudtech/smudtech-2023-program.json";
+import programJson from "./smudtech/smudtech-2023-program.json";
 import ProgramCard from "./smudtech/smudtech-program-card";
 import './smudtech/smudtech.less';
 
