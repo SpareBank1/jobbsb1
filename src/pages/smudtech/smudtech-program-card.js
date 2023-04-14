@@ -12,6 +12,10 @@ export default function ProgramCard(
     }
 ) {
 
+    if (!time) {
+        return null;
+    }
+
     const [showModal, setShowModal] = useState(false);
     const hasPresenters = presenters !== undefined;
     const moreThanOnePresenter = hasPresenters && presenters.length > 1;
