@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjobbsb1=self.webpackChunkjobbsb1||[]).push([[740],{685:function(n,t,e){e.r(t);var o=e(1721),r=e(7294),i=function(n){function t(){return n.apply(this,arguments)||this}(0,o.Z)(t,n);var e=t.prototype;return e.componentDidMount=function(){window.location.replace("https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=145825&DepartmentId=21861&MediaId=4737")},e.render=function(){return r.createElement("div",null)},t}(r.Component);t.default=i}}]);
+//# sourceMappingURL=component---src-pages-sommerjobb-js-5e78f1b927af1baf13fe.js.map
