@@ -6,8 +6,8 @@ date: "2019-02-08"
 firstname: "Christian"
 lastname: "Brandt"
 image: "../../images/employees/Ansatt_Christian_profil.jpg"
-role: "Grafisk designer"
-fullrole: "Senior grafisk designer og foodie"
+role: "Leder for design"
+fullrole: "Leder for design og foodie"
 email: "christian.brandt@sparebank1.no"
 ---
 
