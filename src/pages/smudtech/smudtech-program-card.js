@@ -12,13 +12,13 @@ export default function ProgramCard(
     }
 ) {
 
-    if (!time) {
-        return null;
-    }
-
     const [showModal, setShowModal] = useState(false);
     const hasPresenters = presenters !== undefined;
     const moreThanOnePresenter = hasPresenters && presenters.length > 1;
+
+    if (!time) {
+        return null;
+    }
 
     const trackClassPostfix = track === "all" || track === "intro" || track === "pause" || track === "paneldebatt" || track === "workshop" ? 'fill-width' : track;
     function addImages(hasPresenters, moreThanOnePresenter) {
