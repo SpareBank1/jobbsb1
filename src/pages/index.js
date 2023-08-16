@@ -149,6 +149,16 @@ const IndexPage = (props) => (
                                     <h3 className="ffe-h4">SmudTech-konferansen 2023</h3>
                                 </Link>
                             </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/enklerehverdag/">
+                                    <h3 className="ffe-h4">Løsninger som gir folk en enklere hverdag</h3>
+                                </Link>
+                            </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/fremtidensmobilbank/">
+                                    <h3 className="ffe-h4">Fremtidens mobilbank utvikles sammen</h3>
+                                </Link>
+                            </GridCol>
                         </GridRow>
                     </InlineGrid>
                 </div>
