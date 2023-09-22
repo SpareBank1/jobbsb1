@@ -44,31 +44,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-WC73TLN",
-      },
-    },
-    // {
-    //   resolve: `gatsby-source-instagram`,
-    //   options: {
-    //     username: `3270750488`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-instagram`,
-    //   options: {
-    //     username: `11452000456`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-medium`,
-    //   options: {
-    //     username: `sparebank1-digital`,
-    //     limit: 200,
-    //   },
-    // },
-    {
       resolve: `gatsby-source-rss-feed`,
       options: {
         url: `https://medium.com/feed/sparebank1-digital`,

@@ -15,6 +15,13 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
           <link rel="shortcut icon" type="image/png" href={favicon} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                !function(b,c,f,g,h,i,j){b[h]||(b[h]=function(){(b[h].q=b[h].q||[]).push(arguments)},b[h].q=b[h].q||[],i=c.createElement(f),j=c.getElementsByTagName(f)[0],i.async=1,i.src=g,j.parentNode.insertBefore(i,j))}(window,document,"script","https://cdn.ontame.io/Sparebank1.js","ontame");
+              `,
+            }}
+          />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
