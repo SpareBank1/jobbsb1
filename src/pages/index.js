@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import CookieConsent from "react-cookie-consent";
 import { Grid, GridRow, GridCol, InlineGrid } from '@sb1/ffe-grid-react'
 import Layout from '../components/layout'
 import Header from '../components/header'
@@ -184,6 +185,37 @@ const IndexPage = (props) => (
             </GridCol>
         </GridRow>
     </Grid>
+
+    <CookieConsent
+        overlay="true"
+        location="bottom"
+        buttonText="Det er greit"
+        style={{
+            background: "#020A0A",
+            color: "#d8d8d8",
+            padding: "40px",
+            fontFamily: "SpareBank1-regular, MuseoSans-500, arial, sans-serif",
+            fontSize: "18px"
+        }}
+        buttonStyle={{
+            background: "#4d8cbf",
+            color: "#020a0a",
+            padding: "8px 24px",
+            margin: "8px 16px",
+            borderRadius: "6em",
+            fontSize: "18px"
+        }}
+        declineButtonStyle={{
+            background: "transparent",
+            textDecoration: "underline",
+            color: "#4d8cbf",
+            padding: "8px 16px",
+            margin: "8px 16px",
+            fontSize: "18px"
+        }}
+    >
+        SpareBank1.dev bruker informasjonskapsler (cookies) til statistikk -og analyseformål. Ved å bruke nettsidene samtykker du i at vi kan sette informasjonskapsler i din nettleser.
+    </CookieConsent>
   </Layout>
 )
 
