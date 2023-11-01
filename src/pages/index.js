@@ -160,6 +160,11 @@ const IndexPage = (props) => (
                                     <h3 className="ffe-h4">Fremtidens mobilbank utvikles sammen</h3>
                                 </Link>
                             </GridCol>
+                            <GridCol sm={{ cols: 12 }} md={{ cols: 6 }}>
+                                <Link className="sb1-frontpage-link" to="/fagfrokost/">
+                                    <h3 className="ffe-h4">Fagfrokost - 100% fagprat</h3>
+                                </Link>
+                            </GridCol>                            
                         </GridRow>
                     </InlineGrid>
                 </div>
