@@ -1,6 +1,6 @@
 ---
 path: "/fagfrokost"
-title: "Fagfrokost i SpareBank 1  100% fagprat"
+title: "Fagfrokost i SpareBank 1 -100% fagprat-"
 subtitle: "Fagfrokost: Utviklere om utvikling"
 pagetype: "page"
 image: "./img/fagfrokost_vipps.png"
