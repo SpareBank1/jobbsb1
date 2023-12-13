@@ -20,12 +20,7 @@ npm run dev
 ```
 
 ### Publisering
-
-Deploy til [github pages](https://sparebank1.github.io/jobbsb1/):
-```bash
-npm run deploy
-```
-**Merge til master branch vil føre til at repoet bygges og publiseres med en [github workflow](https://github.com/SpareBank1/jobbsb1/tree/master/.github/workflows)**
+**Merge til main branch vil føre til at repoet bygges og publiseres til Azure**
 
 ### Tester
 
