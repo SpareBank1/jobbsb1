@@ -15,6 +15,7 @@ name: Deploy to Azure
 #  OUTPUT_LOCATION: "build" # location of client code build output
 
 on:
+  repository_dispatch:
   push:
     branches:
       - main
