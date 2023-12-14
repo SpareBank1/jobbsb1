@@ -1,5 +1,5 @@
 {
-  "name": "jobbsb1",
+  "name": "sparebank1-dev",
   "private": true,
   "description": "Job openings at SpareBank 1",
   "version": "0.1.0",
@@ -59,9 +59,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SpareBank1/jobbsb1"
+    "url": "https://github.com/sparebank1utvikling/sparebank1-dev"
   },
   "bugs": {
-    "url": "https://github.com/SpareBank1/jobbsb1/issues"
+    "url": "https://github.com/sparebank1utvikling/sparebank1-dev/issues"
   }
 }

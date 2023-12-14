@@ -36,7 +36,7 @@ const Header = ({ siteTitle, opening }) => (
                   <h1 className="ffe-h1">SpareBank 1 Utvikling</h1>
                 </Link>
           
-                <a href="https://github.com/SpareBank1/jobbsb1" className="sb1-header__link">
+                <a href="https://github.com/sparebank1utvikling/sparebank1-dev" className="sb1-header__link">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 41" className="sb1-header__github-logo">
                     <title>SpareBank1.dev på GitHub</title>
                     <defs>
