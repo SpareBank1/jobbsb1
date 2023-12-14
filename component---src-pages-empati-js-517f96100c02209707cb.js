@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjobbsb1=self.webpackChunkjobbsb1||[]).push([[5],{6266:function(e,b,s){s.r(b);var t=s(7294);b.default=()=>t.createElement("div",null,"Empati")}}]);
+//# sourceMappingURL=component---src-pages-empati-js-517f96100c02209707cb.js.map
