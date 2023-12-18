@@ -1,0 +1,72 @@
+[
+  {
+  "heading": "Stand 1: Makuladegenerasjon (forkalkning)",
+  "text": "Det finnes flere typer, men aldersrelatert makuladegenerasjon er den største årsaken til varig synshemming hos personer over 50 år i Norge. Makula er et lite område av netthinnen som er viktig for skarpsynet. Ved makula-degenerasjon vil skarpsynet hemmes.\\n\\nTørr makuladegenerasjon gjør at det oppstår små, gule flekker rundt makula. Våt makuladegenerasjon kjennetegnes av små blodkar som vokser på baksiden av øyet.",
+  "tasks": "tasks",
+  "task1": "Finn frem mobilen",
+  "task2": "Ta på deg simuleringsbrillene",
+  "task3": "Gå inn på yr.no, og finn værvarsel for stedet der du bor",
+  "color": "fjell",
+  "hands": false
+  },
+  {
+    "heading": "Stand 2: Grønn stær",
+    "text": "Grønn stær er en tilstand som ofte skyldes høyt trykk inne i øyet. På sikt kan tilstanden medføre innskrenkninger i synsfeltet og ubehandlet kan man ende opp med «tunnelsyn». Glaukom er en av de vanligste årsakene til blindhet i Norge, særlig i høy alder. Vi regner med at 2-3 prosent av befolkningen over 40 år har glaukom, mens antatt forekomst blant de over 70 år er 15-20 prosent.",
+    "tasks": "tasks",
+    "task1": "Finn frem mobilen",
+    "task2": "Ta på deg simuleringsbrillene",
+    "task3": "Send en melding på slack eller SMS",
+    "color": "syrin",
+    "hands": false
+  },
+  {
+    "heading": "Stand 3: Grå stær",
+    "text": "Grå stær er en sykdom der linsen i øyet mister sin klarhet. Grå stær gir først og fremst nedsatt syn, «tåkesyn», både på avstand og på nært hold. Selv om alder er den viktigste årsaken til grå stær blir noen barn faktisk født med denne sykdommen. Hos yngre mennesker ses sykdommen oftest på grunn av skader eller andre sykdommer i øyet. Grå stær er den ledende årsaken til blindhet i verden.",
+    "tasks": "tasks",
+    "task1": "Finn frem mobilen",
+    "task2": "Ta på deg simuleringsbrillene",
+    "task3": "Gå inn på kameraappen og ta en selfie",
+    "color": "frost",
+    "hands": false
+  },
+  {
+    "heading": "Stand 4: Tremor (skjelving)",
+    "text": "Tremor er det samme som skjelving. Dette er en ufrivillig, rytmisk, ofte vedvarende aktivering av muskulaturen. Ofte finner ikke legen årsaken til tremor og den kalles da isolert tremor. Den vanligste formen for isolert tremor er essentiell tremor. Dette er en tremor som rammer hendene spesielt. I tillegg kan mange også få litt tremor i nakken/hodet og denne kalles da hodetremor.",
+    "tasks": "tasks",
+    "task1": "Finn frem mobilen",
+    "task2": "Ta på deg simuleringshanskene",
+    "task3": "...",
+    "color": "sand",
+    "hands": true
+  },
+  {
+    "heading": "Stand 5: Diabetes retinopati",
+    "text": "Diabetes retinopati betyr sykdom i øyets netthinne (retina) som følge av diabetes. Dette er den viktigste enkeltårsaken til at personer i yrkesaktiv alder i vestlige land mister synet, helt eller delvis. Personer med diabetisk retinopati kan oppleve svekket syn, blanke områder eller blendende lysflekker når de oppholder seg i sterkt lys. Etter som sykdommen utvikler seg, vil uklart syn, blanke områder og svarte flekker opptre. De svarte flekkene vil kunne flyte omkring i synsfeltet.",
+    "tasks": "tasks",
+    "task1": "Finn frem mobilen",
+    "task2": "Ta på deg simuleringsbrillene",
+    "task3": "...",
+    "color": "fjell",
+    "hands": false
+  },
+  {
+    "heading": "Stand 6: Netthinneløsning",
+    "text": "Symptomer på netthinneløsning er at synet brått forsvinner. Mange beskriver det som en «gardin» som dras for synsfeltet. Synet kan gradvis bedre seg i flere måneder etter operasjon. Det blir imidlertid aldri like bra som før. Etter operasjon opplever opp mot halvparten varig synstap. Nedsatt kontrastsyn og forvrengning av synsinntrykk er vanlige følgetilstander som kan gi problemer med lesing, bilkjøring og nærarbeid.",
+    "tasks": "tasks",
+    "task1": "Finn frem mobilen",
+    "task2": "Ta på deg simuleringsbrillene",
+    "task3": "...",
+    "color": "syrin",
+    "hands": false
+  },
+  {
+    "heading": "Stand 7: Retinitis pigmentosa",
+    "text": "Retinitis pigmentosa (RP) er fellesbetegnelse for en rekke netthinnesykdommer som gir sterk synshemning i form av innsnevret synsfelt eller blindhet. Sykdommen beskrives som å ha kikkertsyn eller tunnelsyn. RP er blant de hyppigste årsakene til alvorlig nedsatt syn hos barn og yngre voksne. Som regel starter RP med at mørkesynet blir dårlig (nattblindhet). Senere er det et stadig mer innsnevret synsfelt (bortfall av sidesyn) som gir de største problemene for mennesker med denne sykdommen.",
+    "tasks": "tasks",
+    "task1": "Finn frem mobilen",
+    "task2": "Ta på deg simuleringsbrillene",
+    "task3": "...",
+    "color": "sand",
+    "hands": false
+  }
+]
