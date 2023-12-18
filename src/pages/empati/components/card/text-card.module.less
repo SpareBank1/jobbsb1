@@ -1,0 +1,50 @@
+@import '@sb1/ffe-core/less/colors.less';
+@base-color-fjell: @ffe-farge-fjell;
+@base-color-hvit: @ffe-farge-hvit;
+@base-background: @ffe-farge-fjell;
+
+.card-styles(@color, @background) {
+  :global(.ffe-h1),
+  :global(.ffe-h2),
+  :global(.ffe-body-paragraph) {
+    color: @color;
+    text-align: start;
+  }
+  white-space: pre-line;
+  background: @background;
+  text-align: start;
+  color: @color;
+  border-radius: 50px;
+}
+
+:global(.ffe-text-card).colorSand {
+  .card-styles(@ffe-farge-fjell, @ffe-farge-sand-70);
+}
+
+:global(.ffe-text-card).colorFjell {
+  .card-styles(@ffe-farge-hvit, @ffe-farge-fjell);
+}
+
+:global(.ffe-text-card).colorFrost {
+  .card-styles(@ffe-farge-fjell, @ffe-farge-frost-30);
+}
+
+:global(.ffe-text-card).colorSyrin {
+  .card-styles(@ffe-farge-fjell, @ffe-farge-syrin-70);
+}
+
+.tasks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .svg {
+    margin-left: 7rem;
+  }
+}
+
+:global(.ffe-context-message).warningMessage {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 583px;
+}
