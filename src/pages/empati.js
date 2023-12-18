@@ -6,7 +6,7 @@ import mann from './empati/images/mann.svg'
 import dame1 from './empati/images/dame1.svg'
 import dame2 from './empati/images/dame2.svg'
 import txt from './empati/empati.text'
-import { createCard } from './empati/components/card/CreateCard'
+import createCard from './empati/components/card/CreateCard'
 
 const EmpatiPage = () => (
   <div className="sb1-page empati-page">
