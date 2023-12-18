@@ -15,7 +15,7 @@ import * as styles from './text-card.module.less'
 import txt from './universell-utforming.text'
 import {ErrorMessage} from "@sb1/ffe-message-box-react";
 
-export const Cards = ({
+export default function Cards({
   hands,
   title,
   text,
@@ -24,14 +24,17 @@ export const Cards = ({
   task3,
   task2,
   task1,
-}) => {
+}) {
+
   const colorClasses = {
     sand: styles.colorSand,
     syrin: styles.colorSyrin,
     fjell: styles.colorFjell,
     frost: styles.colorFrost,
   }
+
   const dynamicColorClass = clsx(colorClasses[color])
+
   return (
       <TextCard className={dynamicColorClass}>
         {() => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import txt from './universell-utforming.text'
-import { Cards } from './Cards'
+import Cards from './Cards'
 
 export const createCard = (stand, color, hands ) => {
   return (
