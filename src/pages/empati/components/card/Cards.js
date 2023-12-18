@@ -12,7 +12,6 @@ import syrin from './svgs/briller-syrin.svg'
 import hand from './svgs/hånd-fjell.svg'
 
 import * as styles from './text-card.module.less'
-import txt from './universell-utforming.text'
 import {ErrorMessage} from "@sb1/ffe-message-box-react";
 
 export default function Cards({
