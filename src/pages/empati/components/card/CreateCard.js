@@ -2,7 +2,7 @@ import React from 'react'
 import txt from './universell-utforming.text'
 import Cards from './Cards'
 
-export const createCard = (stand, color, hands ) => {
+export default function createCard(stand, color, hands) {
   return (
     <Cards
       title={txt[`HEADER_${stand}`]}
