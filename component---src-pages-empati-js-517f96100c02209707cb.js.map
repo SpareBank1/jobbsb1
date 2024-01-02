@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-empati-js-517f96100c02209707cb.js","mappings":"0HAMA,UAJmBA,IACXC,EAAAA,cAAA,WAAK,S","sources":["webpack://jobbsb1/./src/pages/empati.js"],"sourcesContent":["import React from 'react';\n\nconst EmpatiPage = () => (\n        <div>Empati</div>\n);\n\nexport default EmpatiPage;"],"names":["EmpatiPage","React"],"sourceRoot":""}
