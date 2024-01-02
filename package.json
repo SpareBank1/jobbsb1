@@ -17,6 +17,7 @@
     "@sb1/ffe-grid-react": "^11.0.0",
     "@sb1/ffe-icons-react": "^7.2.18",
     "@sb1/ffe-lists-react": "^7.0.5",
+    "@sb1/ffe-message-box": "^12.0.1",
     "@sb1/ffe-message-box-react": "^10.0.5",
     "@sb1/ffe-webfonts": "^3.0.0",
     "babel-jest": "^27.3.1",
