@@ -8,18 +8,33 @@ import dame2 from './empati/images/dame2.svg'
 import empatiJson from './empati/empati.json'
 import textCardsJson from './empati/components/card/textCards.json'
 import Cards from './empati/components/card/Cards'
+import SEO from '../components/seo'
 
 const EmpatiPage = () => (
   <div className="sb1-page empati-page">
-    <img src={sparebank1} alt="SpareBank 1 Logo" />
-    <h1 className="ffe-h1--text-center empati-heading">{empatiJson.heading}</h1>
+    <SEO
+      title="Empati"
+      keywords={[
+        `sparebank 1`,
+        `universell utforming`,
+        `utvikling`,
+        `design`,
+        `test`,
+      ]}
+    />
+    <header>
+      <img src={sparebank1} alt="SpareBank 1-logo" />
+      <h1 className="ffe-h1--text-center empati-heading">
+        {empatiJson.heading}
+      </h1>
+    </header>
     <Grid>
       <GridRow>
         <GridCol sm={12} lg={{ cols: 6, offset: 3 }}>
-          <p className="ffe-body-paragraph empati-paragraph">
+          <p className="ffe-lead-paragraph empati-paragraph">
             {empatiJson.firstParagraph}
           </p>
-          <p className="ffe-body-paragraph empati-paragraph">
+          <p className="ffe-lead-paragraph empati-paragraph">
             {empatiJson.secondParagraph}
           </p>
         </GridCol>
@@ -34,7 +49,7 @@ const EmpatiPage = () => (
 
     <Grid>
       <GridRow topPadding={false}>
-        <GridCol>
+        <GridCol sm={12} lg={{ cols: 8, offset: 2 }}>
           {textCardsJson.map((card, index) => (
             <Cards
               key={index}
@@ -46,6 +61,7 @@ const EmpatiPage = () => (
               task1={card.task1}
               task2={card.task2}
               task3={card.task3}
+              task4={card.task4}
               warningMessage={card.warningMessage}
             />
           ))}

@@ -1,9 +1,11 @@
 @import '@sb1/ffe-core/less/colors.less';
+
 @base-color-fjell: @ffe-farge-fjell;
 @base-color-hvit: @ffe-farge-hvit;
 @base-background: @ffe-farge-fjell;
 
 .card-styles(@color, @background) {
+  :global(div),
   :global(.ffe-h2),
   :global(.ffe-h3),
   :global(.ffe-body-paragraph) {
@@ -16,37 +18,36 @@
   color: @color;
   border-radius: 50px;
   padding: 40px;
+  margin-bottom: 16px;
 }
 
-:global(.ffe-text-card).colorSand {
+:global(div).colorSand {
   .card-styles(@ffe-farge-fjell, @ffe-farge-sand-70);
 }
 
-:global(.ffe-text-card).colorFjell {
+:global(div).colorFjell {
   .card-styles(@ffe-farge-hvit, @ffe-farge-fjell);
 }
 
-:global(.ffe-text-card).colorFrost {
+:global(div).colorFrost {
   .card-styles(@ffe-farge-fjell, @ffe-farge-frost-30);
 }
 
-:global(.ffe-text-card).colorSyrin {
+:global(div).colorSyrin {
   .card-styles(@ffe-farge-fjell, @ffe-farge-syrin-70);
 }
 
 .tasks {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+  }
 
   .svg {
     margin-left: 7rem;
-  }
-
-  @media screen and (max-width: 640px) {
-    .svg {
-      display: none;
-    }
   }
 }
 
